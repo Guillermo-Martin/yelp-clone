@@ -8,8 +8,11 @@ import reportWebVitals from './reportWebVitals';
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 
+// import reducers
+import allReducers from "./reducers";
+
 // Create the Redux store
-const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
   <React.StrictMode>
