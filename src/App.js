@@ -1,10 +1,10 @@
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
-      <Counter />
+      <HomePage />
     </div>
   );
 }

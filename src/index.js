@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import "./assets/styles/index.css";
+// import "./assets/styles/index.css";
 import reportWebVitals from './reportWebVitals';
 
 // imports for the Redux store
