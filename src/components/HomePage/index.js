@@ -1,11 +1,12 @@
 import React from "react";
+import SearchSection from "./../SearchSection";
 
 function HomePage() {
   return (
     <div>
-      <h1>Homepage!</h1>
+      {/* <h1>Homepage!</h1> */}
       {/* Search Section */}
-
+      <SearchSection />
 
       {/* Find the Best Businesses in Town Section */}
 
@@ -18,7 +19,7 @@ function HomePage() {
 
       {/* Footer Section */}
 
-      
+
     </div>
   );
 }
