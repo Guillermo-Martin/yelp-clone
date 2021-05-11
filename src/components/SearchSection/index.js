@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Form, Col, Button } from "react-bootstrap";
+import { Navbar, Nav, Form, InputGroup, Button, FormControl } from "react-bootstrap";
 import exploreLogo from "./../../assets/images/exploreLogo.png";
 import "./styles.css";
 
@@ -24,15 +24,11 @@ function SearchSection() {
         <img src={exploreLogo} alt="logo" className="SearchSection-logo"/>
 
         {/* Search Form */}
-        <Form>
+        <Form className="SearchSection-form">
           <Form.Row>
-            <Col>
-              <Form.Control placeholder="food, gym, games..." />
-            </Col>
-            <Col>
-              <Form.Control placeholder="Oakland, CA" />
-            </Col>
-            <Button>Submit</Button>
+              <Form.Control placeholder="Find food, gym, games..." className="SearchSection-input" />
+              <Form.Control placeholder="Near Oakland, CA" className="SearchSection-input" />
+              <Button className="SearchSection-submit">Submit</Button>
           </Form.Row>
         </Form>
 
