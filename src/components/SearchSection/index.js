@@ -34,6 +34,18 @@ function SearchSection() {
         </Form.Row>
       </Form>
 
+      {/* Links */}
+      <ul>
+        <li><a href="#">Restaurants</a></li>
+        <li><a href="#">Gyms</a></li>
+        <li><a href="#">Shops</a></li>
+        <li><a href="#">Groceries</a></li>
+      </ul>
+
+      {/* Image Credit */}
+      <p>Lorem Ipsum</p>
+      <p>Photo by Lorem Ipsum</p>
+
     </div>
   );
 }
