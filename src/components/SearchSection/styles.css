@@ -7,11 +7,9 @@
 .SearchSection-logo {
   width: 100%;
   /* border: 1px solid black; */
+  margin: 2rem auto;
 }
 
-.SearchSection-form {
-  margin-top: -4rem;
-}
 
 .SearchSection-input {
   width: 90%;
