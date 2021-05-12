@@ -10,7 +10,20 @@
   margin: 2rem auto;
 }
 
+/* Navbar */
+.SearchSection-nav-home.navbar-brand {
+  color: white;
+}
 
+.navbar-light .navbar-toggler {
+  border-color: white;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Search Form */
 .SearchSection-input {
   width: 90%;
   margin: 0.5rem auto 0.5rem auto;
@@ -28,14 +41,27 @@
   border: none;
 }
 
-.SearchSection-nav-home.navbar-brand {
+/* Links below form */
+.SearchSection-ul {
+  /* border: 3px solid black; */
+  padding-left: 0;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.SearchSection-links {
+  /* border: 3px solid green; */
+  margin: 0.5rem auto;
+  list-style: none;
+}
+
+.SearchSection-links a {
+  color: white;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+li .fas {
   color: white;
 }
 
-.navbar-light .navbar-toggler {
-  border-color: white;
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}

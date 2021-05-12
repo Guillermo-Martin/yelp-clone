@@ -33,11 +33,11 @@ function SearchSection() {
         </Form>
 
         {/* Links */}
-        <ul>
-          <li><a href="#">Restaurants</a></li>
-          <li><a href="#">Gyms</a></li>
-          <li><a href="#">Shops</a></li>
-          <li><a href="#">Groceries</a></li>
+        <ul className="SearchSection-ul">
+          <li className="SearchSection-links"><i class="fas fa-utensils"></i><a href="#">Restaurants</a></li>
+          <li className="SearchSection-links"><i class="fas fa-dumbbell"></i><a href="#">Gyms</a></li>
+          <li className="SearchSection-links"><i class="fas fa-store-alt"></i><a href="#">Shops</a></li>
+          <li className="SearchSection-links"><i class="fas fa-carrot"></i><a href="#">Groceries</a></li>
         </ul>
 
         {/* Image Credit */}
