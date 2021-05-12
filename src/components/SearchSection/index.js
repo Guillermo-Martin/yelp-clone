@@ -14,8 +14,8 @@ function SearchSection() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#home">Sign Up</Nav.Link>
-              <Nav.Link href="#link">Log In</Nav.Link>
+              <Nav.Link href="#home"><span className="SearchSection-navlink">Sign Up</span></Nav.Link>
+              <Nav.Link href="#link"><span className="SearchSection-navlink">Log In</span></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -28,7 +28,7 @@ function SearchSection() {
           <Form.Row>
               <Form.Control placeholder="Find food, gym, games..." className="SearchSection-input" />
               <Form.Control placeholder="Near Oakland, CA" className="SearchSection-input" />
-              <Button className="SearchSection-submit">Submit</Button>
+              <Button className="SearchSection-submit"><i class="fas fa-search"></i></Button>
           </Form.Row>
         </Form>
 
