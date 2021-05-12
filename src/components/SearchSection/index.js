@@ -10,7 +10,7 @@ function SearchSection() {
         {/* <h1>Search Section</h1> */}
         {/* Navbar */}
         <Navbar expand="lg">
-          <Navbar.Brand href="#home">Explore</Navbar.Brand>
+          <Navbar.Brand href="#home" className="SearchSection-nav-home">Explore</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
