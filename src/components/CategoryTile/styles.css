@@ -1,5 +1,12 @@
-/*  */
-
 .CategoryTile {
   width: 18rem;
+  height: 18rem;
+}
+
+.CategoryTile-body {
+  padding: 0;
+}
+
+.CategoryTile-title {
+  text-align: center;
 }
