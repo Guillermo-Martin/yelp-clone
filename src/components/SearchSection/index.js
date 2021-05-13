@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Form, InputGroup, Button, FormControl } from "react-bootstrap";
+import { Navbar, Nav, Form, Button } from "react-bootstrap";
 import exploreLogo from "./../../assets/images/exploreLogo.png";
 import "./styles.css";
 
@@ -7,7 +7,6 @@ function SearchSection() {
   return (
     <section id="SearchSection">
       <div>
-        {/* <h1>Search Section</h1> */}
         {/* Navbar */}
         <Navbar expand="lg">
           <Navbar.Brand href="#home" className="SearchSection-nav-home">Explore</Navbar.Brand>
@@ -41,12 +40,12 @@ function SearchSection() {
         </ul>
 
         {/* Image Credit */}
-        <p>Lorem Ipsum</p>
-        <p>Photo by Lorem Ipsum</p>
-
+        <div className="SearchSection-credit">
+          <a href="https://unsplash.com/photos/GXXYkSwndP4">Cozy Bar</a>
+          <p>Photo by <a href="https://unsplash.com/@impatrickt">Patrick Tomasso</a></p>
+        </div>
       </div>
     </section>
-    
   );
 }
 

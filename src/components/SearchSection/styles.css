@@ -1,12 +1,30 @@
 #SearchSection {
   background-color: grey;
-  /* background-image: url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3667&q=80"); */
+  /* https://stackoverflow.com/questions/26621513/darken-css-background-image */
+  /* Photo by Patrick Tomasso (https://unsplash.com/@impatrickt) */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3667&q=80");
   background-size: cover;
+}
+
+/* Image credit */
+.SearchSection-credit {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.SearchSection-credit a {
+  color: white;
+  font-weight: 600;
+}
+
+.SearchSection-credit p {
+  color: white;
 }
 
 .SearchSection-logo {
   width: 100%;
-  /* border: 1px solid black; */
   margin: 2rem auto;
 }
 
@@ -48,14 +66,12 @@
 
 /* Links below form */
 .SearchSection-ul {
-  /* border: 3px solid black; */
   padding-left: 0;
   margin: 2rem auto;
   text-align: center;
 }
 
 .SearchSection-links {
-  /* border: 3px solid green; */
   margin: 0.5rem auto;
   list-style: none;
 }
@@ -69,4 +85,3 @@
 li .fas {
   color: white;
 }
-
