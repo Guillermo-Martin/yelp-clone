@@ -8,7 +8,7 @@ function SearchSection() {
     <section id="SearchSection">
       <div>
         {/* Navbar */}
-        <Navbar expand="lg">
+        {/* <Navbar expand="lg">
           <Navbar.Brand href="#home" className="SearchSection-nav-home">Explore</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -17,7 +17,7 @@ function SearchSection() {
               <Nav.Link href="#link"><span className="SearchSection-navlink">Log In</span></Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Navbar>
+        </Navbar> */}
 
         {/* Logo */}
         <img src={exploreLogo} alt="logo" className="SearchSection-logo"/>
