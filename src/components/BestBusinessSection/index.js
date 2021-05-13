@@ -3,10 +3,10 @@ import CategoryTile from "./../CategoryTile";
 
 function BestBusinessSection() {
   return (
-    <div>
+    <section>
       <h2>Find the Best Businesses in Town</h2>
-      <CategoryTile />
-    </div>
+        <CategoryTile />
+    </section>
   );
 }
 

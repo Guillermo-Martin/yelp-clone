@@ -9,4 +9,9 @@
 
 .CategoryTile-title {
   text-align: center;
+  padding-top: 1.5rem;
+}
+
+.CategoryTile.card {
+  margin: 0 auto;
 }
