@@ -1,0 +1,12 @@
+.BestBusinessSection {
+  padding: 2rem 0;
+  background-color: #f5f5f5;
+}
+
+.BestBusinessSection-title {
+  color: #d32422;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+

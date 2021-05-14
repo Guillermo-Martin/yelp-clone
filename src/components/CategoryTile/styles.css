@@ -1,6 +1,8 @@
 .CategoryTile {
   width: 18rem;
   height: 18rem;
+  /* border: 3px solid black; */
+  /* margin-bottom: 1rem !important; */
 }
 
 .CategoryTile-body {
@@ -18,4 +20,5 @@
 
 .CategoryTile.card {
   margin: 0 auto;
+  margin-bottom: 1rem;
 }
