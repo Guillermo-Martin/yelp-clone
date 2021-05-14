@@ -10,3 +10,12 @@
   margin-bottom: 1rem;
 }
 
+.BestBusinessSection-tile {
+  color: black;
+  border: 3px solid orange;
+}
+
+.BestBusinessSection-tile:hover {
+  text-decoration: none;
+  color: #408ac6
+}
