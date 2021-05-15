@@ -1,6 +1,7 @@
 import React from "react";
 import SearchSection from "./../SearchSection";
 import BestBusinessSection from "./../BestBusinessSection";
+import CityNameSection from "./../CityNameSection";
 
 function HomePage() {
   return (
@@ -13,7 +14,7 @@ function HomePage() {
       <BestBusinessSection />
 
       {/* Yelp "City Name" Section */}
-
+      <CityNameSection />
 
       {/* Browse Businesses by Category Section */}
 
