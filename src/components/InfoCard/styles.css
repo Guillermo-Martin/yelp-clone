@@ -1,0 +1,34 @@
+.InfoCard {
+  /* width will take 100% of its container */
+  width: 100%;
+}
+
+.InfoCard-title {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.InfoCard-title a {
+  color: #0373ba;
+  text-decoration: none;
+}
+
+.InfoCard-title a:hover {
+  border-bottom: 1px solid #0373ba;
+}
+
+.InfoCard-review {
+  color: #666666;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+.InfoCard-text {
+  color: black;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.InfoCard-open {
+  color: #f25d04;
+}
