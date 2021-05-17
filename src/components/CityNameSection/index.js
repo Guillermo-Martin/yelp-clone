@@ -1,19 +1,24 @@
 import React from "react";
 import InfoCard from "./../InfoCard";
+import "./styles.css";
 
 function CityNameSection() {
   return (
-    <section>
-      <h5>Yelp Oakland</h5>
+    <section className="CityNameSection">
+      {/* NEXT: Style */}
+      <h5 className="CityNameSection-title">Yelp Oakland</h5>
 
       {/* City Navbar */}
-      <ul>
-        <li>Alameda</li>
-        <li>Oakland</li>
-        <li>San Francisco</li>
-        <li>Berkeley</li>
-        <li>Emeryville</li>
-        <li>More Cities</li>
+      <ul className="CityNameSection-ul"> 
+        {/* NEXT: convert to links */}
+        {/* NEXT: style */}
+        <li><a href="#" className="CityNameSection-links">Alameda</a></li>
+        <li><a href="#" className="CityNameSection-links">Oakland</a></li>
+        <li><a href="#" className="CityNameSection-links">San Francisco</a></li>
+        <li><a href="#" className="CityNameSection-links">Berkeley</a></li>
+        <li><a href="#" className="CityNameSection-links">Emeryville</a></li>
+        {/* NEXT: add magnifying glass icon */}
+        <li><a href="#" className="CityNameSection-links"><i class="fas fa-search CityNameSection-search"></i> More Cities</a></li>
       </ul>
 
       <hr></hr>
