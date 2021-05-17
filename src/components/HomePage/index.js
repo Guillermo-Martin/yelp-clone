@@ -2,6 +2,7 @@ import React from "react";
 import SearchSection from "./../SearchSection";
 import BestBusinessSection from "./../BestBusinessSection";
 import CityNameSection from "./../CityNameSection";
+import BrowseCategorySection from "./../BrowseCategorySection";
 
 function HomePage() {
   return (
@@ -17,7 +18,7 @@ function HomePage() {
       <CityNameSection />
 
       {/* Browse Businesses by Category Section */}
-
+      <BrowseCategorySection />
 
       {/* Footer Section */}
 

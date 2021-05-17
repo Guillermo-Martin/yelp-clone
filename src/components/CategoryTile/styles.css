@@ -1,5 +1,5 @@
-.CategoryTile {
-  /* width will take 100% of its container */
+/* .CategoryTile {
+  width will take 100% of its container
   width: 100%;
   height: 18rem;
 }
@@ -15,4 +15,44 @@
 .CategoryTile-title {
   text-align: center;
   padding-top: 1rem;
+} */
+
+/* Best Businesses Section Styles */
+.BestBusinessTile {
+  /* width will take 100% of its container */
+  width: 100%;
+  height: 18rem;
+}
+
+.BestBusinessTile-body {
+  padding: 0;
+}
+
+.BestBusinessTile-img {
+  height: 80%;
+}
+
+.BestBusinessTile-title {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+
+/* Browse Businesses By Category Section Styles */
+.BrowseCategoryTile {
+  width: 100%;
+  height: 30%;
+}
+
+.BrowseCategoryTile-body {
+  padding: 0;
+}
+
+.BrowseCategoryTile-img {
+  height: 80%;
+}
+
+.BrowseCategoryTile-title {
+  text-align: center;
+  /* padding-top: 1rem; */
 }

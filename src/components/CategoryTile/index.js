@@ -4,10 +4,11 @@ import "./styles.css";
 
 function CategoryTile(props) {
   return (
-    <Card className="CategoryTile">
-      <Card.Body className="CategoryTile-body">
-        <Card.Img variant="top" className="CategoryTile-img" src={props.src} />
-        <Card.Title className="CategoryTile-title">{props.category}</Card.Title>
+    // <Card className="CategoryTile">
+    <Card className={`${props.section}Tile`}>
+      <Card.Body className={`${props.section}Tile-body`}>
+        <Card.Img variant="top" className={`${props.section}Tile-img`} src={props.src} />
+        <Card.Title className={`${props.section}Tile-title`}>{props.category}</Card.Title>
       </Card.Body>
     </Card>
   );
