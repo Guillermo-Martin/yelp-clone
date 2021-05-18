@@ -10,3 +10,12 @@
   height: 9rem;
   margin: 1rem auto;
 }
+
+.BrowseCategorySection-link {
+  color: black;
+}
+
+.BrowseCategorySection-link:hover {
+  color: #0373ba;
+  text-decoration: none;
+}

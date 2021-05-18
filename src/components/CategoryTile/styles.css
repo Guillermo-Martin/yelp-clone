@@ -44,15 +44,23 @@
   height: 100%;
 }
 
+.BrowseCategoryTile:hover {
+  border: 1px solid #0373ba;
+  box-shadow: 1px 5px 10px #d1d1d1;
+}
+
 .BrowseCategoryTile-body {
-  padding: 0;
+  text-align: center;  
 }
 
 .BrowseCategoryTile-img {
-  height: 80%;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .BrowseCategoryTile-title {
   text-align: center;
-  /* padding-top: 1rem; */
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
