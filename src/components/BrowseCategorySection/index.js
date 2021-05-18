@@ -6,7 +6,7 @@ function BrowseCategorySection() {
   return (
     // <div>
     <section>
-      <h3>Browse Businesses By Category</h3>
+      <h5 className="BrowseCategorySection-title">Browse Businesses By Category</h5>
       <div className="BrowseCategorySection-tile">
         <CategoryTile 
           section="BrowseCategory" 
