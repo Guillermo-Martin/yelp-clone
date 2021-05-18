@@ -26,7 +26,7 @@ function CityNameSection() {
         <InfoCard 
           src="https://images.unsplash.com/photo-1607290817806-e93c813ff329?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80"
           name="Pizza"
-          review="**** 10 reviews"
+          review="10 reviews"
           type="Pizza, Wings"
           city="Oakland, CA"
           weeks="2"
@@ -38,7 +38,7 @@ function CityNameSection() {
         <InfoCard 
           src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3451&q=80"
           name="Burgers"
-          review="**** 12 reviews"
+          review="12 reviews"
           type="Burgers, American (Traditional)"
           city="Berkeley, CA"
           weeks="3"
@@ -49,7 +49,7 @@ function CityNameSection() {
         <InfoCard 
           src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3580&q=80"
           name="Sushi"
-          review="**** 20 reviews"
+          review="20 reviews"
           type="Sushi Bars, Japanese"
           city="San Francisco, CA"
           weeks="1"

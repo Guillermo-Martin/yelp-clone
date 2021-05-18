@@ -11,10 +11,17 @@
 .InfoCard-title a {
   color: #0373ba;
   text-decoration: none;
+  margin-left: 0.1rem;
 }
 
 .InfoCard-title a:hover {
   border-bottom: 1px solid #0373ba;
+}
+
+.InfoCard-review img {
+  width: 7.4rem;
+  height: 1.7rem;
+  margin-right: 0.2rem;
 }
 
 .InfoCard-review {
@@ -26,9 +33,14 @@
 .InfoCard-text {
   color: black;
   margin-bottom: 0;
+  margin-left: 0.1rem;
   font-size: 0.9rem;
 }
 
 .InfoCard-open {
   color: #f25d04;
+}
+
+.InfoCard-open i {
+  margin-left: 0.1rem;
 }
