@@ -16,10 +16,6 @@
   margin-bottom: 1rem;
 }
 
-.BestBusinessSection-tile:hover {
-  box-shadow: 1px 5px 10px #d1d1d1;
-}
-
 .BestBusinessSection-link {
   color: black;
 }
