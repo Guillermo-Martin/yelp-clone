@@ -7,7 +7,7 @@ function CategoryTile(props) {
     // <Card className="CategoryTile">
     <Card className={`${props.section}Tile`}>
       <Card.Body className={`${props.section}Tile-body`}>
-        <Card.Img variant="top" className={`${props.section}Tile-img`} src={props.src} />
+        <Card.Img variant="top" className={`${props.section}Tile-img`} src={props.src} alt={props.alt}/>
         <Card.Title className={`${props.section}Tile-title`}>{props.category}</Card.Title>
       </Card.Body>
     </Card>

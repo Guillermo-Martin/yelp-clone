@@ -1,7 +1,14 @@
 import React from "react";
 import CategoryTile from "./../CategoryTile";
 import "./styles.css";
-import shoppingIcon from "./../../assets/images/shoppingIcon.png";
+// import restaurantsIcon from "./../../assets/images/restaurantsIcon.png";
+// import shoppingIcon from "./../../assets/images/shoppingIcon.png";
+// import nightlifeIcon from "./../../assets/images/nightlifeIcon.png";
+// import activelifeIcon from "./../../assets/images/activelifeIcon.png";
+// import spaIcon from "./../../assets/images/spaIcon.png";
+// import automotiveIcon from "./../../assets/images/automotiveIcon.png";
+// import homeserviceIcon from "./../../assets/images/homeserviceIcon.png";
+// import miscIcon from "./../../assets/images/miscIcon.png";
 
 function BrowseCategorySection() {
   return (
@@ -12,7 +19,8 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            src={shoppingIcon}
+            // src={restaurantsIcon}
+            alt="Restaurant icon"
             category="Restaurants"  
           />
         </a>
@@ -22,7 +30,8 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3451&q=80"
+            // src={shoppingIcon}
+            alt="Shopping icon"
             category="Shopping"  
           />
         </a>
@@ -32,7 +41,8 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3451&q=80"
+            // src={nightlifeIcon}
+            alt="Nightlife icon"
             category="Nightlife"  
           />
         </a>
@@ -42,7 +52,8 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            src={shoppingIcon}
+            // src={activelifeIcon}
+            alt="Active life icon"
             category="Active Life"  
           />
         </a>
@@ -52,7 +63,8 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3451&q=80"
+            // src={spaIcon}
+            alt="Beauty and spas icon"
             category="Beauty & Spas"  
           />
         </a>
@@ -62,7 +74,8 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3451&q=80"
+            // src={automotiveIcon}
+            alt="Automotive icon"
             category="Automotive"  
           />
         </a>
@@ -72,7 +85,8 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3451&q=80"
+            // src={homeserviceIcon}
+            alt="Home icon"
             category="Home Services"  
           />
         </a>
@@ -82,7 +96,8 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3451&q=80"
+            // src={miscIcon}
+            alt="Misc icon"
             category="More Categories"  
           />
         </a>
