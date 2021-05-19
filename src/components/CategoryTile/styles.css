@@ -38,7 +38,9 @@
 
 .BestBusinessTile-title {
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 
