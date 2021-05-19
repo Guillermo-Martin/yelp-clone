@@ -3,6 +3,7 @@ import SearchSection from "./../SearchSection";
 import BestBusinessSection from "./../BestBusinessSection";
 import CityNameSection from "./../CityNameSection";
 import BrowseCategorySection from "./../BrowseCategorySection";
+import Footer from "./../Footer";
 
 function HomePage() {
   return (
@@ -21,7 +22,7 @@ function HomePage() {
       <BrowseCategorySection />
 
       {/* Footer Section */}
-
+      <Footer />
 
     </div>
   );

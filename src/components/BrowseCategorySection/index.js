@@ -6,7 +6,7 @@ import shoppingIcon from "./../../assets/images/shoppingIcon.png";
 function BrowseCategorySection() {
   return (
     // <div>
-    <section>
+    <section className="BrowseCategorySection">
       <h5 className="BrowseCategorySection-title">Browse Businesses By Category</h5>
       <div className="BrowseCategorySection-tile">
         <a href="#" className="BrowseCategorySection-link">
