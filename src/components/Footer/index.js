@@ -1,56 +1,19 @@
 import React from "react";
-
-let aboutLinks = ["cat", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum",];
+import footerLogo from "./../../assets/images/footerLogo.png";
+import "./styles.css";
 
 function Footer(){
-  let allAboutLinks = aboutLinks.map(link => (
-    <li>{link}</li>
-  ));
-
   return (
-    <footer>
-      {/* <h5>Footer</h5> */}
-      <h6>About</h6>
-      <ul>
-        {/* <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li> */}
-        {allAboutLinks}
+    <footer className="Footer">
+      <h6 className="Footer-section-header">About</h6>
+      <ul className="Footer-section-ul">
+        <li><a href="#">lorem ispum</a></li>
+        <li><a href="#">dolor sit amet</a></li>
+        <li><a href="#">consectetur</a></li>
+        <li><a href="#">magna aliqua</a></li>
+        <li><a href="#">reprehenderit</a></li>
       </ul>
-      <h6>Discover</h6>
-      <ul>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-      </ul>
-      <h6>Explore For Business</h6>
-      <ul>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-      </ul>
-      <h6>Languages</h6>
-      <ul>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-      </ul>
-      <h6>Countries</h6>
-      <ul>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-      </ul>
+      <img src={footerLogo} alt="Footer logo" />
     </footer>
   );
 }
