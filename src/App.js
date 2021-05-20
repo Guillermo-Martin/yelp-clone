@@ -7,7 +7,7 @@ import TopNavbar from "./components/TopNavbar";
 function App() {
   return (
     <div>
-      {/* <TopNavbar /> */}
+      <TopNavbar />
       {/* <HomePage /> */}
       <DetailsPage />
     </div>
