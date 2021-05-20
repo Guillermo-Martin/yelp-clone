@@ -1,14 +1,14 @@
 import React from "react";
 import CategoryTile from "./../CategoryTile";
 import "./styles.css";
-// import restaurantsIcon from "./../../assets/images/restaurantsIcon.png";
-// import shoppingIcon from "./../../assets/images/shoppingIcon.png";
-// import nightlifeIcon from "./../../assets/images/nightlifeIcon.png";
-// import activelifeIcon from "./../../assets/images/activelifeIcon.png";
-// import spaIcon from "./../../assets/images/spaIcon.png";
-// import automotiveIcon from "./../../assets/images/automotiveIcon.png";
-// import homeserviceIcon from "./../../assets/images/homeserviceIcon.png";
-// import miscIcon from "./../../assets/images/miscIcon.png";
+import restaurantsIcon from "./../../assets/images/restaurantsIcon.png";
+import shoppingIcon from "./../../assets/images/shoppingIcon.png";
+import nightlifeIcon from "./../../assets/images/nightlifeIcon.png";
+import activelifeIcon from "./../../assets/images/activelifeIcon.png";
+import spaIcon from "./../../assets/images/spaIcon.png";
+import automotiveIcon from "./../../assets/images/automotiveIcon.png";
+import homeserviceIcon from "./../../assets/images/homeserviceIcon.png";
+import miscIcon from "./../../assets/images/miscIcon.png";
 
 function BrowseCategorySection() {
   return (
@@ -19,7 +19,7 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            // src={restaurantsIcon}
+            src={restaurantsIcon}
             alt="Restaurant icon"
             category="Restaurants"  
           />
@@ -30,7 +30,7 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            // src={shoppingIcon}
+            src={shoppingIcon}
             alt="Shopping icon"
             category="Shopping"  
           />
@@ -41,7 +41,7 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            // src={nightlifeIcon}
+            src={nightlifeIcon}
             alt="Nightlife icon"
             category="Nightlife"  
           />
@@ -52,7 +52,7 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            // src={activelifeIcon}
+            src={activelifeIcon}
             alt="Active life icon"
             category="Active Life"  
           />
@@ -63,7 +63,7 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            // src={spaIcon}
+            src={spaIcon}
             alt="Beauty and spas icon"
             category="Beauty & Spas"  
           />
@@ -74,7 +74,7 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            // src={automotiveIcon}
+            src={automotiveIcon}
             alt="Automotive icon"
             category="Automotive"  
           />
@@ -85,7 +85,7 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            // src={homeserviceIcon}
+            src={homeserviceIcon}
             alt="Home icon"
             category="Home Services"  
           />
@@ -96,7 +96,7 @@ function BrowseCategorySection() {
         <a href="#" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
-            // src={miscIcon}
+            src={miscIcon}
             alt="Misc icon"
             category="More Categories"  
           />
