@@ -1,0 +1,18 @@
+.HeroDetails {
+  background-color: grey;
+  height: 50vh;
+  position: relative;
+}
+
+.HeroDetails div {
+  color: white;
+  /* background-color: purple; */
+  position: absolute;
+  top: 4.5rem;
+  left: 0.5rem;
+}
+
+.HeroDetails img {
+  width: 11rem;
+}
+
