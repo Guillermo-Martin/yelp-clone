@@ -1,5 +1,6 @@
 import React from "react";
 import HeroDetails from "./../HeroDetails";
+import BasicInfoSection from "./../BasicInfoSection";
 
 function DetailsPage() {
   return (
@@ -9,6 +10,7 @@ function DetailsPage() {
       <HeroDetails />
 
       {/* Basic info section (website, address, etc.) */}
+      <BasicInfoSection />
 
       {/* COVID-19 updates section (?) */}
 
