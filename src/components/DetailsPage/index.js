@@ -3,6 +3,7 @@ import HeroDetails from "./../HeroDetails";
 import BasicInfoSection from "./../BasicInfoSection";
 import ShareRowSection from "../ShareRowSection";
 import UpdatesSection from "./../UpdatesSection";
+import MenuSection from "./../MenuSection";
 
 function DetailsPage() {
   return (
@@ -19,6 +20,9 @@ function DetailsPage() {
 
       {/* COVID-19 updates section (?) */}
       <UpdatesSection />
+
+      {/* Menu section */}
+      <MenuSection />
 
       {/* Location and hours section (map) */}
 
