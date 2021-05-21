@@ -1,0 +1,64 @@
+.UpdatesSection {
+  padding: 2rem 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.UpdatesSection-div {
+  padding-left: 1rem;
+}
+
+.UpdatesSection-div h5, .UpdatesSection-div h6 {
+  font-weight: 700;
+}
+
+.UpdatesSection-div h5 {
+  position: relative;
+}
+
+.UpdatesSection-div h5 span {
+  position: absolute;
+  top: 0.2rem;
+  right: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+span .fa-pencil-alt {
+  margin-left: 0.5rem;
+}
+
+.UpdatesSection-div a {
+  color: black;
+}
+
+.UpdatesSection-div-date {
+  color: #747180;
+  font-size: 0.9rem;
+}
+
+.UpdatesSection-div ul {
+  padding-left: 0;
+}
+
+.UpdatesSection-div li {
+  list-style: none;
+  font-weight: 500;
+}
+
+.UpdatesSection-p-safety {
+  font-size: 0.8rem;
+  padding-right: 1rem;
+  margin-bottom: 0.5rem;
+  color: #747180;
+}
+
+.UpdatesSection-div .fa-times {
+  color: red;
+  margin-right: 0.5rem;
+}
+
+.UpdatesSection-div .fa-check {
+  color: green;
+  margin-right: 0.2rem;
+}
