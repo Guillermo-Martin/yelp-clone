@@ -2,6 +2,7 @@ import React from "react";
 import HeroDetails from "./../HeroDetails";
 import BasicInfoSection from "./../BasicInfoSection";
 import ShareRowSection from "../ShareRowSection";
+import UpdatesSection from "./../UpdatesSection";
 
 function DetailsPage() {
   return (
@@ -17,6 +18,7 @@ function DetailsPage() {
       <BasicInfoSection />
 
       {/* COVID-19 updates section (?) */}
+      <UpdatesSection />
 
       {/* Location and hours section (map) */}
 
