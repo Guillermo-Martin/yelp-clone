@@ -1,0 +1,41 @@
+.BasicInfoSection-div {
+  text-align: left;
+}
+
+.BasicInfoSection-div p {
+  margin: 1rem auto;
+  font-weight: 500;
+  padding-left: 0.9rem;
+  position: relative;
+}
+
+p.BasicInfoSection-directions {
+  margin-bottom: 0;
+}
+
+p.BasicInfoSection-address {
+  margin-top: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #747180;
+}
+
+.BasicInfoSection-div i {
+  font-size: 1.3rem;
+  position: absolute;
+  right: 0.9rem;
+  top: 0.2rem;
+}
+
+.BasicInfoSection-directions .fa-directions {
+  position: absolute;
+  top: 0.8rem;
+}
+
+.BasicInfoSection-div a {
+  color: #03838f;
+}
+
+.BasicInfoSection hr {
+  width: 90%;
+}
