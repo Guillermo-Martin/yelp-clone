@@ -2,16 +2,22 @@
   padding: 2rem 0;
 }
 
+.MenuSection h5 {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
 .MenuSection-tile {
   width: 15rem;
-  /* height: 17rem; */
   margin: 1rem auto;
   margin-bottom: 1.5rem;
-  /* border: 3px solid black; */
 }
 
 .MenuSection-tile p {
   color: grey;
+  font-size: 0.9rem;
 }
 
 .MenuSection-tile a {

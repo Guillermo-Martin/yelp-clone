@@ -5,7 +5,7 @@ import "./styles.css";
 function MenuSection() {
   return (
     <section className="MenuSection">
-      <h1>Menu</h1>
+      <h5>Menu</h5>
       <div className="MenuSection-tile">
         <a href="#">
           {/* Image by Briana Tozour: https://unsplash.com/@britozour */}
