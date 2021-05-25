@@ -70,3 +70,21 @@
   font-size: 0.9rem;
   font-weight: 700;
 }
+
+/* Menu Section Tiles */
+.MenuSectionTile-body {
+  padding: 0;
+}
+
+.MenuSectionTile {
+  border: none;
+}
+
+.MenuSectionTile-img {
+  width: 100%;
+}
+
+.MenuSectionTile-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}

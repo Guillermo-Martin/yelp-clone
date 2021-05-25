@@ -1,0 +1,23 @@
+.MenuSection {
+  padding: 2rem 0;
+}
+
+.MenuSection-tile {
+  width: 15rem;
+  /* height: 17rem; */
+  margin: 1rem auto;
+  margin-bottom: 1.5rem;
+  /* border: 3px solid black; */
+}
+
+.MenuSection-tile p {
+  color: grey;
+}
+
+.MenuSection-tile a {
+  color: black;
+}
+
+.MenuSection-tile a:hover {
+  text-decoration: none;
+}
