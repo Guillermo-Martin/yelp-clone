@@ -3,8 +3,8 @@
 }
 
 .MenuSection h5 {
-  margin-left: 1rem;
   margin-bottom: 1.5rem;
+  text-align: center;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -26,4 +26,24 @@
 
 .MenuSection-tile a:hover {
   text-decoration: none;
+}
+
+.MenuSection-btn {
+  color: black;
+  border: 0.5px solid grey;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-left: 3.156rem;
+  padding: 0.5rem 1rem;
+  transition-property: background-color;
+  transition-duration: 0.6s;
+}
+
+.MenuSection-btn:hover {
+  background-color: rgba(232, 232, 232, 1);
+  color: black;
+}
+
+.MenuSection-btn .fa-book-open {
+  margin-right: 0.3rem;
 }

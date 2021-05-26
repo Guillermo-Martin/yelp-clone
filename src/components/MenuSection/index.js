@@ -1,5 +1,6 @@
 import React from "react";
 import CategoryTile from "./../CategoryTile";
+import { Button } from "react-bootstrap";
 import "./styles.css";
 
 function MenuSection() {
@@ -44,6 +45,8 @@ function MenuSection() {
           <p>2 Photos &#8226; 2 Reviews</p>
         </a>
       </div>
+
+      <a href="#"><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></a>
     </section>
   );
 }
