@@ -1,12 +1,13 @@
 import React from "react";
 import map from "./../../assets/images/map.png";
 import { Button } from "react-bootstrap";
+import "./styles.css";
 
 function LocationHoursSection() {
   return (
-    <section>
+    <section className="LocationHoursSection">
       <h5>Location &#38; Hours</h5>
-      <img src={map} alt="map" />
+      <img src={map} alt="map" className="LocationHoursSection-map" />
       <p>123 Fake Street</p>
       <p>Oakland, CA 12345</p>
       <p>12th Street &#38; Broadway</p>

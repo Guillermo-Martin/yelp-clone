@@ -1,0 +1,16 @@
+.LocationHoursSection {
+  padding: 2rem 0;
+  padding-left: 1rem;
+}
+
+.LocationHoursSection h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.LocationHoursSection-map {
+  width: 95%;
+  margin-bottom: 1rem;
+}
