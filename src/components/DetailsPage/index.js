@@ -4,6 +4,7 @@ import BasicInfoSection from "./../BasicInfoSection";
 import ShareRowSection from "../ShareRowSection";
 import UpdatesSection from "./../UpdatesSection";
 import MenuSection from "./../MenuSection";
+import LocationHoursSection from "./../LocationHoursSection";
 
 function DetailsPage() {
   return (
@@ -25,6 +26,7 @@ function DetailsPage() {
       <MenuSection />
 
       {/* Location and hours section (map) */}
+      <LocationHoursSection />
 
       {/* Review section (with reviews) */}
 
