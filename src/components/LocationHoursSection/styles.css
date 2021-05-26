@@ -14,3 +14,19 @@
   width: 95%;
   margin-bottom: 1rem;
 }
+
+.LocationHourSection-address {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.LocationHourSection-address.address {
+  color: #03838f;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.LocationHourSection-address.city {
+  font-weight: 700;
+}
