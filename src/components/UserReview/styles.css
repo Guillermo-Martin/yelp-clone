@@ -1,7 +1,50 @@
 .UserReview {
-  /* border: 3px solid black; */
   padding-left: 1rem;
 }
+
+
+/* User image and info */
+.UserReview-user {
+  position: relative;
+}
+
+.UserReview-basic-info {
+  width: 50%;
+  margin-right: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 9rem;
+}
+
+.UserReview-user img {
+  border-radius: 50%;
+}
+
+.UserReview-basic-info p {
+  margin-bottom: 0;
+}
+
+.UserReview-basic-info-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.UserReview-basic-info-city {
+  font-size: 1rem;
+}
+
+
+.UserReview-icons p, .UserReview-icons i {
+  font-weight: 700;
+  color: #747180;
+}
+
+.UserReview-icons i {
+  margin-right: 0.2rem;
+  width: 1.3rem;
+}
+
+
 
 .UserReivew-rating {
   /* width: 100%; */
@@ -14,3 +57,4 @@
 .UserReview-user-img {
   width: 100%;
 }
+

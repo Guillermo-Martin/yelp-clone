@@ -6,17 +6,35 @@ import "./styles.css";
 function UserReview() {
   return (
     <div className="UserReview">
-      <h1>User</h1>
-      {/* // image */}
-      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user picture" />
-      {/* // city */}
-      <p>Berkeley, CA</p>
+
+      <div className="UserReview-user">
+        {/* User image */}
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user picture" />
+
+        {/* Name and City */}
+        <div className="UserReview-basic-info">
+          <p className="UserReview-basic-info-name">User Name</p>
+          <p className="UserReview-basic-info-city">Berkeley, CA</p>
+          {/* // row of icons */}
+          <div className="UserReview-icons">
+            <p><i class="far fa-user"></i>123</p>
+            <p><i class="far fa-star"></i>456</p>
+            <p><i class="far fa-image"></i>789</p>
+          </div>
+        </div>
+
+        
+
+
+      </div>
+      
+
       {/* // row of icons */}
-      <div>
+      {/* <div>
         <span><i class="far fa-user"></i>123</span>
         <span><i class="far fa-star"></i>456</span>
         <span><i class="far fa-image"></i>789</span>
-      </div>
+      </div> */}
 
       {/* // rating and date */}
       <div className="UserReview-rating">
