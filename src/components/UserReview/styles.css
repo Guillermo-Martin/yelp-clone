@@ -1,7 +1,6 @@
 .UserReview {
-  /* padding-left: 1rem; */
+  padding-left: 1rem;
 }
-
 
 /* User image and info */
 .UserReview-user {
@@ -88,13 +87,12 @@
 
 /* Pictures the user took */
 .UserReview-share-img {
-  width: 90%;
+  width: 100%;
   border-radius: 0.5rem;
-  
 }
 
 .UserReview-images {
-  width: 100%;
-  text-align: center;
-  margin: 2rem 0;
+  width: 95%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
