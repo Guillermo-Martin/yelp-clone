@@ -1,16 +1,13 @@
 import React from "react";
+import UserReview from "./../UserReview";
 
 function ReviewSection() {
   return (
-    <h1>Reviews</h1>
-    // image
-    // city
-    // row of icons
-    // rating and date
-    // number of photos and check-ins
-    // review
-    // pictures user took
-    // row of buttons for "useful", "funny", "cool"
+    <section>
+      <h4>Recommended Reviews</h4>
+      <UserReview />
+    </section>
+    
   );
 }
 
