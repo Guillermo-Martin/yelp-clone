@@ -1,5 +1,5 @@
 .UserReview {
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 
 
@@ -61,6 +61,10 @@
 
 
 /* Photo and check-in icons */
+.UserReview-checkIn {
+  margin-left: 0.2rem;
+}
+
 .UserReview-checkIn span, .UserReview-checkIn .far {
   font-size: 0.9rem;
   font-weight: 700;
@@ -75,9 +79,22 @@
 }
 
 
-
-
-.UserReview-user-img {
-  width: 100%;
+/* Actual review */
+.UserReview-text {
+  width: 95%;
+  margin: 1rem 0;
+  padding-left: 0.2rem;
 }
 
+/* Pictures the user took */
+.UserReview-share-img {
+  width: 90%;
+  border-radius: 0.5rem;
+  
+}
+
+.UserReview-images {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+}
