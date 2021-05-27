@@ -55,10 +55,19 @@
 .LocationHoursSection li {
   list-style-type: none;
   margin-bottom: 0.3rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .LocationHoursSection li:last-child {
   margin-bottom: 0rem;
+}
+
+a.LocationHoursSection-edit {
+  color: #03838f;
+  font-weight: 700;
+}
+
+.LocationHoursSection-edit .fa-pencil-alt {
+  margin-right: 0.7rem;
 }

@@ -12,7 +12,7 @@ function LocationHoursSection() {
       <p className="LocationHourSection-address city">Oakland, CA 12345</p>
       <p className="LocationHourSection-address">12th Street &#38; Broadway</p>
       <p className="LocationHourSection-address">Downtown Oakland</p>
-      <Button variant="outline-secondary">Get Directions</Button>
+      <a href="#"><Button variant="outline-secondary">Get Directions</Button></a>
       <ul>
         <li>Mon 4:30 AM - 5:30 PM</li>
         <li>Tues 4:30 AM - 5:30 PM</li>
@@ -22,6 +22,7 @@ function LocationHoursSection() {
         <li>Sat Closed</li>
         <li>Sun Closed</li>
       </ul>
+      <a className="LocationHoursSection-edit"><i class="fas fa-pencil-alt"></i>Edit Business Info</a>
     </section>
   );
 }
