@@ -1,0 +1,16 @@
+.UserReview {
+  /* border: 3px solid black; */
+  padding-left: 1rem;
+}
+
+.UserReivew-rating {
+  /* width: 100%; */
+}
+
+.UserReview-rating img {
+  width: 100%;
+}
+
+.UserReview-user-img {
+  width: 100%;
+}

@@ -1,10 +1,11 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import reviewStars from "./../../assets/images/reviewStars.png";
+import "./styles.css";
 
 function UserReview() {
   return (
-    <div>
+    <div className="UserReview">
       <h1>User</h1>
       {/* // image */}
       <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user picture" />
@@ -18,7 +19,7 @@ function UserReview() {
       </div>
 
       {/* // rating and date */}
-      <div>
+      <div className="UserReview-rating">
         <img src={reviewStars} alt="review stars" />
         <p>5/27/2021</p>
       </div>
@@ -36,7 +37,7 @@ function UserReview() {
 
       {/* // pictures user took */}
       {/* Picture by RR Abrot: https://unsplash.com/@rr_abrot */}
-      <img src="https://images.unsplash.com/photo-1542181961-9590d0c79dab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80" alt="coffee shop" />
+      <img src="https://images.unsplash.com/photo-1542181961-9590d0c79dab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80" alt="coffee shop" className="UserReview-user-img"/>
 
       {/* // row of buttons for "useful", "funny", "cool" */}
       <div>
