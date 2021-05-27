@@ -5,6 +5,7 @@ import ShareRowSection from "../ShareRowSection";
 import UpdatesSection from "./../UpdatesSection";
 import MenuSection from "./../MenuSection";
 import LocationHoursSection from "./../LocationHoursSection";
+import ReviewSection from "./../ReviewSection";
 
 function DetailsPage() {
   return (
@@ -29,7 +30,7 @@ function DetailsPage() {
       <LocationHoursSection />
 
       {/* Review section (with reviews) */}
-
+      <ReviewSection />
     </div>
   );
 }
