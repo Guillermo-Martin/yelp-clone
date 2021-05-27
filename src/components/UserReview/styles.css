@@ -45,14 +45,37 @@
 }
 
 
-
-.UserReivew-rating {
-  /* width: 100%; */
+/* Rating and date */
+.UserReview-rating {
+  margin: 0.7rem 0;
 }
 
 .UserReview-rating img {
-  width: 100%;
+  width: 10rem;
+  margin-right: 0.5rem;
 }
+
+.UserReview-rating span {
+  color: grey;
+}
+
+
+/* Photo and check-in icons */
+.UserReview-checkIn span, .UserReview-checkIn .far {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.UserReview-checkIn .far {
+  margin-right: 0.3rem;
+}
+
+.UserReview-checkIn-icon {
+  margin-right: 1rem;
+}
+
+
+
 
 .UserReview-user-img {
   width: 100%;

@@ -11,41 +11,32 @@ function UserReview() {
         {/* User image */}
         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user picture" />
 
-        {/* Name and City */}
+        {/* Name, city, icons */}
         <div className="UserReview-basic-info">
           <p className="UserReview-basic-info-name">User Name</p>
           <p className="UserReview-basic-info-city">Berkeley, CA</p>
-          {/* // row of icons */}
+          {/* row of icons */}
           <div className="UserReview-icons">
             <p><i class="far fa-user"></i>123</p>
             <p><i class="far fa-star"></i>456</p>
             <p><i class="far fa-image"></i>789</p>
           </div>
         </div>
-
-        
-
-
       </div>
       
 
-      {/* // row of icons */}
-      {/* <div>
-        <span><i class="far fa-user"></i>123</span>
-        <span><i class="far fa-star"></i>456</span>
-        <span><i class="far fa-image"></i>789</span>
-      </div> */}
-
-      {/* // rating and date */}
+      {/* Rating and date */}
       <div className="UserReview-rating">
-        <img src={reviewStars} alt="review stars" />
-        <p>5/27/2021</p>
+        <div>
+          <img src={reviewStars} alt="review stars" className="UserReview-rating-stars" />
+          <span>5/27/2021</span>
+        </div>
       </div>
       
-      {/* // number of photos and check-ins */}
-      <div>
-        <span><i class="far fa-image"></i>789</span>
-        <i class="far fa-check-circle"></i>
+      {/* Photo and check-in icons */}
+      <div className="UserReview-checkIn">
+        <span className="UserReview-checkIn-icon"><i class="far fa-image"></i>7 photos</span>
+        <span><i class="far fa-check-circle"></i>8 check-ins</span>
       </div>
 
       {/* // review */}
