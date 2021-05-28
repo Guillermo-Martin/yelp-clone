@@ -52,10 +52,16 @@ function UserReview() {
       
 
       {/* // row of buttons for "useful", "funny", "cool" */}
-      <div>
-        <Button><i class="far fa-lightbulb"></i>Useful</Button>
-        <Button><i class="far fa-laugh-squint"></i>Funny</Button>
-        <Button><i class="far fa-smile-beam"></i>Cool</Button>
+      <div className="UserReview-buttons">
+        <Button variant="outline-secondary">
+          <i class="far fa-lightbulb"></i>Useful <span>18</span>
+        </Button>
+        <Button variant="outline-secondary">
+          <i class="far fa-laugh-squint"></i>Funny <span>5</span>
+        </Button>
+        <Button variant="outline-secondary">
+          <i class="far fa-smile-beam"></i>Cool <span>18</span>
+        </Button>
       </div>
     </div>
   );
