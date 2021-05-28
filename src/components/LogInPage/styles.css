@@ -1,0 +1,21 @@
+.LogInPage {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.LogInPage h4 {
+  color: #d32422;
+  font-weight: 700;
+}
+
+.LogInPage-sign-up {
+  font-weight: 700;
+}
+
+.LogInPage-sign-up a, .LogInPage-terms a {
+  color: #0373ba;
+}
+
+.LogInPage-terms {
+  font-size: 0.9rem;
+}

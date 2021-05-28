@@ -1,15 +1,17 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
+import "./styles.css";
 
 function LogInPage() {
   return (
-    <div>
+    <div className="LogInPage">
       {/* Intro text */}
       <div>
-        <p>Log in to Explore</p>
-        <p>New to Explore? <a href="#">Sign up</a></p>
-        <p>By logging in, you agree to Explore’s <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
+        <h4>Log in to Explore</h4>
+        <p className="LogInPage-sign-up">New to Explore? <a href="#">Sign up</a></p>
+        <p className="LogInPage-terms">By logging in, you agree to Explore’s <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
       </div>
+
       <Button><i class="fab fa-facebook"></i>Continue with Facebook</Button>
       <Button><i class="fab fa-google"></i>Continue with Google</Button>
       <Button><i class="fab fa-apple"></i>Continue with Apple</Button>
@@ -28,7 +30,6 @@ function LogInPage() {
         
         <Button variant="primary" type="submit">Log In</Button>
       </Form>
-
     </div>
   );
 }
