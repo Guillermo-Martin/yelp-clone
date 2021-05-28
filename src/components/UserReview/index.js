@@ -3,18 +3,19 @@ import { Button } from "react-bootstrap";
 import reviewStars from "./../../assets/images/reviewStars.png";
 import "./styles.css";
 
-function UserReview() {
+function UserReview(props) {
+  let { name, city, review, src } = props;
+
   return (
     <div className="UserReview">
-
       <div className="UserReview-user">
         {/* User image */}
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user picture" />
+        <img src={src} alt="user picture" />
 
         {/* Name, city, icons */}
         <div className="UserReview-basic-info">
-          <p className="UserReview-basic-info-name">User Name</p>
-          <p className="UserReview-basic-info-city">Berkeley, CA</p>
+          <p className="UserReview-basic-info-name">{name}</p>
+          <p className="UserReview-basic-info-city">{city}</p>
           {/* row of icons */}
           <div className="UserReview-icons">
             <p><i class="far fa-user"></i>123</p>
@@ -24,7 +25,6 @@ function UserReview() {
         </div>
       </div>
       
-
       {/* Rating and date */}
       <div className="UserReview-rating">
         <div>
@@ -41,7 +41,7 @@ function UserReview() {
 
       {/* Review */}
       <p className="UserReview-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        {review}
       </p>
 
       {/* Pictures user took */}
@@ -50,8 +50,7 @@ function UserReview() {
         <img src="https://images.unsplash.com/photo-1542181961-9590d0c79dab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80" alt="coffee shop" className="UserReview-share-img"/>
       </div>
       
-
-      {/* // row of buttons for "useful", "funny", "cool" */}
+      {/* Row of buttons for "useful", "funny", "cool" */}
       <div className="UserReview-buttons">
         <Button variant="outline-secondary">
           <i class="far fa-lightbulb"></i>Useful <span>18</span>

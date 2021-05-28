@@ -1,3 +1,7 @@
 .ReviewSection {
   padding: 2rem 0;
 }
+
+.ReviewSection h4 {
+  padding-left: 1rem;
+}
