@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage";
 import DetailsPage from "./components/DetailsPage";
 import TopNavbar from "./components/TopNavbar";
 import Footer from "./components/Footer";
+import LogInPage from "./components/LogInPage";
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <div>
       <TopNavbar />
       {/* <HomePage /> */}
-      <DetailsPage />
+      {/* <DetailsPage /> */}
+      <LogInPage />
     </div>
   );
 }
