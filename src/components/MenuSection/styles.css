@@ -31,7 +31,7 @@
 
 .MenuSection-btn {
   color: black;
-  border: 0.5px solid grey;
+  border: 1px solid #bbbabf;
   font-weight: 500;
   margin-top: 0.5rem;
   margin-left: 3.156rem;
@@ -41,6 +41,7 @@
 }
 
 .MenuSection-btn:hover {
+  border: 1px solid #bbbabf;
   background-color: rgba(232, 232, 232, 1);
   color: black;
 }
