@@ -12,9 +12,12 @@ function LogInPage() {
         <p className="LogInPage-terms">By logging in, you agree to Explore’s <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
       </div>
 
-      <Button><i class="fab fa-facebook"></i>Continue with Facebook</Button>
-      <Button><i class="fab fa-google"></i>Continue with Google</Button>
-      <Button><i class="fab fa-apple"></i>Continue with Apple</Button>
+      <div className="LogInPage-buttons">
+        <a><Button className="LogInPage-buttons-facebook"><i class="fab fa-facebook"></i>Continue with Facebook</Button></a>
+        <a><Button className="LogInPage-buttons-google"><i class="fab fa-google"></i>Continue with Google</Button></a>
+        <a><Button className="LogInPage-buttons-apple"><i class="fab fa-apple"></i>Continue with Apple</Button></a>
+      </div>
+      
       <hr/>or <hr/>
 
       {/* Form */}
@@ -28,7 +31,7 @@ function LogInPage() {
           <Form.Label><a href="#">Forgot password?</a></Form.Label>
         </Form.Group>
         
-        <Button variant="primary" type="submit">Log In</Button>
+        <Button variant="primary" type="submit" className="LogInPage-login-button">Log In</Button>
       </Form>
     </div>
   );

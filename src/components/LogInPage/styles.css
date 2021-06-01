@@ -19,3 +19,60 @@
 .LogInPage-terms {
   font-size: 0.9rem;
 }
+
+
+/* Log In Buttons */
+.LogInPage-buttons {
+  margin: 2rem 0;
+}
+
+.LogInPage-buttons Button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+}
+
+.LogInPage-buttons i {
+  margin-right: 0.5rem;
+}
+
+.LogInPage-buttons .LogInPage-buttons-facebook {
+  background-color: #1877f2;
+  border-color: #1877f2;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.LogInPage-buttons .LogInPage-buttons-facebook:hover {
+  background-color: rgba(24, 118, 242, 0.8);
+  border-color: #1877f2;
+}
+
+.LogInPage-buttons .LogInPage-buttons-google {
+  background-color: white;
+  border-color: #cccccc;
+  color:#757575;
+}
+
+.LogInPage-buttons .LogInPage-buttons-apple {
+  background-color: black;
+  border-color: black;
+  color:white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.LogInPage-buttons .LogInPage-buttons-apple:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+}
+
+/* Log In Button */
+.LogInPage-login-button {
+  width: 100%;
+  background-color: #d32422;
+  border-color: #d32422;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+}
