@@ -76,3 +76,26 @@
   font-weight: 700;
   padding: 0.7rem 1rem;
 }
+
+.LogInPage-hr {
+  margin-bottom: 2rem;
+}
+
+.LogInPage-hr1 {
+  width: 40%;
+  float: left;
+  border: 1px solid #cccccc;
+  margin-top: 0.7rem;
+}
+
+.LogInPage-hr2 {
+  width: 40%;
+  float: right;
+  border: 1px solid #cccccc;
+  margin-top: 0.7rem;
+}
+
+.LogInPage-hr span {
+  color: #666666;
+  font-weight: 500;
+}

@@ -18,7 +18,10 @@ function LogInPage() {
         <a><Button className="LogInPage-buttons-apple"><i class="fab fa-apple"></i>Continue with Apple</Button></a>
       </div>
       
-      <hr/>or <hr/>
+      <div className="LogInPage-hr">
+        <hr className="LogInPage-hr1" /><span>OR</span><hr className="LogInPage-hr2" />
+        
+      </div>
 
       {/* Form */}
       <Form>
