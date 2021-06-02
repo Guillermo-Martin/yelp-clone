@@ -36,7 +36,9 @@ function LogInPage() {
           </div>
         </Form.Group>
         
-        <Button variant="primary" type="submit" className="LogInPage-login-button">Log In</Button>
+        <a href="#">
+          <Button variant="primary" type="submit" className="LogInPage-login-button">Log In</Button>
+        </a>
       </Form>
     </div>
   );

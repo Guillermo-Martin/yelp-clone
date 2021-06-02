@@ -108,8 +108,14 @@
   border-color: #d32422;
   font-weight: 700;
   padding: 0.7rem 1rem;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
+.LogInPage-login-button:hover {
+  background-color: rgba(211, 36, 34, 0.8);
+  border-color: #d32422;
+}
 
 
 
