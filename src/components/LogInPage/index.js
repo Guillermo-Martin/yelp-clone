@@ -40,6 +40,8 @@ function LogInPage() {
           <Button variant="primary" type="submit" className="LogInPage-login-button">Log In</Button>
         </a>
       </Form>
+
+      <p className="LogInPage-sign-up-2">New to Explore? <a href="#">Sign up</a></p>
     </div>
   );
 }
