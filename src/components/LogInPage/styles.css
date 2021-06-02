@@ -68,15 +68,8 @@
   border-color: black;
 }
 
-/* Log In Button */
-.LogInPage-login-button {
-  width: 100%;
-  background-color: #d32422;
-  border-color: #d32422;
-  font-weight: 700;
-  padding: 0.7rem 1rem;
-}
 
+/* Horizontal rules */
 .LogInPage-hr {
   margin-bottom: 2rem;
 }
@@ -99,3 +92,24 @@
   color: #666666;
   font-weight: 500;
 }
+
+
+/* Forgot password */
+.LogInPage-form-label {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+}
+
+
+/* Log In Button */
+.LogInPage-login-button {
+  width: 100%;
+  background-color: #d32422;
+  border-color: #d32422;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+}
+
+
+
+

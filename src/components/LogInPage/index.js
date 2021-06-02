@@ -31,7 +31,9 @@ function LogInPage() {
 
         <Form.Group controlId="formBasicPassword">
           <Form.Control type="password" placeholder="Password" />
-          <Form.Label><a href="#">Forgot password?</a></Form.Label>
+          <div className="LogInPage-form-label">
+            <Form.Label><a href="#">Forgot password?</a></Form.Label>
+          </div>
         </Form.Group>
         
         <Button variant="primary" type="submit" className="LogInPage-login-button">Log In</Button>
