@@ -3,7 +3,6 @@ import SearchSection from "./../SearchSection";
 import BestBusinessSection from "./../BestBusinessSection";
 import CityNameSection from "./../CityNameSection";
 import BrowseCategorySection from "./../BrowseCategorySection";
-import Footer from "./../Footer";
 
 function HomePage() {
   return (
@@ -20,10 +19,6 @@ function HomePage() {
 
       {/* Browse Businesses by Category Section */}
       <BrowseCategorySection />
-
-      {/* Footer Section */}
-      <Footer />
-
     </div>
   );
 }
