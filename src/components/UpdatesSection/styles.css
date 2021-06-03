@@ -8,6 +8,7 @@
   padding-left: 1rem;
 }
 
+/* All headers */
 .UpdatesSection-div h5, .UpdatesSection-div h6 {
   font-weight: 700;
 }
@@ -16,6 +17,7 @@
   position: relative;
 }
 
+/* Edit button and icon */
 .UpdatesSection-div h5 span {
   position: absolute;
   top: 0.2rem;
@@ -53,6 +55,7 @@ span .fa-pencil-alt {
   color: #747180;
 }
 
+/* Check and X */
 .UpdatesSection-div .fa-times {
   color: red;
   margin-right: 0.5rem;

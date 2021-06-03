@@ -11,11 +11,13 @@
   text-align: left;
 }
 
+/* Map */
 .LocationHoursSection-map {
   width: 95%;
   margin-bottom: 1rem;
 }
 
+/* Address */
 .LocationHourSection-address {
   margin-bottom: 0;
   font-weight: 500;
@@ -32,6 +34,7 @@
   font-weight: 700;
 }
 
+/* "Get Directions" button */
 .LocationHoursSection Button {
   margin: 1rem 0;
   color: black;
@@ -49,6 +52,7 @@
   color: black;
 }
 
+/* Days and times */
 .LocationHoursSection ul {
   padding-left: 0;
 }
@@ -64,6 +68,7 @@
   margin-bottom: 0rem;
 }
 
+/* "Edit Business Info" button */
 a.LocationHoursSection-edit {
   color: #03838f;
   font-weight: 700;

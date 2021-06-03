@@ -9,6 +9,7 @@
   margin-bottom: 1rem;
 }
 
+/* List of cities */
 .CityNameSection-ul {
   padding-left: 0;
   text-align: center;
@@ -27,6 +28,7 @@ li .CityNameSection-search {
   color: #666666;
 }
 
+/* Horizontal rule */
 .CityNameSection hr {
   width: 75%;
 }
@@ -39,6 +41,7 @@ li .CityNameSection-search {
   margin-bottom: 0.8rem;
 }
 
+/* Business cards */
 .CityNameSection-card {
   width: 18rem;
   margin: 0 auto;

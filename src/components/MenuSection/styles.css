@@ -10,6 +10,7 @@
   font-weight: 700;
 }
 
+/* Tiles */
 .MenuSection-tile {
   width: 15rem;
   margin: 1rem auto;
@@ -29,6 +30,7 @@
   text-decoration: none;
 }
 
+/* "Full Menu" button */
 .MenuSection-btn {
   color: black;
   border: 1px solid #bbbabf;

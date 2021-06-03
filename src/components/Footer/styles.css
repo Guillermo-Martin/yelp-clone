@@ -8,8 +8,8 @@
   text-align: center;
 }
 
+/* Links */
 .Footer-section-ul {
-  /* border: 3px solid black; */
   width: 50%;
   margin: 0 auto;
 }
@@ -23,6 +23,7 @@
   font-size: 0.9rem;
 }
 
+/* Image */
 .Footer img {
   width: 100%;
   margin-top: 1rem;

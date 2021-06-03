@@ -2,6 +2,7 @@
   text-align: left;
 }
 
+/* Text */
 .BasicInfoSection-div p {
   margin: 1rem auto;
   font-weight: 500;
@@ -20,6 +21,7 @@ p.BasicInfoSection-address {
   color: #747180;
 }
 
+/* All icons */
 .BasicInfoSection-div i {
   font-size: 1.3rem;
   position: absolute;
@@ -32,10 +34,12 @@ p.BasicInfoSection-address {
   top: 0.8rem;
 }
 
+/* All links */
 .BasicInfoSection-div a {
   color: #03838f;
 }
 
+/* Horizontal Rules */
 .BasicInfoSection hr {
   width: 90%;
 }
