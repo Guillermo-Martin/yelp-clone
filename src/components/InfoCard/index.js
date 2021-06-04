@@ -1,13 +1,16 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import "./styles.css";
+import { Link } from "react-router-dom";
 import reviewStars from "./../../assets/images/reviewStars.png"
+import "./styles.css";
+
 
 function InfoCard(props) {
   return (
     /* width will take 100% of its container */
     <Card className="InfoCard">
-      <a href="#"><Card.Img variant="top" src={props.src} /></a>
+      {/* <a href="#"><Card.Img variant="top" src={props.src} /></a> */}
+      <Link to="/details"><Card.Img variant="top" src={props.src} /></Link>
       <Card.Body>
         <Card.Title className="InfoCard-title"><a href="#">{props.name}</a></Card.Title>
         <Card.Text className="InfoCard-review"><img src={reviewStars} alt="review" />{props.review}</Card.Text>
