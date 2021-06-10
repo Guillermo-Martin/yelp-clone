@@ -21,10 +21,12 @@ function SignUpPage() {
       </div>
 
       
-
-      <hr />
-      <p>OR</p>
-      <hr />
+      {/* Horizontal Rules */}
+      <div className="SignUpPage-hr">
+        <hr className="SignUpPage-hr1" /><span>OR</span><hr className="SignUpPage-hr2" />
+        
+      </div>
+      
 
       {/* Form */}
       <Form>

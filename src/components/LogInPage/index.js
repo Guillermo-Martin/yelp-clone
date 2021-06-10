@@ -20,7 +20,6 @@ function LogInPage() {
       
       <div className="LogInPage-hr">
         <hr className="LogInPage-hr1" /><span>OR</span><hr className="LogInPage-hr2" />
-        
       </div>
 
       {/* Form */}
