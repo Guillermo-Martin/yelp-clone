@@ -85,10 +85,10 @@ function SignUpPage() {
         </div>
         
 
-        <Button>Sign Up</Button>
+        <Button className="SignInPage-SignUp-button">Sign Up</Button>
       </Form>
 
-      <p>Already on Explore? <a href="#">Log In</a></p>
+      <p className="SignInPage-login">Already on Explore? <a href="#">Log In</a></p>
     </div>
   );
 }

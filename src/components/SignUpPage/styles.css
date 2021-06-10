@@ -119,3 +119,23 @@
   margin-bottom: 0;
 }
 
+.SignInPage-SignUp-button{
+  width: 100%;
+  background-color: #d32422;
+  border-color: #d32422;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.SignInPage-SignUp-button:hover {
+  background-color: rgba(211, 36, 34, 0.8);
+  border-color: #d32422;
+}
+
+.SignInPage-login {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #999999;
+}
