@@ -24,20 +24,62 @@ function SignUpPage() {
       {/* Horizontal Rules */}
       <div className="SignUpPage-hr">
         <hr className="SignUpPage-hr1" /><span>OR</span><hr className="SignUpPage-hr2" />
-        
       </div>
       
 
       {/* Form */}
       <Form>
-        <Form.Group controlId="formGroupEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+        <Form.Group controlId="formGroupFirstName">
+          <Form.Control type="text" placeholder="First Name" />
         </Form.Group>
+
+        <Form.Group controlId="formGroupLastName">
+          <Form.Control type="text" placeholder="Last Name" />
+        </Form.Group>
+
+        <Form.Group controlId="formGroupEmail">
+          <Form.Control type="email" placeholder="Email" />
+        </Form.Group>
+
         <Form.Group controlId="formGroupPassword">
-          <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
+
+        <Form.Group controlId="formGroupZIPCode">
+          <Form.Control type="text" placeholder="ZIP Code" />
+        </Form.Group>
+
+        <Form.Group controlId="formGroupMonthSelect">
+          <Form.Label>Birthday Optional</Form.Label>
+          <Form.Control as="select">
+            <option>Month</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </Form.Control>
+        </Form.Group>
+
+        <Form.Group controlId="formGroupDaySelect">
+          <Form.Control as="select">
+            <option>Day</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </Form.Control>
+        </Form.Group>
+
+        <Form.Group controlId="formGroupYearSelect">
+          <Form.Control as="select">
+            <option>Year</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </Form.Control>
+        </Form.Group>
+
         <Button>Sign Up</Button>
       </Form>
 
