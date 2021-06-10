@@ -13,10 +13,10 @@ function SignUpPage() {
       </div>
       
       {/* Buttons */}
-      <div>
-        <Button>Continue with Facebook</Button>
-        <Button>Continue with Google</Button>
-        <Button>Continue with Apple</Button>
+      <div className="SignUpPage-buttons">
+        <Button className="SignUpPage-buttons-facebook"><i class="fab fa-facebook"></i>Continue with Facebook</Button>
+        <Button className="SignUpPage-buttons-google"><i class="fab fa-google"></i>Continue with Google</Button>
+        <Button className="SignUpPage-buttons-apple"><i class="fab fa-apple"></i>Continue with Apple</Button>
       </div>
 
       <p>Don't worry, we never post without your permission.</p>

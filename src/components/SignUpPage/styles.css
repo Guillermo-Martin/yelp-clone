@@ -20,3 +20,50 @@
 .SignUpPage-terms a {
   color: #0373ba;
 }
+
+/* SignUpPage buttons */
+.SignUpPage-buttons {
+  margin: 2rem 0;
+}
+
+.SignUpPage-buttons Button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+}
+
+.SignUpPage-buttons i {
+  margin-right: 0.5rem;
+}
+
+.SignUpPage-buttons .SignUpPage-buttons-facebook {
+  background-color: #1877f2;
+  border-color: #1877f2;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.SignUpPage-buttons .SignUpPage-buttons-facebook:hover {
+  background-color: rgba(24, 118, 242, 0.8);
+  border-color: #1877f2;
+}
+
+.SignUpPage-buttons .SignUpPage-buttons-google {
+  background-color: white;
+  border-color: #cccccc;
+  color:#757575;
+}
+
+.SignUpPage-buttons .SignUpPage-buttons-apple {
+  background-color: black;
+  border-color: black;
+  color:white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.SignUpPage-buttons .SignUpPage-buttons-apple:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+}
