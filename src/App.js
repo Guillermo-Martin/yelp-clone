@@ -11,19 +11,19 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <div>
-      {/* <Router>
+      <Router>
         <TopNavbar />
+
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/details" component={DetailsPage} />
           <Route exact path="/login" component={LogInPage} />
+          <Route exact path="/signup" component={SignUpPage} />
           <TopNavbar />
         </Switch>
         
         <Footer />
-      </Router> */}
-
-      <SignUpPage />
+      </Router>
     </div>
   );
 }

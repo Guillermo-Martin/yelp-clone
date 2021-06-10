@@ -10,7 +10,7 @@ function TopNavbar() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           
-          <Nav.Link href="/login"><span className="TopNavbar-link">Sign Up</span></Nav.Link>
+          <Nav.Link href="/signup"><span className="TopNavbar-link">Sign Up</span></Nav.Link>
           <Nav.Link href="/login"><span className="TopNavbar-link">Log In</span></Nav.Link>
         </Nav>
       </Navbar.Collapse>

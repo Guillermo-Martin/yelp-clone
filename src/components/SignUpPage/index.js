@@ -20,13 +20,11 @@ function SignUpPage() {
         <p>Don't worry, we never post without your permission.</p>
       </div>
 
-      
       {/* Horizontal Rules */}
       <div className="SignUpPage-hr">
         <hr className="SignUpPage-hr1" /><span>OR</span><hr className="SignUpPage-hr2" />
       </div>
       
-
       {/* Form */}
       <Form>
         <Form.Group controlId="formGroupFirstName">
@@ -83,12 +81,12 @@ function SignUpPage() {
             </Form.Control>
           </Form.Group>
         </div>
-        
 
         <Button className="SignInPage-SignUp-button">Sign Up</Button>
       </Form>
 
-      <p className="SignInPage-login">Already on Explore? <a href="#">Log In</a></p>
+      <p className="SignInPage-login">Already on Explore? <a href="/login">Log In</a></p>
+      
     </div>
   );
 }

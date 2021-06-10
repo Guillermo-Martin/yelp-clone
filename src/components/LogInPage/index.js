@@ -8,7 +8,7 @@ function LogInPage() {
       {/* Intro text */}
       <div>
         <h4>Log in to Explore</h4>
-        <p className="LogInPage-sign-up">New to Explore? <a href="#">Sign up</a></p>
+        <p className="LogInPage-sign-up">New to Explore? <a href="/signup">Sign up</a></p>
         <p className="LogInPage-terms">By logging in, you agree to Explore’s <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
       </div>
 
@@ -40,7 +40,7 @@ function LogInPage() {
         </a>
       </Form>
 
-      <p className="LogInPage-sign-up-2">New to Explore? <a href="#">Sign up</a></p>
+      <p className="LogInPage-sign-up-2">New to Explore? <a href="/signup">Sign up</a></p>
     </div>
   );
 }
