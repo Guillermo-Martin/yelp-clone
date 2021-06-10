@@ -49,36 +49,40 @@ function SignUpPage() {
           <Form.Control type="text" placeholder="ZIP Code" />
         </Form.Group>
 
-        <Form.Group controlId="formGroupMonthSelect">
-          <Form.Label>Birthday Optional</Form.Label>
-          <Form.Control as="select">
-            <option>Month</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </Form.Control>
-        </Form.Group>
+        {/* Birthday */}
+        <div className="SignUpPage-birthday">
+          <Form.Group controlId="formGroupMonthSelect" className="SignUpPage-birthday-select">
+            {/* <Form.Label>Birthday Optional</Form.Label> */}
+            <Form.Control as="select">
+              <option>Month</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </Form.Control>
+          </Form.Group>
 
-        <Form.Group controlId="formGroupDaySelect">
-          <Form.Control as="select">
-            <option>Day</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </Form.Control>
-        </Form.Group>
+          <Form.Group controlId="formGroupDaySelect" className="SignUpPage-birthday-select">
+            <Form.Control as="select">
+              <option>Day</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </Form.Control>
+          </Form.Group>
 
-        <Form.Group controlId="formGroupYearSelect">
-          <Form.Control as="select">
-            <option>Year</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </Form.Control>
-        </Form.Group>
+          <Form.Group controlId="formGroupYearSelect" className="SignUpPage-birthday-select">
+            <Form.Control as="select">
+              <option>Year</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </Form.Control>
+          </Form.Group>
+        </div>
+        
 
         <Button>Sign Up</Button>
       </Form>

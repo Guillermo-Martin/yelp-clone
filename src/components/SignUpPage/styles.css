@@ -95,3 +95,15 @@
   color: #666666;
   font-weight: 500;
 }
+
+/* Form */
+.SignUpPage-birthday {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.SignUpPage-birthday-select {
+  width: 32%;
+  margin-bottom: 0;
+}
