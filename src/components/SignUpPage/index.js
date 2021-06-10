@@ -1,9 +1,10 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
+import "./styles.css";
 
 function SignUpPage() {
   return (
-    <div>
+    <div className="SignInPage">
       {/* Intro text */}
       <div>
         <h5>Sign Up For Explore</h5>
