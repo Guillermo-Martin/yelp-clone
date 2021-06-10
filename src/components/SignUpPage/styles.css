@@ -97,6 +97,17 @@
 }
 
 /* Form */
+.SignUpPage-birthday-header {
+  color: black;
+  font-weight: 700;
+}
+
+.SignUpPage-birthday-header span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #999999;
+}
+
 .SignUpPage-birthday {
   display: flex;
   justify-content: space-between;
@@ -107,3 +118,4 @@
   width: 32%;
   margin-bottom: 0;
 }
+

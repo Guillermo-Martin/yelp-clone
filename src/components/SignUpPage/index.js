@@ -50,6 +50,7 @@ function SignUpPage() {
         </Form.Group>
 
         {/* Birthday */}
+        <h6 className="SignUpPage-birthday-header">Birthday <span>Optional</span></h6>
         <div className="SignUpPage-birthday">
           <Form.Group controlId="formGroupMonthSelect" className="SignUpPage-birthday-select">
             {/* <Form.Label>Birthday Optional</Form.Label> */}
