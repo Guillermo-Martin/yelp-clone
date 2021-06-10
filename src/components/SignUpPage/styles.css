@@ -67,3 +67,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   border-color: black;
 }
+
+.SignUpPage-buttons p {
+  font-size: 0.9rem;
+}
