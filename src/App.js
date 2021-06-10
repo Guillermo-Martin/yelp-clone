@@ -4,13 +4,14 @@ import DetailsPage from "./components/DetailsPage";
 import TopNavbar from "./components/TopNavbar";
 import Footer from "./components/Footer";
 import LogInPage from "./components/LogInPage";
+import SignUpPage from "./components/SignUpPage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 function App() {
   return (
     <div>
-      <Router>
+      {/* <Router>
         <TopNavbar />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -20,7 +21,9 @@ function App() {
         </Switch>
         
         <Footer />
-      </Router>
+      </Router> */}
+
+      <SignUpPage />
     </div>
   );
 }
