@@ -1,4 +1,22 @@
-.SignInPage {
+.SignUpPage {
   padding: 2rem 1rem;
   text-align: center;
+}
+
+/* SignUpPage Intro Text */
+.SignUpPage h4 {
+  color: #d32422;
+  font-weight: 700;
+}
+
+.SignUpPage-connect {
+  font-weight: 700;
+}
+
+.SignUpPage-terms {
+  font-size: 0.8rem;
+}
+
+.SignUpPage-terms a {
+  color: #0373ba;
 }

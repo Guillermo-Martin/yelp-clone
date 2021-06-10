@@ -4,12 +4,12 @@ import "./styles.css";
 
 function SignUpPage() {
   return (
-    <div className="SignInPage">
+    <div className="SignUpPage">
       {/* Intro text */}
       <div>
-        <h5>Sign Up For Explore</h5>
-        <p>Connect with great local businesses</p>
-        <p>By continuing you agree to Explore's <a href="#">Terms of Service</a> and acknowledge Explore's <a href="#">Privacy Policy</a>.</p>
+        <h4>Sign Up For Explore</h4>
+        <p className="SignUpPage-connect">Connect with great local businesses</p>
+        <p className="SignUpPage-terms">By continuing you agree to Explore's <a href="#">Terms of Service</a> and acknowledge Explore's <a href="#">Privacy Policy</a>.</p>
       </div>
       
       {/* Buttons */}
