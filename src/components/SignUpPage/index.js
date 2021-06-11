@@ -2,6 +2,33 @@ import React from "react";
 import { Button, Form } from "react-bootstrap";
 import "./styles.css";
 
+// Create months for birthday dropdown
+const months = ["Month", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const allMonths = months.map(month => (
+  <option>{month}</option>
+));
+
+// Create days for birthday dropdown
+const days = ["Day"];
+for(let i = 1; i <= 31; i++) {
+  days.push(i);
+}
+
+const allDays = days.map(day => (
+  <option>{day}</option>
+));
+
+// Create years for birthday dropdown
+const years = [];
+for(let j = 1900; j <= 2021; j++) {
+  years.push(j);
+}
+
+const allYears = years.map(year => (
+  <option>{year}</option>
+));
+
+// Component
 function SignUpPage() {
   return (
     <div className="SignUpPage">
@@ -51,33 +78,21 @@ function SignUpPage() {
         <h6 className="SignUpPage-birthday-header">Birthday <span>Optional</span></h6>
         <div className="SignUpPage-birthday">
           <Form.Group controlId="formGroupMonthSelect" className="SignUpPage-birthday-select">
-            {/* <Form.Label>Birthday Optional</Form.Label> */}
             <Form.Control as="select">
-              <option>Month</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              {allMonths}
             </Form.Control>
           </Form.Group>
 
           <Form.Group controlId="formGroupDaySelect" className="SignUpPage-birthday-select">
             <Form.Control as="select">
-              <option>Day</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              {allDays}
             </Form.Control>
           </Form.Group>
 
           <Form.Group controlId="formGroupYearSelect" className="SignUpPage-birthday-select">
             <Form.Control as="select">
               <option>Year</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              {allYears.reverse()}
             </Form.Control>
           </Form.Group>
         </div>
