@@ -1,5 +1,6 @@
 // import Counter from "./components/Counter";
 import HomePage from "./components/HomePage";
+import ScrollToTop from "./components/ScrollToTop";
 import DetailsPage from "./components/DetailsPage";
 import TopNavbar from "./components/TopNavbar";
 import Footer from "./components/Footer";
@@ -12,6 +13,7 @@ function App() {
   return (
     <div>
       <Router>
+        <ScrollToTop />
         <TopNavbar />
 
         <Switch>
