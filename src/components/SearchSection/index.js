@@ -1,33 +1,34 @@
 import React from "react";
-import { Navbar, Nav, Form, Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
+import useInputState from "./../../hooks/useInputState";
 import exploreLogo from "./../../assets/images/exploreLogo.png";
 import "./styles.css";
 
 function SearchSection() {
+  const [ business, setBusiness, resetBusiness ] = useInputState("");
+  const [ city, setCity, resetCity ] = useInputState("");
+
+  // onSubmit function
+  function onSubmit() {
+    alert("Business: " + business + " & " + "City: " + city);
+    
+    // reset business and city
+    resetBusiness();
+    resetCity();
+  }
+
   return (
     <section id="SearchSection">
       <div>
-        {/* Navbar */}
-        {/* <Navbar expand="lg">
-          <Navbar.Brand href="#home" className="SearchSection-nav-home">Explore</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="#home"><span className="SearchSection-navlink">Sign Up</span></Nav.Link>
-              <Nav.Link href="#link"><span className="SearchSection-navlink">Log In</span></Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar> */}
-
         {/* Logo */}
         <img src={exploreLogo} alt="logo" className="SearchSection-logo"/>
 
         {/* Search Form */}
-        <Form className="SearchSection-form">
+        <Form className="SearchSection-form" onSubmit={onSubmit}>
           <Form.Row>
-              <Form.Control placeholder="Find food, gym, games..." className="SearchSection-input" />
-              <Form.Control placeholder="Near Oakland, CA" className="SearchSection-input" />
-              <Button className="SearchSection-submit"><i class="fas fa-search"></i></Button>
+              <Form.Control value={business} placeholder="Find food, gym, games..." onChange={setBusiness} className="SearchSection-input" />
+              <Form.Control value={city} placeholder="Near Oakland, CA" onChange={setCity} className="SearchSection-input" />
+              <Button className="SearchSection-submit" type="submit"><i class="fas fa-search"></i></Button>
           </Form.Row>
         </Form>
 
