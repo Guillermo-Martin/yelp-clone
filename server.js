@@ -38,7 +38,7 @@ let characters = [
 ];
 
 
-// API routes 
+// API routes
 // ========================================
 app.get("/", function(req, res) {
   return res.json(characters);
