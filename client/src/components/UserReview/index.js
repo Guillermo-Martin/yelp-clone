@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import reviewStars from "./../../assets/images/reviewStars.png";
+import reviewStars from "../../assets/images/reviewStars.png";
 import "./styles.css";
 
 function UserReview(props) {

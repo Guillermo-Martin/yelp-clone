@@ -1,14 +1,14 @@
 import React from "react";
-import CategoryTile from "./../CategoryTile";
+import CategoryTile from "../CategoryTile";
 import "./styles.css";
-import restaurantsIcon from "./../../assets/images/restaurantsIcon.png";
-import shoppingIcon from "./../../assets/images/shoppingIcon.png";
-import nightlifeIcon from "./../../assets/images/nightlifeIcon.png";
-import activelifeIcon from "./../../assets/images/activelifeIcon.png";
-import spaIcon from "./../../assets/images/spaIcon.png";
-import automotiveIcon from "./../../assets/images/automotiveIcon.png";
-import homeserviceIcon from "./../../assets/images/homeserviceIcon.png";
-import miscIcon from "./../../assets/images/miscIcon.png";
+import restaurantsIcon from "../../assets/images/restaurantsIcon.png";
+import shoppingIcon from "../../assets/images/shoppingIcon.png";
+import nightlifeIcon from "../../assets/images/nightlifeIcon.png";
+import activelifeIcon from "../../assets/images/activelifeIcon.png";
+import spaIcon from "../../assets/images/spaIcon.png";
+import automotiveIcon from "../../assets/images/automotiveIcon.png";
+import homeserviceIcon from "../../assets/images/homeserviceIcon.png";
+import miscIcon from "../../assets/images/miscIcon.png";
 
 function BrowseCategorySection() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import UserReview from "./../UserReview";
+import UserReview from "../UserReview";
 import "./styles.css";
 
 function ReviewSection() {

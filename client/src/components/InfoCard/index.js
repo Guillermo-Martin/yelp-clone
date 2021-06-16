@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import reviewStars from "./../../assets/images/reviewStars.png"
+import reviewStars from "../../assets/images/reviewStars.png"
 import "./styles.css";
 
 

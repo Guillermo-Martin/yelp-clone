@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryTile from "./../CategoryTile";
+import CategoryTile from "../CategoryTile";
 import { Button } from "react-bootstrap";
 import "./styles.css";
 

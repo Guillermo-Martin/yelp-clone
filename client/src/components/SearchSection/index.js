@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
-import useInputState from "./../../hooks/useInputState";
-import exploreLogo from "./../../assets/images/exploreLogo.png";
+import useInputState from "../../hooks/useInputState";
+import exploreLogo from "../../assets/images/exploreLogo.png";
 import "./styles.css";
 
 function SearchSection() {

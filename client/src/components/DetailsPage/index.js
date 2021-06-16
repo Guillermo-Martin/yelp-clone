@@ -1,11 +1,11 @@
 import React from "react";
-import HeroDetails from "./../HeroDetails";
-import BasicInfoSection from "./../BasicInfoSection";
+import HeroDetails from "../HeroDetails";
+import BasicInfoSection from "../BasicInfoSection";
 import ShareRowSection from "../ShareRowSection";
-import UpdatesSection from "./../UpdatesSection";
-import MenuSection from "./../MenuSection";
-import LocationHoursSection from "./../LocationHoursSection";
-import ReviewSection from "./../ReviewSection";
+import UpdatesSection from "../UpdatesSection";
+import MenuSection from "../MenuSection";
+import LocationHoursSection from "../LocationHoursSection";
+import ReviewSection from "../ReviewSection";
 
 function DetailsPage() {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import SearchSection from "./../SearchSection";
-import BestBusinessSection from "./../BestBusinessSection";
-import CityNameSection from "./../CityNameSection";
-import BrowseCategorySection from "./../BrowseCategorySection";
+import SearchSection from "../SearchSection";
+import BestBusinessSection from "../BestBusinessSection";
+import CityNameSection from "../CityNameSection";
+import BrowseCategorySection from "../BrowseCategorySection";
 
 function HomePage() {
   return (
