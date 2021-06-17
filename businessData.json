@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Pepperoni Pizza",
+    "stars": 4,
+    "numReviews": 20,
+    "type": "pizza",
+    "review": "Turpis nunc eget lorem dolor sed viverra ipsum. Ac turpis egestas sed tempus urna et pharetra.",
+    "phoneNumber": "(123) 456-7890",
+    "address": "123 Real Street",
+    "neighborhood": "Temescal"
+  },
+  {
+    "name": "Cheeseburger",
+    "stars": 3.5,
+    "numReviews": 10,
+    "type": "burger",
+    "review": "Varius sit amet mattis vulputate enim nulla. In aliquam sem fringilla ut. Sem fringilla ut morbi tincidunt augue interdum velit.",
+    "phoneNumber": "(246) 801-3579",
+    "address": "321 Fake Street",
+    "neighborhood": "Rockridge"
+  },
+  {
+    "name": "Milk Tea Boba",
+    "stars": 4,
+    "numReviews": 70,
+    "type": "boba",
+    "review": "Nulla facilisi cras fermentum odio. Amet tellus cras adipiscing enim eu turpis egestas pretium.",
+    "phoneNumber": "(738) 426-1759",
+    "address": "246 Real Ave",
+    "neighborhood": "Uptown"
+  }
+]
