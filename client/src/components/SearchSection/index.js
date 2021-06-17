@@ -1,7 +1,6 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
 import useInputState from "../../hooks/useInputState";
-import axios from "axios";
 import exploreLogo from "../../assets/images/exploreLogo.png";
 import "./styles.css";
 
@@ -11,7 +10,7 @@ function SearchSection() {
 
   // onSubmit function
   function onSubmit() {
-    console.log("Business: " + business + " & " + "City: " + city);
+    alert("Business: " + business + " & " + "City: " + city);
     
     // reset business and city
     resetBusiness();
