@@ -1,15 +1,19 @@
+import { GET_ALL_BUSINESS_DATA, GET_ALL_BUSINESS_DATA_ERROR } from "./types";
 import axios from "axios";
 
-// action:  getAllBusinessData
-export const getAllBusinessData = async dispatch => {
+// Action: "getAllBusinessData"
+export const getAllBusinessData = () => async dispatch => {
   try {
-    let response = await axios.get("/api/businessData");
-    console.log("In actions", response.data);
+    const response = await axios.get("/api/businessData");
+    console.log(response.data);
     dispatch({
-      type: "GET_ALL_BUSINESS_DATA",
-      payload: response.data
+        type: GET_ALL_BUSINESS_DATA,
+        payload: response.data
     })
-  } catch (err) {
-    console.log(err);
+  } catch (error) {
+    dispatch({
+        type: GET_ALL_BUSINESS_DATA_ERROR,
+        payload: error,
+    })
   }
 }
