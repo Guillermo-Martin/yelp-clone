@@ -17,7 +17,7 @@ function HomePage() {
   useEffect(() => {
     dispatch(getAllBusinessData()) 
   }, [dispatch]);
- 
+
 
   return (
     <div>

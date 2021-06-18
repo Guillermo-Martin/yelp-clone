@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import { Button, Form } from "react-bootstrap";
 import "./styles.css";
 
@@ -106,4 +107,12 @@ function SignUpPage() {
   );
 }
 
-export default SignUpPage;
+
+function mapStateToProps(state) {
+  return {
+    businessData: state.businessData
+  }
+}
+
+
+export default connect(mapStateToProps)(SignUpPage);
