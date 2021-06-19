@@ -1,4 +1,5 @@
 import React from "react";
+import SearchResultsCard from "./../SearchResultsCard";
 
 function SearchResultsPage() {
   return (
@@ -7,6 +8,8 @@ function SearchResultsPage() {
       <h3>All Results</h3>
       {/* Put search results here */}
 
+      <SearchResultsCard />
+      
     </div>
   );
 }
