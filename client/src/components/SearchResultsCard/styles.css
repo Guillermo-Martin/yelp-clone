@@ -1,0 +1,16 @@
+.SearchResultsCard {
+  width: 90%;
+}
+
+
+/* Image */
+.SearchResultsCard-img {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Name of Business */
+.SearchResultsCard-business {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
