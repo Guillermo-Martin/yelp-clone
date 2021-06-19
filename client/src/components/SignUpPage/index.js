@@ -6,7 +6,7 @@ import "./styles.css";
 // Create months for birthday dropdown
 const months = ["Month", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const allMonths = months.map(month => (
-  <option>{month}</option>
+  <option key={month}>{month}</option>
 ));
 
 // Create days for birthday dropdown
@@ -16,7 +16,7 @@ for(let i = 1; i <= 31; i++) {
 }
 
 const allDays = days.map(day => (
-  <option>{day}</option>
+  <option key={day}>{day}</option>
 ));
 
 // Create years for birthday dropdown
@@ -26,11 +26,14 @@ for(let j = 1900; j <= 2021; j++) {
 }
 
 const allYears = years.map(year => (
-  <option>{year}</option>
+  <option key={year}>{year}</option>
 ));
 
 // Component
-function SignUpPage() {
+function SignUpPage(props) {
+  // testing mapStateToProps (delete)
+  console.log("In SignUpPage", props.businessData.allData);
+  
   return (
     <div className="SignUpPage">
       {/* Intro text */}
