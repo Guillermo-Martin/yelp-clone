@@ -1,5 +1,5 @@
 .SearchResultsCard {
-  width: 90%;
+  width: 100%;
 }
 
 
@@ -9,8 +9,37 @@
   width: 100%;
 }
 
-/* Name of Business */
+/* Business Info */
+.SearchResultsCard-info {
+  /* border: 1px solid black; */
+  margin-bottom: 0.4rem;
+  padding-left: 0.1rem;
+}
+
 .SearchResultsCard-business {
   font-size: 1.5rem;
   font-weight: 700;
+  margin-bottom: 0;
+}
+
+.SearchResultsCard-text div {
+  font-size: 0.9rem;
+}
+
+/* Review Stars */
+.SearchResultsCard-review {
+  /* border: 1px solid black; */
+  margin-bottom: 0.1rem;
+}
+
+.SearchResultsCard-stars {
+  /* border: 1px solid black; */
+  width: 7.4rem;
+  height: 1.7rem;
+  margin-right: 0.2rem;
+}
+
+/* Text */
+.SearchResultsCard-text {
+  color: #747380;
 }
