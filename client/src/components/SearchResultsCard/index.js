@@ -19,9 +19,9 @@ function SearchResultsCard() {
         
         <Card.Text className="SearchResultsCard-review SearchResultsCard-text"><img className="SearchResultsCard-stars"src={reviewStars} alt="review" />22</Card.Text>
         <Card.Text className="SearchResultsCard-text">$$ &#8226; Pizza</Card.Text>
-        <div>
-          <p>Delivery</p>
-          <p>Takeout</p>
+        <div className="SearchResultsCard-options">
+          <div><i class="fas fa-check"></i>Delivery</div>
+          <div><i class="fas fa-times"></i>Takeout</div>
         </div>
         <Card.Text className="SearchResultsCard-text">Cursus sit amet dictum sit amet justo donec. Nunc eget lorem dolor sed. Praesent semper feugiat nibh sed pulvinar proin.</Card.Text>
         <Card.Text className="SearchResultsCard-text"></Card.Text>
