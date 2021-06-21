@@ -1,8 +1,16 @@
 import React from "react";
+import { connect } from "react-redux";
 import SearchResultsCard from "./../SearchResultsCard";
 import "./styles.css";
 
-function SearchResultsPage() {
+
+function SearchResultsPage(props) {
+  // get all businessData
+  const businessData = props.businessData.allData;
+
+  // map through all business data and save to variable
+  const allBusinessData = businessData.map(business => <SearchResultsCard />);
+
   return (
     <div className="SearchResultsPage">
 
@@ -13,11 +21,17 @@ function SearchResultsPage() {
       </div>
       
       {/* Put search results here */}
-
-      <SearchResultsCard />
+      {allBusinessData}
 
     </div>
   );
 }
 
-export default SearchResultsPage;
+// making SearchResultsPage aware of Redux store
+function mapStateToProps(state) {
+  return {
+    businessData: state.businessData
+  };
+}
+
+export default connect(mapStateToProps)(SearchResultsPage);

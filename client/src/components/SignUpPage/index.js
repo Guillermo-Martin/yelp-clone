@@ -30,10 +30,7 @@ const allYears = years.map(year => (
 ));
 
 // Component
-function SignUpPage(props) {
-  // testing mapStateToProps (delete)
-  console.log("In SignUpPage", props.businessData.allData);
-  
+function SignUpPage() {
   return (
     <div className="SignUpPage">
       {/* Intro text */}
@@ -111,11 +108,5 @@ function SignUpPage(props) {
 }
 
 
-function mapStateToProps(state) {
-  return {
-    businessData: state.businessData
-  }
-}
 
-
-export default connect(mapStateToProps)(SignUpPage);
+export default SignUpPage;
