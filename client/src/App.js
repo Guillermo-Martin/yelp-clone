@@ -15,7 +15,7 @@ function App() {
     <div>
       <Router>
         <ScrollToTop />
-        {/* <TopNavbar /> */}
+        <TopNavbar />
 
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -26,7 +26,7 @@ function App() {
           {/* <TopNavbar /> */}
         </Switch>
         
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

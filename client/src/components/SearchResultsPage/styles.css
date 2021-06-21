@@ -1,2 +1,19 @@
+.SearchResultsPage {
+  padding: 2rem 1rem;
+}
 
-  
+/* Headers */
+.SearchResultsPage-headers {
+  margin-bottom: 2rem;
+}
+
+.SearchResultsPage h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.SearchResultsPage h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
