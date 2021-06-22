@@ -10,8 +10,15 @@ module.exports = {
     
     // get the search text from the URL
     const { businessInput, cityInput } = req.params;
-
     // console.log(businessInput, cityInput);
-    return res.json(businessData);
+
+    // filter through businessData JSON
+    // for every business in the "businessData" JSON, if the "businessInput" equals the "business.type",
+    // add it to "allSearchResults"
+    const allSearchResults = businessData.filter(business => businessInput === business.type);
+
+    
+    // send the filtered results back to the front end
+    return res.json(allSearchResults);
   }
 }
