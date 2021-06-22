@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import SearchResultsCard from "./../SearchResultsCard";
 import "./styles.css";
 
@@ -12,21 +13,25 @@ function SearchResultsPage(props) {
 
   // map through all business data and save to variable
   const allBusinessData = businessData.map(business => 
-    <SearchResultsCard 
-      src={business.src}
-      name={business.name}
-      phoneNumber={business.phoneNumber}
-      address={business.address}
-      city={business.city}
-      neighborhood={business.neighborhood}
-      stars={business.stars}
-      numReviews={business.numReviews}
-      cost={business.cost}
-      type={business.type}
-      review={business.review}
-
-    />)
-  ;
+    <div className="SearchResultsPage-result">
+      <Link href="#" className="SearchResultsPage-link">
+        <SearchResultsCard 
+          src={business.src}
+          name={business.name}
+          phoneNumber={business.phoneNumber}
+          address={business.address}
+          city={business.city}
+          neighborhood={business.neighborhood}
+          stars={business.stars}
+          numReviews={business.numReviews}
+          cost={business.cost}
+          type={business.type}
+          review={business.review}
+        />
+      </Link>
+      
+    </div>
+  );
 
   return (
     <div className="SearchResultsPage">

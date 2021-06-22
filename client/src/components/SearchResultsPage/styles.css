@@ -17,3 +17,18 @@
   font-weight: 600;
   font-size: 1.3rem;
 }
+
+/* Results Cards */
+.SearchResultsPage-result {
+  margin-bottom: 1rem;
+}
+
+
+.SearchResultsPage-link {
+  color: black;
+}
+
+.SearchResultsPage-link:hover {
+  text-decoration: none;
+  color: black;
+}
