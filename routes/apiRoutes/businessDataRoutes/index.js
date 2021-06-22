@@ -7,8 +7,8 @@ const { getAllBusinessData, searchAllBusinessData } = require("./../../../contro
 router.route("/")
   .get(getAllBusinessData);
 
-// Route reached here:  "/api/businessData/search"
-router.get("/search", searchAllBusinessData);
+// Route reached here:  "/api/businessData/search/:businessInput/:cityInput"
+router.get("/search/:businessInput/:cityInput", searchAllBusinessData);
 
 
 module.exports = router;

@@ -6,7 +6,11 @@ module.exports = {
     return res.json(businessData);
   },
   searchAllBusinessData: (req, res) => {
-    console.log("you've reached the searchAllBusinessData function!")
-    res.send("You've reached the searchAllBusinessData function!")
+    console.log("you've reached the searchAllBusinessData function!");
+    
+    // get the search text from the URL
+    const { businessInput, cityInput } = req.params;
+
+    console.log(businessInput, cityInput);
   }
 }

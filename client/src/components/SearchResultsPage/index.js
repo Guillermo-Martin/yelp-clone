@@ -10,7 +10,7 @@ function SearchResultsPage(props) {
   // get all businessData
   const businessData = props.businessData.allData;
 
-  console.log(businessData);
+  // console.log(businessData);
 
   // get the inputs from URL using React Router
   const { businessInput, cityInput } = props.match.params;
@@ -23,7 +23,7 @@ function SearchResultsPage(props) {
   
   // call useEffect to make an API call to "/api/businessData/search"
   useEffect(() => {
-    dispatch(getSearchBusinessResults())
+    dispatch(getSearchBusinessResults(businessInput, cityInput))
   }, [dispatch]);
 
 
