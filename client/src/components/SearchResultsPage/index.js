@@ -7,16 +7,11 @@ import "./styles.css";
 
 
 function SearchResultsPage(props) {
-  // get all businessData
-  const businessData = props.businessData.allData;
-
-  // console.log(businessData);
-
   // get the inputs from URL using React Router
   const { businessInput, cityInput } = props.match.params;
 
   // extract state from the store
-  const searchResults = useSelector(state => state.searchResults);
+  const { searchResults } = useSelector(state => state.searchResults);
 
   // save dispatch to a variable
   const dispatch = useDispatch();
@@ -27,8 +22,8 @@ function SearchResultsPage(props) {
   }, [dispatch]);
 
 
-  // map through all business data and save to variable
-  const allBusinessData = businessData.map(business => 
+  // map through searchResults (from store) and save to variable
+  const allSearchResults = searchResults.map(business => 
     <div className="SearchResultsPage-result">
       <Link href="#" className="SearchResultsPage-link">
         <SearchResultsCard 
@@ -59,7 +54,7 @@ function SearchResultsPage(props) {
       </div>
       
       {/* Put search results here */}
-      {allBusinessData}
+      {allSearchResults}
 
     </div>
   );

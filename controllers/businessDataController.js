@@ -11,6 +11,7 @@ module.exports = {
     // get the search text from the URL
     const { businessInput, cityInput } = req.params;
 
-    console.log(businessInput, cityInput);
+    // console.log(businessInput, cityInput);
+    return res.json(businessData);
   }
 }
