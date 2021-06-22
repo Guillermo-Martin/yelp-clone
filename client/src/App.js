@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/details" component={DetailsPage} />
           <Route exact path="/login" component={LogInPage} />
           <Route exact path="/signup" component={SignUpPage} />
-          <Route exact path="/search/:searchInput" component={SearchResultsPage} />
+          <Route exact path="/search/:searchInput/:cityInput" component={SearchResultsPage} />
           {/* <TopNavbar /> */}
         </Switch>
         

@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import useInputState from "../../hooks/useInputState";
 import exploreLogo from "../../assets/images/exploreLogo.png";
 import "./styles.css";
 
 function SearchSection() {
-  const [ business, setBusiness, resetBusiness ] = useInputState("");
-  const [ city, setCity, resetCity ] = useInputState("");
+  // React hooks, multiple inputs: https://stackoverflow.com/questions/63710791/react-hooks-handle-multiple-inputs
+  // form inputs state
+  const [ inputs, setInputs ] = useState({
+    business: "",
+    city: ""
+  });
+
+  // handleChange function for inputs
+  function handleChange(event) {
+    setInputs(prevState => ({...prevState, [event.target.name]: event.target.value}));
+  }
+  
+
 
   // onSubmit function
-  function onSubmit() {
-    alert("Business: " + business + " & " + "City: " + city);
+  function onSubmit(event) {
+    event.preventDefault();
+    
+    console.log("business", inputs.business)
+    console.log("city", inputs.city);
     
     // reset business and city
-    resetBusiness();
-    resetCity();
+    setInputs(prevState => ({...prevState, business: ""}));
+    setInputs(prevState => ({...prevState, city: ""}));
   }
 
   return (
@@ -26,8 +40,8 @@ function SearchSection() {
         {/* Search Form */}
         <Form className="SearchSection-form" onSubmit={onSubmit}>
           <Form.Row>
-              <Form.Control value={business} placeholder="Find food, gym, games..." onChange={setBusiness} className="SearchSection-input" />
-              <Form.Control value={city} placeholder="Near Oakland, CA" onChange={setCity} className="SearchSection-input" />
+              <Form.Control name="business" value={inputs.business} placeholder="Find food, gym, games..." onChange={handleChange} className="SearchSection-input" />
+              <Form.Control name="city" value={inputs.city} placeholder="Near Oakland, CA" onChange={handleChange} className="SearchSection-input" />
               <Button className="SearchSection-submit" type="submit"><i class="fas fa-search"></i></Button>
           </Form.Row>
         </Form>
