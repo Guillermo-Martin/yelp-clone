@@ -1,32 +1,44 @@
 [
   {
+    "src": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80",
     "name": "Pepperoni Pizza",
     "stars": 4,
     "numReviews": 20,
-    "type": "pizza",
+    "cost": "$",
+    "type": "Pizza",
+    "options": "",
     "review": "Turpis nunc eget lorem dolor sed viverra ipsum. Ac turpis egestas sed tempus urna et pharetra.",
     "phoneNumber": "(123) 456-7890",
     "address": "123 Real Street",
+    "city": "Oakland, CA",
     "neighborhood": "Temescal"
   },
   {
+    "src": "https://images.unsplash.com/photo-1534790566855-4cb788d389ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3450&q=80",
     "name": "Cheeseburger",
     "stars": 3.5,
     "numReviews": 10,
-    "type": "burger",
+    "cost": "$$$",
+    "type": "Burger",
+    "options": "",
     "review": "Varius sit amet mattis vulputate enim nulla. In aliquam sem fringilla ut. Sem fringilla ut morbi tincidunt augue interdum velit.",
     "phoneNumber": "(246) 801-3579",
     "address": "321 Fake Street",
-    "neighborhood": "Rockridge"
+    "city": "Berkeley, CA",
+    "neighborhood": "Downtown Berkeley"
   },
   {
+    "src": "https://images.unsplash.com/photo-1525803377221-4f6ccdaa5133?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3453&q=80",
     "name": "Milk Tea Boba",
     "stars": 4,
     "numReviews": 70,
-    "type": "boba",
+    "cost": "$$",
+    "type": "Boba",
+    "options": "",
     "review": "Nulla facilisi cras fermentum odio. Amet tellus cras adipiscing enim eu turpis egestas pretium.",
     "phoneNumber": "(738) 426-1759",
     "address": "246 Real Ave",
-    "neighborhood": "Uptown"
+    "city": "Emeryville, CA",
+    "neighborhood": "Bay Street"
   }
 ]

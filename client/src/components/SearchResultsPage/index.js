@@ -8,8 +8,25 @@ function SearchResultsPage(props) {
   // get all businessData
   const businessData = props.businessData.allData;
 
+  console.log(businessData);
+
   // map through all business data and save to variable
-  const allBusinessData = businessData.map(business => <SearchResultsCard />);
+  const allBusinessData = businessData.map(business => 
+    <SearchResultsCard 
+      src={business.src}
+      name={business.name}
+      phoneNumber={business.phoneNumber}
+      address={business.address}
+      city={business.city}
+      neighborhood={business.neighborhood}
+      stars={business.stars}
+      numReviews={business.numReviews}
+      cost={business.cost}
+      type={business.type}
+      review={business.review}
+
+    />)
+  ;
 
   return (
     <div className="SearchResultsPage">
