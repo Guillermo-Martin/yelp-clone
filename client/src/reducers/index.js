@@ -2,6 +2,7 @@
 import { combineReducers } from "redux";
 import counterReducer from "./counterReducer";
 import homePageReducer from "./homePageReducer";
+import searchResultsPageReducer from "./searchResultsPageReducer";
 
 // Redux Persist imports
 import { persistReducer } from "redux-persist";
@@ -19,6 +20,7 @@ const persistConfig = {
 const allReducers = combineReducers({
   count: counterReducer,
   businessData: homePageReducer,
+  searchResults: searchResultsPageReducer
 });
 
 export default persistReducer(persistConfig, allReducers);

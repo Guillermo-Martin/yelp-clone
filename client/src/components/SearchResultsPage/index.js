@@ -1,5 +1,6 @@
-import React from "react";
-import { connect } from "react-redux";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch, connect } from "react-redux";
+import { getSearchBusinessResults } from "./../../actions/searchResultsPageActions";
 import { Link } from "react-router-dom";
 import SearchResultsCard from "./../SearchResultsCard";
 import "./styles.css";
@@ -10,6 +11,21 @@ function SearchResultsPage(props) {
   const businessData = props.businessData.allData;
 
   console.log(businessData);
+
+  // get the inputs from URL using React Router
+  const { businessInput, cityInput } = props.match.params;
+
+  // extract state from the store
+  const searchResults = useSelector(state => state.searchResults);
+
+  // save dispatch to a variable
+  const dispatch = useDispatch();
+  
+  // call useEffect to make an API call to "/api/businessData/search"
+  useEffect(() => {
+    dispatch(getSearchBusinessResults())
+  }, [dispatch]);
+
 
   // map through all business data and save to variable
   const allBusinessData = businessData.map(business => 
