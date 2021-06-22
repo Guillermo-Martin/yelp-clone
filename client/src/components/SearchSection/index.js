@@ -18,13 +18,15 @@ function SearchSection() {
   }
   
 
-
   // onSubmit function
   function onSubmit(event) {
     event.preventDefault();
     
-    console.log("business", inputs.business)
-    console.log("city", inputs.city);
+    // destructure input data
+    const { business, city } = inputs;
+    
+    // go to "/search/:business/:cityInput"
+    window.location.href = `/search/${business}/${city}`;
     
     // reset business and city
     setInputs(prevState => ({...prevState, business: ""}));
