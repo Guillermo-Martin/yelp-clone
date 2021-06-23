@@ -14,7 +14,6 @@ module.exports = {
 
     // filter through businessData JSON
     const allSearchResults = businessData.filter(function(business){
-      // console.log("citymatch", cityInput, business.city);
 
       // change businessInput, business "type" to lowercase
       let businessInputLower = businessInput.toLowerCase();
@@ -28,11 +27,15 @@ module.exports = {
       // change cityInput into a single string and lowercase
       let cityInputLower = cityInput.split(" ").join("").toLowerCase();
 
-      console.log("cityInput", cityInputLower);
+      // change "neighborhood" in data to lowercase
+      let neighborhoodLower = business.neighborhood.toLowerCase();
+      console.log("neighborhood json", neighborhoodLower);
+
+      // console.log("cityInput", cityInputLower);
 
       // see if the "businessInput" exists in the "name" or "type" array
-      // see if the "cityInput" exists in the "queryCity" array
-      if(businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower) || business.queryCity.includes(cityInputLower)){
+      // see if the "cityInput" exists in the "queryCity" array or in "neighborhood"
+      if(businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower) || business.queryCity.includes(cityInputLower) || neighborhoodLower === cityInputLower){
         // if it does, add it to allSearchResults;
         return business;
       }
