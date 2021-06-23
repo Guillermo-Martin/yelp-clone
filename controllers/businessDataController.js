@@ -13,12 +13,26 @@ module.exports = {
     // console.log(businessInput, cityInput);
 
     // filter through businessData JSON
-    // for every business in the "businessData" JSON, if the "businessInput" equals the "business.type",
-    // add it to "allSearchResults"
-    const allSearchResults = businessData.filter(business => businessInput === business.type);
+    const allSearchResults = businessData.filter(function(business){
+      // change businessInput, business "type" to lowercase
+      let businessInputLower = businessInput.toLowerCase();
+      
+      // change business "name" to lowercase letters, then turn into an array
+      let businessNameArr = business.name.toLowerCase().split(" ");
+
+      // change all "types" in the array to lowercase
+      let businessTypesLower = business.type.map(type => type.toLowerCase());
+
+      // see if the "businessInput" exists in the array
+      if(businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower)){
+        // if it does, add it to allSearchResults;
+        return business;
+      }
+    });
 
     
     // send the filtered results back to the front end
+    console.log("allSearchResults", allSearchResults);
     return res.json(allSearchResults);
   }
 }
