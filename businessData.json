@@ -11,6 +11,7 @@
     "phoneNumber": "(123) 456-7890",
     "address": "123 Real Street",
     "city": "Oakland, CA",
+    "queryCity": ["oakland,ca", "oakland"],
     "neighborhood": "Temescal"
   },
   {
@@ -25,6 +26,7 @@
     "phoneNumber": "(246) 801-3579",
     "address": "321 Fake Street",
     "city": "Berkeley, CA",
+    "queryCity": ["berkeley,ca", "berkeley"],
     "neighborhood": "Downtown Berkeley"
   },
   {
@@ -39,6 +41,7 @@
     "phoneNumber": "(738) 426-1759",
     "address": "246 Real Ave",
     "city": "Emeryville, CA",
+    "queryCity": ["emeryville,ca", "emeryville"],
     "neighborhood": "Bay Street"
   }
 ]
