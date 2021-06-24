@@ -23,7 +23,17 @@ function SearchSection() {
     event.preventDefault();
     
     // destructure input data
-    const { business, city } = inputs;
+    let { business, city } = inputs;
+
+    // check to see if any of the inputs are empty
+    if(business === "" && city === ""){
+      business = "default";
+      city = "default";
+    } else if(business === "") {
+      business = "default";
+    } else if(city === "") {
+      city = "default"
+    }
     
     // go to "/search/:business/:cityInput"
     window.location.href = `/search/${business}/${city}`;
