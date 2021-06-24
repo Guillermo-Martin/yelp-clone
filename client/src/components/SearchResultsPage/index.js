@@ -36,7 +36,7 @@ function SearchResultsPage(props) {
           stars={business.stars}
           numReviews={business.numReviews}
           cost={business.cost}
-          type={business.type}
+          type={business.type.join(", ")}
           review={business.review}
         />
       </Link>
