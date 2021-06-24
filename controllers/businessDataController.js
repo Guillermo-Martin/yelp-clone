@@ -16,20 +16,17 @@ module.exports = {
     if(businessInput === "default" && cityInput === "default"){
       console.log("they're empty!");
       return res.json(businessData);
-    } else if(businessInput === "default"){ // <--- start here!!!
+    } else if(businessInput === "default"){
       // filter through businessData JSON
       let allSearchResults = businessData.filter(function(business){
 
         // change cityInput into a single string and lowercase
         let cityInputLower = cityInput.split(" ").join("").toLowerCase();
 
-        // change "neighborhood" in data to lowercase
-        let neighborhoodLower = business.neighborhood.toLowerCase();
+        // change "neighborhood" in businessData JSON to lowercase
+        let neighborhoodLower = business.neighborhood.split(" ").join("").toLowerCase();
         
-
-        // see if the "businessInput" exists in the "name" or "type" array
         // see if the "cityInput" exists in the "queryCity" array or in "neighborhood"
-        // if(businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower) || business.queryCity.includes(cityInputLower) || neighborhoodLower === cityInputLower){
         if(business.queryCity.includes(cityInputLower) || neighborhoodLower === cityInputLower){
           // if it does, add it to allSearchResults;
           return business;
@@ -53,8 +50,6 @@ module.exports = {
         let businessTypesLower = business.type.map(type => type.toLowerCase());
 
         // see if the "businessInput" exists in the "name" or "type" array
-        // see if the "cityInput" exists in the "queryCity" array or in "neighborhood"
-        // if(businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower) || business.queryCity.includes(cityInputLower) || neighborhoodLower === cityInputLower){
         if(businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower)){
           // if it does, add it to allSearchResults;
           return business;
@@ -80,14 +75,11 @@ module.exports = {
         // change cityInput into a single string and lowercase
         let cityInputLower = cityInput.split(" ").join("").toLowerCase();
 
-        // change "neighborhood" in data to lowercase
-        let neighborhoodLower = business.neighborhood.toLowerCase();
+        // change "neighborhood" in businessData JSON to lowercase
+        let neighborhoodLower = business.neighborhood.split(" ").join("").toLowerCase();
         
-
-        // see if the "businessInput" exists in the "name" or "type" array
-        // see if the "cityInput" exists in the "queryCity" array or in "neighborhood"
+        // see if the "businessInput" and "cityInput" exits in the "name", "type", "queryCity", or "neighborhood"
         if((businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower)) && (business.queryCity.includes(cityInputLower) || neighborhoodLower === cityInputLower)){
-        // if(businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower)){
           // if it does, add it to allSearchResults;
           return business;
         }
