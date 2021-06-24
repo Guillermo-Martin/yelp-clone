@@ -12,7 +12,7 @@ function SearchResultsCard(props) {
   return (
     <Card className="SearchResultsCard">
       {/* Image */}
-      <Card.Img variant="top" src={src} alt={name} />
+      <Card.Img variant="top" className="SearchResultsCard-img" src={src} alt={name} />
       <Card.Body>
         {/* Business address */}
         <div className="SearchResultsCard-info">

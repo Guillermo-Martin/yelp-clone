@@ -10,8 +10,9 @@
 
 /* Image */
 .SearchResultsCard-img {
-  margin-bottom: 1rem;
   width: 100%;
+  height: 11.9rem;
+  object-fit: cover;
 }
 
 /* Business Info */
