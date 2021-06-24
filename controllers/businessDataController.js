@@ -86,7 +86,7 @@ module.exports = {
 
         // see if the "businessInput" exists in the "name" or "type" array
         // see if the "cityInput" exists in the "queryCity" array or in "neighborhood"
-        if(businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower) && business.queryCity.includes(cityInputLower) || neighborhoodLower === cityInputLower){
+        if((businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower)) && (business.queryCity.includes(cityInputLower) || neighborhoodLower === cityInputLower)){
         // if(businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower)){
           // if it does, add it to allSearchResults;
           return business;
