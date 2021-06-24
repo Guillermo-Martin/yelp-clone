@@ -49,7 +49,10 @@ function SearchResultsPage(props) {
 
       {/* Headers */}
       <div className="SearchResultsPage-headers">
-        <h2>Best Pizza near Oakland, CA</h2>
+        {/* <h2>Best Pizza near Oakland, CA</h2> */}
+        <h2>{businessInput === "default" ? "All Businesses " : "Best " + businessInput} {cityInput === "default" ? null : "in " + cityInput}</h2>
+        
+      
         <h3>All Results</h3>
       </div>
       
