@@ -1,12 +1,13 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import reviewStars from "./../../assets/images/reviewStars.png";
 import "./styles.css";
 
 function SearchResultsCard(props) {
 
   // Get info from props
   let { src, name, address, numReviews, phoneNumber, review, cost, type, stars, city, neighborhood } = props;
+
+  console.log(stars);
 
   return (
     <Card className="SearchResultsCard">
@@ -25,7 +26,10 @@ function SearchResultsCard(props) {
         </div>
         
         {/* Ratings and info */}
-        <Card.Text className="SearchResultsCard-review SearchResultsCard-text"><img className="SearchResultsCard-stars"src={reviewStars} alt="review" />{numReviews}</Card.Text>
+        <Card.Text className="SearchResultsCard-review SearchResultsCard-text">
+          <img className="SearchResultsCard-stars" src={process.env.PUBLIC_URL + `/images/stars${stars}.png`} alt="review" />
+          {numReviews}
+        </Card.Text>
         <Card.Text className="SearchResultsCard-text">{cost} &#8226; {type}</Card.Text>
 
         {/* Options */}

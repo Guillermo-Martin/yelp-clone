@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import reviewStars from "../../assets/images/reviewStars.png";
+import stars45 from "../../assets/images/stars45.png";
 
 import "./styles.css";
 
@@ -9,7 +9,7 @@ function HeroDetails() {
     <section className="HeroDetails">
       <div>
         <h2 className="HeroDetails-name">Coffee Shop</h2>
-        <img src={reviewStars} />
+        <img src={stars45} />
         <p>10 reviews</p>
         <p className="HeroDetails-claimed"><i class="fas fa-check-circle"></i>Claimed</p>
         <p>Coffee &#38; Tea, Cafes</p>

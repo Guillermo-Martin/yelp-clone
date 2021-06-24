@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import reviewStars from "../../assets/images/reviewStars.png"
+import stars45 from "../../assets/images/stars45.png"
 import "./styles.css";
 
 
@@ -13,7 +13,7 @@ function InfoCard(props) {
       <Link to="/details"><Card.Img variant="top" src={props.src} /></Link>
       <Card.Body>
         <Card.Title className="InfoCard-title"><a href="#">{props.name}</a></Card.Title>
-        <Card.Text className="InfoCard-review"><img src={reviewStars} alt="review" />{props.review}</Card.Text>
+        <Card.Text className="InfoCard-review"><img src={stars45} alt="review" />{props.review}</Card.Text>
         <Card.Text className="InfoCard-text">{props.type}</Card.Text>
         <Card.Text className="InfoCard-text">{props.city}</Card.Text>
         <Card.Text className="InfoCard-open"><i class="fas fa-fire"></i> Opened {props.weeks} weeks ago</Card.Text>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import reviewStars from "../../assets/images/reviewStars.png";
+import stars45 from "../../assets/images/stars45.png";
 import "./styles.css";
 
 function UserReview(props) {
@@ -28,7 +28,7 @@ function UserReview(props) {
       {/* Rating and date */}
       <div className="UserReview-rating">
         <div>
-          <img src={reviewStars} alt="review stars" className="UserReview-rating-stars" />
+          <img src={stars45} alt="review stars" className="UserReview-rating-stars" />
           <span>5/27/2021</span>
         </div>
       </div>

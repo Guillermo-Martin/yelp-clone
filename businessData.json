@@ -2,7 +2,7 @@
   {
     "src": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80",
     "name": "Pepperoni Pizza",
-    "stars": 4,
+    "stars": 2,
     "numReviews": 20,
     "cost": "$",
     "type": ["Pizza"],
@@ -17,7 +17,7 @@
   {
     "src": "https://images.unsplash.com/photo-1534790566855-4cb788d389ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3450&q=80",
     "name": "Cheeseburger",
-    "stars": 3.5,
+    "stars": 45,
     "numReviews": 10,
     "cost": "$$$",
     "type": ["Burger", "AmericaN", "PIZZA"],
@@ -32,7 +32,7 @@
   {
     "src": "https://images.unsplash.com/photo-1525803377221-4f6ccdaa5133?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3453&q=80",
     "name": "Milk Tea Boba",
-    "stars": 4,
+    "stars": 3,
     "numReviews": 70,
     "cost": "$$",
     "type": ["Boba", "PIZZA"],
