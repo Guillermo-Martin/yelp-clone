@@ -57,7 +57,33 @@ function SearchResultsPage(props) {
       </div>
       
       {/* Put search results here */}
-      {allSearchResults}
+      {/* If "allSearchResults.length" is 0, display an "no results found message"; otherwise show all results */}
+      {
+        allSearchResults.length === 0 
+          ? 
+          // No results found
+          <div>
+            <h2>
+              {
+                // if both inputs are empty, show "No results for businessInput in cityInput"
+                businessInput !== "default" && cityInput !== "default"
+                ?
+                `No results for ${businessInput} in ${cityInput}`
+                : 
+                // else if "cityInput" is empty, show "no results in cityInput"
+                cityInput !== "default"
+                  ?
+                  `No results in ${cityInput}`
+                  :
+                // else show "no results for businessInput
+                `No results for ${businessInput}`
+              }  
+            </h2>
+          </div>
+          : 
+        // show all results
+        allSearchResults
+      }
 
     </div>
   );
