@@ -18,11 +18,33 @@
   font-size: 1.3rem;
 }
 
+/* No results found */
+.SearchResultsPage h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+
+.SearchResultsPage ul {
+  padding-left: 0;
+  
+}
+
+.SearchResultsPage li {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+.SearchResultsPage li span {
+  color: grey;
+}
+
+
 /* Results Cards */
 .SearchResultsPage-result {
   margin-bottom: 1rem;
 }
-
 
 .SearchResultsPage-link {
   color: black;

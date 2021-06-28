@@ -67,6 +67,15 @@ function SearchResultsPage(props) {
                 `No results for ${businessInput}`
               }  
             </h2>
+            <h4>Suggestions for improving your results:</h4>
+            <div>
+              <ul>
+                <li><span>&#8226;</span> Try a larger search area</li>
+                <li><span>&#8226;</span> Try a different location</li>
+                <li><span>&#8226;</span> Check the spelling or try alternate spellings</li>
+                <li><span>&#8226;</span> Try a more general search, e.g. "pizza" instead of "pepperoni"</li>
+              </ul>
+            </div>
           </div>
           : 
         // show all results
