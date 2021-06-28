@@ -40,23 +40,11 @@ function SearchResultsPage(props) {
           review={business.review}
         />
       </Link>
-      
     </div>
   );
 
   return (
     <div className="SearchResultsPage">
-
-      {/* Headers */}
-      <div className="SearchResultsPage-headers">
-        {/* <h2>Best Pizza near Oakland, CA</h2> */}
-        <h2>{businessInput === "default" ? "All Businesses " : "Best " + businessInput} {cityInput === "default" ? null : "in " + cityInput}</h2>
-        
-      
-        <h3>All Results</h3>
-      </div>
-      
-      {/* Put search results here */}
       {/* If "allSearchResults.length" is 0, display an "no results found message"; otherwise show all results */}
       {
         allSearchResults.length === 0 
@@ -82,9 +70,14 @@ function SearchResultsPage(props) {
           </div>
           : 
         // show all results
-        allSearchResults
-      }
+        <div className="SearchResultsPage-headers">
+          <h2>{businessInput === "default" ? "All Businesses " : "Best " + businessInput} {cityInput === "default" ? null : "in " + cityInput}</h2>
+          
+          <h3>All Results</h3>
 
+          {allSearchResults}
+        </div>
+      }
     </div>
   );
 }
