@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import useInputState from "../../hooks/useInputState";
+import { Link } from "react-router-dom";
 import exploreLogo from "../../assets/images/exploreLogo.png";
 import "./styles.css";
 
@@ -60,10 +61,10 @@ function SearchSection() {
 
         {/* Links */}
         <ul className="SearchSection-ul">
-          <li className="SearchSection-links"><i class="fas fa-utensils"></i><a href="#">Restaurants</a></li>
-          <li className="SearchSection-links"><i class="fas fa-dumbbell"></i><a href="#">Gyms</a></li>
-          <li className="SearchSection-links"><i class="fas fa-store-alt"></i><a href="#">Shops</a></li>
-          <li className="SearchSection-links"><i class="fas fa-carrot"></i><a href="#">Groceries</a></li>
+          <li className="SearchSection-links"><i class="fas fa-utensils"></i><Link to="/search/restaurants/default">Restaurants</Link></li>
+          <li className="SearchSection-links"><i class="fas fa-dumbbell"></i><Link to="/search/gyms/default">Gyms</Link></li>
+          <li className="SearchSection-links"><i class="fas fa-store-alt"></i><Link to="/search/shops/default">Shops</Link></li>
+          <li className="SearchSection-links"><i class="fas fa-carrot"></i><Link to="/search/groceries/default">Groceries</Link></li>
         </ul>
 
         {/* Image Credit */}
