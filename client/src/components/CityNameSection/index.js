@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import InfoCard from "../InfoCard";
 import "./styles.css";
 
@@ -9,12 +10,12 @@ function CityNameSection() {
 
       {/* City Navbar */}
       <ul className="CityNameSection-ul"> 
-        <li><a href="#" className="CityNameSection-links">Alameda</a></li>
-        <li><a href="#" className="CityNameSection-links">Oakland</a></li>
-        <li><a href="#" className="CityNameSection-links">San Francisco</a></li>
-        <li><a href="#" className="CityNameSection-links">Berkeley</a></li>
-        <li><a href="#" className="CityNameSection-links">Emeryville</a></li>
-        <li><a href="#" className="CityNameSection-links"><i class="fas fa-search CityNameSection-search"></i> More Cities</a></li>
+        <li><Link to="/search/default/Alameda" className="CityNameSection-links">Alameda</Link></li>
+        <li><Link to="/search/default/Oakland" className="CityNameSection-links">Oakland</Link></li>
+        <li><Link to="/search/default/San Francisco" className="CityNameSection-links">San Francisco</Link></li>
+        <li><Link to="/search/default/Berkeley" className="CityNameSection-links">Berkeley</Link></li>
+        <li><Link to="/search/default/Emeryville" className="CityNameSection-links">Emeryville</Link></li>
+        <li><Link to="/search/default/Oakland" className="CityNameSection-links"><i class="fas fa-search CityNameSection-search"></i> More Cities</Link></li>
       </ul>
 
       <hr></hr>
