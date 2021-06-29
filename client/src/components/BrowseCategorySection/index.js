@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CategoryTile from "../CategoryTile";
-import "./styles.css";
 import restaurantsIcon from "../../assets/images/restaurantsIcon.png";
 import shoppingIcon from "../../assets/images/shoppingIcon.png";
 import nightlifeIcon from "../../assets/images/nightlifeIcon.png";
@@ -9,102 +9,100 @@ import spaIcon from "../../assets/images/spaIcon.png";
 import automotiveIcon from "../../assets/images/automotiveIcon.png";
 import homeserviceIcon from "../../assets/images/homeserviceIcon.png";
 import miscIcon from "../../assets/images/miscIcon.png";
+import "./styles.css";
 
 function BrowseCategorySection() {
   return (
-    // <div>
     <section className="BrowseCategorySection">
       <h5 className="BrowseCategorySection-title">Browse Businesses By Category</h5>
       <div className="BrowseCategorySection-tile">
-        <a href="#" className="BrowseCategorySection-link">
+        <Link to="/search/Restaurants/default" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
             src={restaurantsIcon}
             alt="Restaurant icon"
             category="Restaurants"  
           />
-        </a>
+        </Link>
       </div>
 
       <div className="BrowseCategorySection-tile">
-        <a href="#" className="BrowseCategorySection-link">
+        <Link to="/search/Shopping/default" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
             src={shoppingIcon}
             alt="Shopping icon"
             category="Shopping"  
           />
-        </a>
+        </Link>
       </div>
 
       <div className="BrowseCategorySection-tile">
-        <a href="#" className="BrowseCategorySection-link">
+        <Link to="/search/Nightlife/default" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
             src={nightlifeIcon}
             alt="Nightlife icon"
             category="Nightlife"  
           />
-        </a>
+        </Link>
       </div>
 
       <div className="BrowseCategorySection-tile">
-        <a href="#" className="BrowseCategorySection-link">
+        <Link to="/search/Active Life/default" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
             src={activelifeIcon}
             alt="Active life icon"
             category="Active Life"  
           />
-        </a>
+        </Link>
       </div>
 
       <div className="BrowseCategorySection-tile">
-        <a href="#" className="BrowseCategorySection-link">
+        <Link to="/search/Beauty and Spas/default" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
             src={spaIcon}
             alt="Beauty and spas icon"
             category="Beauty & Spas"  
           />
-        </a>
+        </Link>
       </div>
 
       <div className="BrowseCategorySection-tile">
-        <a href="#" className="BrowseCategorySection-link">
+        <Link to="/search/Automotive/default" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
             src={automotiveIcon}
             alt="Automotive icon"
             category="Automotive"  
           />
-        </a>
+        </Link>
       </div>
 
       <div className="BrowseCategorySection-tile">
-        <a href="#" className="BrowseCategorySection-link">
+        <Link to="/search/Home Services/default" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
             src={homeserviceIcon}
             alt="Home icon"
             category="Home Services"  
           />
-        </a>
+        </Link>
       </div>
 
       <div className="BrowseCategorySection-tile">
-        <a href="#" className="BrowseCategorySection-link">
+        <Link to="/search/More Categories/default" className="BrowseCategorySection-link">
           <CategoryTile 
             section="BrowseCategory" 
             src={miscIcon}
             alt="Misc icon"
             category="More Categories"  
           />
-        </a>
+        </Link>
       </div>
     </section>
-      
-    // </div>
   );
 }
 
