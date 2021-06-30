@@ -5,7 +5,7 @@ import axios from "axios";
 export const getAllBusinessData = () => async dispatch => {
   try {
     const response = await axios.get("/api/businessData");
-    // console.log(response.data);
+    console.log("FIRESTORE RESPONSE: ", response.data);
     dispatch({
         type: GET_ALL_BUSINESS_DATA,
         payload: response.data
