@@ -74,28 +74,21 @@ module.exports = {
         return res.status(200).json(allSearchResults);
         
       } else if(cityInput === "default") {
-        // filter through businessData JSON
-        // let allSearchResults = businessData.filter(function(business){
+        // if cityInput is "default" (meaning cityInput was empty), search through all the businesses
+        // change businessInput to lowercase
+        let businessInputLower = businessInput.split(" ").join("").toLowerCase();
 
-        //   // change businessInput, business "type" to lowercase
-        //   let businessInputLower = businessInput.toLowerCase();
-          
-        //   // change business "name" to lowercase letters, then turn into an array
-        //   let businessNameArr = business.name.toLowerCase().split(" ");
+        // create a query snapshot, see if "businessInputLower" is found in the "name"of each document
+        const querySnapshot = await businessRef.where("queryBusiness", "array-contains", businessInputLower).get();
 
-        //   // change all "types" in the array to lowercase
-        //   let businessTypesLower = business.type.map(type => type.toLowerCase());
+        // access querySnapshot as an array, map, return data
+        let allSearchResults = querySnapshot.docs.map(doc => {
+          return doc.data();
+        });
 
-        //   // see if the "businessInput" exists in the "name" or "type" array
-        //   if(businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower)){
-        //     // if it does, add it to allSearchResults;
-        //     return business;
-        //   }
-        // });
+        // send data to front end
+        return res.status(200).json(allSearchResults);
 
-        // // send the filtered results back to the front end
-        // console.log("allSearchResults", allSearchResults);
-        // return res.json(allSearchResults);
       } else {
         // filter through businessData JSON
         // let allSearchResults = businessData.filter(function(business){
