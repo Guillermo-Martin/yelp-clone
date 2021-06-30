@@ -1,9 +1,35 @@
 const businessData = require("./../businessData.json");
+// Cloud Firestore setup
+const admin = require('firebase-admin');
+const { serviceAccount } = require("./../config");
 
+// Initialize the app
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
+
+// Create the database
+const db = admin.firestore();
+
+// Functions
 module.exports = {
-  getAllBusinessData: (req, res) => {
+  getAllBusinessData: async (req, res) => {
+    // Retrieve data from Firestore as JSON:  https://stackoverflow.com/questions/53569696/retrieve-data-from-firestore-as-json/53569812
     console.log("you've reached the getAllBusinessData function!");
-    return res.json(businessData);
+
+    // create a collection reference
+    const businessesRef = db.collection("businesses");
+
+    // create a query snapshot
+    const querySnapshot = await businessesRef.get();
+
+    // access querySnapshot as an array (using ".docs"), map through it.  For every document, return its data
+    let allBusinessData = querySnapshot.docs.map(doc => {
+      return doc.data();
+    });
+
+    // send data to front end
+    res.json(allBusinessData);
   },
   searchAllBusinessData: (req, res) => {
     console.log("you've reached the searchAllBusinessData function!");
@@ -91,3 +117,4 @@ module.exports = {
     }
   }
 }
+
