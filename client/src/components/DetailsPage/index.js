@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { getOneBusinessDetails } from "./../../actions/detailsPageActions";
 import HeroDetails from "../HeroDetails";
 import BasicInfoSection from "../BasicInfoSection";
 import ShareRowSection from "../ShareRowSection";
@@ -8,6 +10,17 @@ import LocationHoursSection from "../LocationHoursSection";
 import ReviewSection from "../ReviewSection";
 
 function DetailsPage() {
+  // extract "businessDetails" state from store
+  const businessDetails = useSelector(state => state.businessDetails);
+
+  // save dispatch to a variable
+  const dispatch = useDispatch();
+
+  // call useEffect to make the API call (pass in the action to make an API call)
+  useEffect(() => {
+    dispatch(getOneBusinessDetails())
+  }, [dispatch]);
+
   return (
     <div>
       {/* <h1>Details Page!</h1> */}
