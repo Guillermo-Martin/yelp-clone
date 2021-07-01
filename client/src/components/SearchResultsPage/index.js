@@ -25,7 +25,7 @@ function SearchResultsPage(props) {
   // map through searchResults (from store) and save to variable
   const allSearchResults = searchResults.map(business => 
     <div className="SearchResultsPage-result">
-      <Link href="#" className="SearchResultsPage-link">
+      <Link to={`/search/${businessInput}/${cityInput}/details/${business.id}`} className="SearchResultsPage-link">
         <SearchResultsCard 
           src={business.src}
           name={business.name}
