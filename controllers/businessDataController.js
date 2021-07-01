@@ -120,8 +120,27 @@ module.exports = {
       return res.status(404).json(error);
     }
   },
-  getOneBusinessDetails: (req, res) => {
+  getOneBusinessDetails: async (req, res) => {
     console.log("you made it to the getOneBusinessDetails function!");
-    console.log("businessId: ", req.params.id);
+    
+    // get the businessId from the front end (req.params.id)
+    const businessId = req.params.id;
+
+    // search for the businessId in the "businesses" collection, then create a document reference
+    const docRef = db.collection("businesses").doc(businessId);
+
+    // create a snapshot of the document
+    const docSnapshot = await docRef.get();
+
+    // see if the document exists
+    if(!docSnapshot){
+      // if it doesn't, send back a "doesn't exist message"
+      console.log("That document doesn't exist!");
+      res.send("That document doesn't exist!");
+    } else {
+      // else, send the data to the front end
+      console.log("businessData: ", docSnapshot.data());
+      return res.status(200).json(docSnapshot.data());
+    }
   }
 }
