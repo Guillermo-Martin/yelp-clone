@@ -119,5 +119,9 @@ module.exports = {
     } catch (error) {
       return res.status(404).json(error);
     }
+  },
+  getOneBusinessDetails: (req, res) => {
+    console.log("you made it to the getOneBusinessDetails function!");
+    console.log("businessId: ", req.params.id);
   }
 }

@@ -9,7 +9,10 @@ import MenuSection from "../MenuSection";
 import LocationHoursSection from "../LocationHoursSection";
 import ReviewSection from "../ReviewSection";
 
-function DetailsPage() {
+function DetailsPage(props) {
+  // get the id from the url using react router
+  const businessId = props.match.params.id;
+
   // extract "businessDetails" state from store
   const businessDetails = useSelector(state => state.businessDetails);
 
@@ -18,7 +21,7 @@ function DetailsPage() {
 
   // call useEffect to make the API call (pass in the action to make an API call)
   useEffect(() => {
-    dispatch(getOneBusinessDetails())
+    dispatch(getOneBusinessDetails(businessId))
   }, [dispatch]);
 
   return (
