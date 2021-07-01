@@ -78,7 +78,7 @@ module.exports = {
         // change businessInput to lowercase
         let businessInputLower = businessInput.split(" ").join("").toLowerCase();
 
-        // create a query snapshot, see if "businessInputLower" is found in the "name"of each document
+        // create a query snapshot, see if "businessInputLower" is found in the "queryBusiness" array of each document
         const querySnapshot = await businessRef.where("queryBusiness", "array-contains", businessInputLower).get();
 
         // access querySnapshot as an array, map, return data
@@ -90,39 +90,36 @@ module.exports = {
         return res.status(200).json(allSearchResults);
 
       } else {
+        // ===== SEARCH BY BUSINESS AND CITY/NEIGHBORHOOD =====
+        // change businessInput and cityInput to single string and lowercase
+        let businessInputLower = businessInput.split(" ").join("").toLowerCase();
+        let cityInputLower = cityInput.split(" ").join("").toLowerCase();
+
+        // get all businessData
+        // create a collection reference
+        const businessesRef = db.collection("businesses");
+
+        // create a query snapshot
+        const querySnapshot = await businessesRef.get();
+
+        // access querySnapshot as an array (using ".docs"), map through it.  For every document, return its data
+        let allBusinessData = querySnapshot.docs.map(doc => {
+          return doc.data();
+        });
+
         // filter through businessData JSON
-        // let allSearchResults = businessData.filter(function(business){
+        let filteredResults = allBusinessData.filter(business => {
+          if(((business.queryBusiness.includes(businessInputLower))) && (business.queryCity.includes(cityInputLower))){
+            return business;
+          } 
+        });
 
-        //   // change businessInput, business "type" to lowercase
-        //   let businessInputLower = businessInput.toLowerCase();
-          
-        //   // change business "name" to lowercase letters, then turn into an array
-        //   let businessNameArr = business.name.toLowerCase().split(" ");
-
-        //   // change all "types" in the array to lowercase
-        //   let businessTypesLower = business.type.map(type => type.toLowerCase());
-
-        //   // change cityInput into a single string and lowercase
-        //   let cityInputLower = cityInput.split(" ").join("").toLowerCase();
-
-        //   // change "neighborhood" in businessData JSON to lowercase
-        //   let neighborhoodLower = business.neighborhood.split(" ").join("").toLowerCase();
-          
-        //   // see if the "businessInput" and "cityInput" exits in the "name", "type", "queryCity", or "neighborhood"
-        //   if((businessNameArr.includes(businessInputLower) || businessTypesLower.includes(businessInputLower)) && (business.queryCity.includes(cityInputLower) || neighborhoodLower === cityInputLower)){
-        //     // if it does, add it to allSearchResults;
-        //     return business;
-        //   }
-        // });
-
-        // // send the filtered results back to the front end
-        // console.log("allSearchResults", allSearchResults);
-        // return res.json(allSearchResults);
+        // send data to front end
+        return res.status(200).json(filteredResults);
       }
     } catch (error) {
       return res.status(404).json(error);
     }
-    
   }
 }
 
