@@ -25,7 +25,7 @@ function BasicInfoSection(props) {
           <i class="fas fa-directions"></i>
         </p>
 
-        <p className="BasicInfoSection-address">{address} {city}</p>
+        <p className="BasicInfoSection-address">{address} {city} 12345</p>
 
         <hr></hr>
 

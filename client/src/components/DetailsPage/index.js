@@ -16,7 +16,7 @@ function DetailsPage(props) {
   // extract "businessDetails" state from store
   const businessDetails = useSelector(state => state.businessDetails);
   // extract data from store
-  const { name, stars, numReviews, type, phoneNumber, address, city } = businessDetails.details;
+  const { name, stars, numReviews, type, phoneNumber, address, city, neighborhood } = businessDetails.details;
 
   // save dispatch to a variable
   const dispatch = useDispatch();
@@ -56,7 +56,11 @@ function DetailsPage(props) {
       <MenuSection />
 
       {/* Location and hours section (map) */}
-      <LocationHoursSection />
+      <LocationHoursSection 
+        address={address}
+        city={city}
+        neighborhood={neighborhood}
+      />
 
       {/* Review section (with reviews) */}
       <ReviewSection />

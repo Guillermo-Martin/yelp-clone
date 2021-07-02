@@ -3,15 +3,18 @@ import map from "../../assets/images/map.png";
 import { Button } from "react-bootstrap";
 import "./styles.css";
 
-function LocationHoursSection() {
+function LocationHoursSection(props) {
+  // extract data from props
+  const { address, city, neighborhood } = props;
+
   return (
     <section className="LocationHoursSection">
       <h5>Location &#38; Hours</h5>
       <img src={map} alt="map" className="LocationHoursSection-map" />
-      <p className="LocationHourSection-address address">123 Fake Street</p>
-      <p className="LocationHourSection-address city">Oakland, CA 12345</p>
+      <p className="LocationHourSection-address address">{address}</p>
+      <p className="LocationHourSection-address city">{city} 12345</p>
       <p className="LocationHourSection-address">12th Street &#38; Broadway</p>
-      <p className="LocationHourSection-address">Downtown Oakland</p>
+      <p className="LocationHourSection-address">{neighborhood}</p>
       <a href="#"><Button variant="outline-secondary">Get Directions</Button></a>
       <ul>
         <li>Mon 4:30 AM - 5:30 PM</li>
