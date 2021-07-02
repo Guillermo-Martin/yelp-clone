@@ -1,7 +1,5 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import stars45 from "../../assets/images/stars45.png";
-
 import "./styles.css";
 
 function HeroDetails(props) {

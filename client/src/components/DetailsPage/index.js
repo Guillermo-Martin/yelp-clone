@@ -15,8 +15,11 @@ function DetailsPage(props) {
 
   // extract "businessDetails" state from store
   const businessDetails = useSelector(state => state.businessDetails);
+
+  // the data
+  console.log(businessDetails.details);
   // extract data from store
-  const { name, stars, numReviews, type, phoneNumber, address, city, neighborhood } = businessDetails.details;
+  const { name, stars, numReviews, type, phoneNumber, address, city, neighborhood, zipcode, intersection, website, hours } = businessDetails.details;
 
   // save dispatch to a variable
   const dispatch = useDispatch();
@@ -24,7 +27,7 @@ function DetailsPage(props) {
   // call useEffect to make the API call (pass in the action to make an API call)
   useEffect(() => {
     dispatch(getOneBusinessDetails(businessId))
-  }, [dispatch]);
+  }, []);
 
   console.log(businessDetails.details.type)
 
@@ -47,6 +50,8 @@ function DetailsPage(props) {
         phoneNumber={phoneNumber}
         address={address}
         city={city}
+        zipcode={zipcode}
+        website={website}
       />
 
       {/* COVID-19 updates section (?) */}
@@ -59,7 +64,10 @@ function DetailsPage(props) {
       <LocationHoursSection 
         address={address}
         city={city}
+        zipcode={zipcode}
         neighborhood={neighborhood}
+        intersection={intersection}
+        hours={hours}
       />
 
       {/* Review section (with reviews) */}

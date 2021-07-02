@@ -3,14 +3,14 @@ import "./styles.css";
 
 function BasicInfoSection(props) {
   // extract data from props
-  const { phoneNumber, address, city } = props;
+  const { phoneNumber, address, city, zipcode, website } = props;
   
   return (
     <section className="BasicInfoSection">
       <div className="BasicInfoSection-div">
         {/* <h2>Basic Info</h2> */}
         <p>
-          <a href="#">coffeeshop.com</a>
+          <a href={website}>{website}</a>
           <i class="fas fa-external-link-alt"></i>
         </p>
 
@@ -25,7 +25,7 @@ function BasicInfoSection(props) {
           <i class="fas fa-directions"></i>
         </p>
 
-        <p className="BasicInfoSection-address">{address} {city} 12345</p>
+        <p className="BasicInfoSection-address">{address} {city} {zipcode}</p>
 
         <hr></hr>
 
