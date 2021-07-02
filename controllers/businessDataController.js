@@ -139,8 +139,16 @@ module.exports = {
       res.send("That document doesn't exist!");
     } else {
       // else, send the data to the front end
-      console.log("businessData: ", docSnapshot.data());
-      return res.status(200).json(docSnapshot.data());
+
+      // save data to variable
+      const businessData = docSnapshot.data();
+      
+      // change type to string beefore sending it to front end
+      businessData.type = businessData.type.join(", ");
+      
+      // send data to front end
+      return res.status(200).json(businessData);
+      
     }
   }
 }

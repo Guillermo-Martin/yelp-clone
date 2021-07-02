@@ -5,7 +5,7 @@ import axios from "axios";
 export const getOneBusinessDetails = id => async dispatch => {
   try {
     const response = await axios.get(`/api/businessData/${id}`);
-    console.log("more details: ", response.data);
+    // console.log("more details: ", response.data);
     dispatch({
       type: GET_ONE_BUSINESS_DETAILS,
       payload: response.data
