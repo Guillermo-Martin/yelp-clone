@@ -1,7 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-function BasicInfoSection() {
+function BasicInfoSection(props) {
+  // extract data from props
+  const { phoneNumber, address, city } = props;
+  
   return (
     <section className="BasicInfoSection">
       <div className="BasicInfoSection-div">
@@ -13,7 +16,7 @@ function BasicInfoSection() {
 
         <hr></hr>
 
-        <p>(123) 456-7890<i class="fas fa-phone"></i></p>
+        <p>{phoneNumber}<i class="fas fa-phone"></i></p>
 
         <hr></hr>
 
@@ -22,7 +25,7 @@ function BasicInfoSection() {
           <i class="fas fa-directions"></i>
         </p>
 
-        <p className="BasicInfoSection-address">123 Fake Street Oakland, CA 12345</p>
+        <p className="BasicInfoSection-address">{address} {city}</p>
 
         <hr></hr>
 

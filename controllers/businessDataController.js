@@ -143,12 +143,11 @@ module.exports = {
       // save data to variable
       const businessData = docSnapshot.data();
       
-      // change type to string beefore sending it to front end
+      // change type to string before sending it to front end
       businessData.type = businessData.type.join(", ");
       
       // send data to front end
       return res.status(200).json(businessData);
-      
     }
   }
 }
