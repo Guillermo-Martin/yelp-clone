@@ -8,13 +8,15 @@ import UpdatesSection from "../UpdatesSection";
 import MenuSection from "../MenuSection";
 import LocationHoursSection from "../LocationHoursSection";
 import ReviewSection from "../ReviewSection";
+import Loader from "./../Loader";
 
 function DetailsPage(props) {
   // get the id from the url using react router
   const businessId = props.match.params.id;
 
-  // extract "businessDetails" state from store
+  // extract state from store
   const businessDetails = useSelector(state => state.businessDetails);
+  const isLoading = useSelector(state => state.businessDetails.isLoading);
 
   // the data
   console.log(businessDetails.details);
@@ -32,47 +34,56 @@ function DetailsPage(props) {
   console.log(businessDetails.details.type);
 
   return (
-
     <div>
-      {/* <h1>Details Page!</h1> */}
-      {/* Hero Image with basic details section */}
-      <HeroDetails 
-        name={name}
-        stars={stars}
-        numReviews={numReviews}
-        type={type}
-      />
+      {/* if "isLoading" is true, display the loader; otherwise, show the info */}
+      {
+        isLoading
+        ?
+        <Loader />
+        :
+        <div>
+        {/* <h1>Details Page!</h1> */}
+        {/* Hero Image with basic details section */}
+        
+          <HeroDetails 
+          name={name}
+          stars={stars}
+          numReviews={numReviews}
+          type={type}
+        />
 
-      {/* List/Row of buttons (write a review, add photo, share, save) */}
-      <ShareRowSection />
+        {/* List/Row of buttons (write a review, add photo, share, save) */}
+        <ShareRowSection />
 
-      {/* Basic info section (website, address, etc.) */}
-      <BasicInfoSection 
-        phoneNumber={phoneNumber}
-        address={address}
-        city={city}
-        zipcode={zipcode}
-        website={website}
-      />
+        {/* Basic info section (website, address, etc.) */}
+        <BasicInfoSection 
+          phoneNumber={phoneNumber}
+          address={address}
+          city={city}
+          zipcode={zipcode}
+          website={website}
+        />
 
-      {/* COVID-19 updates section (?) */}
-      <UpdatesSection />
+        {/* COVID-19 updates section (?) */}
+        <UpdatesSection />
 
-      {/* Menu section */}
-      <MenuSection />
+        {/* Menu section */}
+        <MenuSection />
 
-      {/* Location and hours section (map) */}
-      <LocationHoursSection 
-        address={address}
-        city={city}
-        zipcode={zipcode}
-        neighborhood={neighborhood}
-        intersection={intersection}
-        hours={hours}
-      />
+        {/* Location and hours section (map) */}
+        <LocationHoursSection 
+          address={address}
+          city={city}
+          zipcode={zipcode}
+          neighborhood={neighborhood}
+          intersection={intersection}
+          hours={hours}
+        />
 
-      {/* Review section (with reviews) */}
-      <ReviewSection />
+        {/* Review section (with reviews) */}
+        <ReviewSection />
+        </div>
+      }
     </div>
   );
 }
