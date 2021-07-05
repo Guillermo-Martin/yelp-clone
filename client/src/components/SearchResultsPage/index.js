@@ -3,6 +3,7 @@ import { useSelector, useDispatch, connect } from "react-redux";
 import { getSearchBusinessResults } from "./../../actions/searchResultsPageActions";
 import { Link } from "react-router-dom";
 import SearchResultsCard from "./../SearchResultsCard";
+import Loader from "./../Loader";
 import "./styles.css";
 
 
@@ -12,6 +13,7 @@ function SearchResultsPage(props) {
 
   // extract state from the store
   const { searchResults } = useSelector(state => state.searchResults);
+  const isLoading = useSelector(state => state.searchResults.isLoading);
 
   // save dispatch to a variable
   const dispatch = useDispatch();
@@ -45,8 +47,13 @@ function SearchResultsPage(props) {
 
   return (
     <div className="SearchResultsPage">
-      {/* If "allSearchResults.length" is 0, display an "no results found message"; otherwise show all results */}
+      {/* if "isLoading" is true, display the loader; otherwise, show the results */}
       {
+        isLoading
+        ?
+        <Loader />
+        :
+        // If "allSearchResults.length" is 0, display a "no results found message"; otherwise show all results
         allSearchResults.length === 0 
           ? 
           // No results found
@@ -78,14 +85,14 @@ function SearchResultsPage(props) {
             </div>
           </div>
           : 
-        // show all results
-        <div className="SearchResultsPage-headers">
-          <h2>{businessInput === "default" ? "All Businesses " : "Best " + businessInput} {cityInput === "default" ? null : "in " + cityInput}</h2>
-          
-          <h3>All Results</h3>
+          // show all results
+          <div className="SearchResultsPage-headers">
+            <h2>{businessInput === "default" ? "All Businesses " : "Best " + businessInput} {cityInput === "default" ? null : "in " + cityInput}</h2>
+            
+            <h3>All Results</h3>
 
-          {allSearchResults}
-        </div>
+            {allSearchResults}
+          </div>
       }
     </div>
   );

@@ -29,9 +29,10 @@ function DetailsPage(props) {
     dispatch(getOneBusinessDetails(businessId))
   }, []);
 
-  console.log(businessDetails.details.type)
+  console.log(businessDetails.details.type);
 
   return (
+
     <div>
       {/* <h1>Details Page!</h1> */}
       {/* Hero Image with basic details section */}

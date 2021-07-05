@@ -22,7 +22,7 @@ const allReducers = combineReducers({
   count: counterReducer,
   businessData: homePageReducer,
   searchResults: searchResultsPageReducer,
-  businessDetails: detailsPageReducer
+  businessDetails: detailsPageReducer,
 });
 
 export default persistReducer(persistConfig, allReducers);
