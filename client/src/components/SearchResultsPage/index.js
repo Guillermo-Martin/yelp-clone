@@ -12,8 +12,7 @@ function SearchResultsPage(props) {
   const { businessInput, cityInput } = props.match.params;
 
   // extract state from the store
-  const { searchResults } = useSelector(state => state.searchResults);
-  const isLoading = useSelector(state => state.searchResults.isLoading);
+  const { searchResults, isLoading } = useSelector(state => state.searchResults);
 
   // save dispatch to a variable
   const dispatch = useDispatch();
