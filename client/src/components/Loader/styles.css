@@ -1,0 +1,59 @@
+/* Background image */
+.Loader {
+  background-image: url(https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Spinner configuration */
+.spinner-grow {
+  background-color: transparent;
+  animation:  1.5s linear infinite spinner-grow;
+}
+
+/* Spinner and text */
+.Loader-content {
+  width: 100%;
+  text-align: center;
+  color: white;
+  /* https://stackoverflow.com/questions/28455100/how-to-center-div-vertically-inside-of-absolutely-positioned-parent-div */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Loader-content-spinner {
+  border: 2px solid white;
+  width: 15rem;
+  height: 15rem;
+  opacity: 0;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.Loader-content h3 {
+  animation: pulsing 1.5s infinite;
+}
+
+/* Fade in/fade out animation:  https://stackoverflow.com/questions/23985018/simple-css-animation-loop-fading-in-out-loading-text/31458204 */
+@keyframes pulsing {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -23,7 +23,6 @@ function App() {
           <Route exact path="/login" component={LogInPage} />
           <Route exact path="/signup" component={SignUpPage} />
           <Route exact path="/search/:businessInput/:cityInput" component={SearchResultsPage} />
-          {/* <TopNavbar /> */}
         </Switch>
         
         <Footer />

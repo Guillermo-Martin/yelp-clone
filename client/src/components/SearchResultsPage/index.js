@@ -50,7 +50,7 @@ function SearchResultsPage(props) {
       {
         isLoading
         ?
-        <Loader />
+          <Loader />
         :
         // If "allSearchResults.length" is 0, display a "no results found message"; otherwise show all results
         allSearchResults.length === 0 
