@@ -14,7 +14,7 @@ function LocationHoursSection(props) {
   // https://stackoverflow.com/questions/24706267/error-cannot-read-property-map-of-undefined
   if(hours !== undefined) {
     allHours = hours.map(hour => (
-      <li>{hour}</li>
+      <li><span className="LocationHoursSection-day">{hour.day}</span> {hour.hours}</li>
     ));
   }
 

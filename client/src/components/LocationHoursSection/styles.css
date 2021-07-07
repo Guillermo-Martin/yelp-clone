@@ -64,6 +64,11 @@
   font-weight: 700;
 }
 
+.LocationHoursSection-day {
+  display: inline-block;
+  width: 5rem;
+}
+
 .LocationHoursSection li:last-child {
   margin-bottom: 0rem;
 }

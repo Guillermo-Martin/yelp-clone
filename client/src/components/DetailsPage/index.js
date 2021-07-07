@@ -19,7 +19,6 @@ function DetailsPage(props) {
   const isLoading = useSelector(state => state.businessDetails.isLoading);
 
   // the data
-  console.log(businessDetails.details);
   // extract data from store
   const { name, stars, numReviews, type, phoneNumber, address, city, neighborhood, zipcode, intersection, website, hours } = businessDetails.details;
 
@@ -30,8 +29,6 @@ function DetailsPage(props) {
   useEffect(() => {
     dispatch(getOneBusinessDetails(businessId))
   }, []);
-
-  console.log(businessDetails.details.type);
 
   return (
     <div>
