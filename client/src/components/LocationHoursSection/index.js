@@ -7,10 +7,16 @@ function LocationHoursSection(props) {
   // extract data from props
   const { address, city, neighborhood, zipcode, intersection, hours } = props;
 
+  // hours array for rendering
+  let allHours = "";
+
   // create list of hours
-  const allHours = hours.map(hour => (
-    <li>{hour}</li>
-  ));
+  // https://stackoverflow.com/questions/24706267/error-cannot-read-property-map-of-undefined
+  if(hours !== undefined) {
+    allHours = hours.map(hour => (
+      <li>{hour}</li>
+    ));
+  }
 
   return (
     <section className="LocationHoursSection">

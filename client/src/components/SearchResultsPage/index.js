@@ -22,27 +22,31 @@ function SearchResultsPage(props) {
     dispatch(getSearchBusinessResults(businessInput, cityInput))
   }, [dispatch]);
 
+  // results array for rendering
+  let allSearchResults = "";
 
   // map through searchResults (from store) and save to variable
-  const allSearchResults = searchResults.map(business => 
-    <div className="SearchResultsPage-result">
-      <Link to={`/search/${businessInput}/${cityInput}/details/${business.id}`} className="SearchResultsPage-link">
-        <SearchResultsCard 
-          src={business.src}
-          name={business.name}
-          phoneNumber={business.phoneNumber}
-          address={business.address}
-          city={business.city}
-          neighborhood={business.neighborhood}
-          stars={business.stars}
-          numReviews={business.numReviews}
-          cost={business.cost}
-          type={business.type.join(", ")}
-          review={business.review}
-        />
-      </Link>
-    </div>
-  );
+  if(searchResults !== undefined){
+    allSearchResults = searchResults.map(business => 
+      <div className="SearchResultsPage-result">
+        <Link to={`/search/${businessInput}/${cityInput}/details/${business.id}`} className="SearchResultsPage-link">
+          <SearchResultsCard 
+            src={business.src}
+            name={business.name}
+            phoneNumber={business.phoneNumber}
+            address={business.address}
+            city={business.city}
+            neighborhood={business.neighborhood}
+            stars={business.stars}
+            numReviews={business.numReviews}
+            cost={business.cost}
+            type={business.type.join(", ")}
+            review={business.review}
+          />
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <div className="SearchResultsPage">
