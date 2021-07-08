@@ -1,11 +1,11 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import stars45 from "../../assets/images/stars45.png";
+// import stars45 from "../../assets/images/stars45.png";
 import "./styles.css";
 
 function UserReview(props) {
-  let { name, city, review, src } = props;
-
+  let { name, city, review, src, friends, numReviews, photos, stars, date, businessPhotos, checkIns } = props;
+  
   return (
     <div className="UserReview">
       <div className="UserReview-user">
@@ -18,9 +18,9 @@ function UserReview(props) {
           <p className="UserReview-basic-info-city">{city}</p>
           {/* row of icons */}
           <div className="UserReview-icons">
-            <p><i class="far fa-user"></i>123</p>
-            <p><i class="far fa-star"></i>456</p>
-            <p><i class="far fa-image"></i>789</p>
+            <p><i class="far fa-user"></i>{friends}</p>
+            <p><i class="far fa-star"></i>{numReviews}</p>
+            <p><i class="far fa-image"></i>{photos}</p>
           </div>
         </div>
       </div>
@@ -28,15 +28,16 @@ function UserReview(props) {
       {/* Rating and date */}
       <div className="UserReview-rating">
         <div>
-          <img src={stars45} alt="review stars" className="UserReview-rating-stars" />
-          <span>5/27/2021</span>
+          {/* <img src={stars45} alt="review stars" className="UserReview-rating-stars" /> */}
+          <img src={process.env.PUBLIC_URL + `/images/stars${stars}.png`} alt="review stars" className="UserReview-rating-stars" />
+          <span>{date}</span>
         </div>
       </div>
       
       {/* Photo and check-in icons */}
       <div className="UserReview-checkIn">
-        <span className="UserReview-checkIn-icon"><i class="far fa-image"></i>7 photos</span>
-        <span><i class="far fa-check-circle"></i>8 check-ins</span>
+        <span className="UserReview-checkIn-icon"><i class="far fa-image"></i>{businessPhotos} photos</span>
+        <span><i class="far fa-check-circle"></i>{checkIns} check-ins</span>
       </div>
 
       {/* Review */}

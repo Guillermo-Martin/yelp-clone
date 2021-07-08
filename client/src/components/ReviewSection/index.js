@@ -2,11 +2,40 @@ import React from "react";
 import UserReview from "../UserReview";
 import "./styles.css";
 
-function ReviewSection() {
+function ReviewSection(props) {
+  console.log("in reviews", props.reviews);
+
+  // extract data from props
+  const { reviews } = props;
+
+  // create li for allReviews
+  // allReviews array for rendering
+  let allReviews = "";
+
+  if(reviews !== undefined){
+    allReviews = reviews.map(review => (
+      <div>
+        <UserReview
+          src={review.reviewInfo.imgSrc}
+          name={review.reviewInfo.userName}
+          city={review.reviewInfo.city}
+          review={review.reviewInfo.review}
+          friends={review.reviewInfo.friends}
+          numReviews={review.reviewInfo.numReviews}
+          photos={review.reviewInfo.photos}
+          stars={review.reviewInfo.stars}
+          date={review.reviewInfo.date}
+          businessPhotos={review.reviewInfo.businessPhotos}
+          checkIns={review.reviewInfo.checkIns}
+        />
+      </div>
+    ));
+  }
+
   return (
     <section className="ReviewSection">
       <h4>Recommended Reviews</h4>
-      <UserReview
+      {/* <UserReview
         src="https://randomuser.me/api/portraits/men/32.jpg"
         name="Tyler A."
         city="Berkeley, CA"
@@ -29,7 +58,8 @@ function ReviewSection() {
         name="Samantha A."
         city="Emeryville, CA"
         review="Nisl purus in mollis nunc sed id semper risus. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Sit amet mauris commodo quis. Purus semper eget duis at tellus at urna condimentum. Magna sit amet purus gravida quis blandit turpis. Lectus sit amet est placerat in egestas erat imperdiet. Sit amet consectetur adipiscing elit. Nec nam aliquam sem et tortor."
-      />
+      /> */}
+      {allReviews}
     </section>
   );
 }
