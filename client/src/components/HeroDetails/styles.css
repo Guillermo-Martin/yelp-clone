@@ -1,8 +1,5 @@
 .HeroDetails {
   background-color: grey;
-  /* Image by Nathan Dumlao: https://unsplash.com/@nate_dumlao */
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1515215234071-62cca5638e20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80");
-  background-size: cover;
   height: 65vh;
   position: relative;
 }

@@ -4,9 +4,11 @@ import "./styles.css";
 
 function HeroDetails(props) {
   // get data from props
-  const { name, stars, numReviews, type } = props;
+  const { name, stars, numReviews, type, heroImage } = props;
+
+  console.log("heroImage", heroImage);
   return (
-    <section className="HeroDetails">
+    <section className="HeroDetails" style={{ background: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("${heroImage}")`, backgroundSize: "cover"}}>
       <div>
         <h2 className="HeroDetails-name">{name}</h2>
         <img src={process.env.PUBLIC_URL + `/images/stars${stars}.png`} alt="number of stars" />

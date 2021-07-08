@@ -20,7 +20,7 @@ function DetailsPage(props) {
 
   // the data
   // extract data from store
-  const { name, stars, numReviews, type, phoneNumber, address, city, neighborhood, zipcode, intersection, website, hours, covid19Updates, services, safety, reviews } = businessDetails.details;
+  const { name, stars, numReviews, type, phoneNumber, address, city, neighborhood, zipcode, intersection, website, hours, covid19Updates, services, safety, reviews, heroImage } = businessDetails.details;
 
   // save dispatch to a variable
   const dispatch = useDispatch();
@@ -50,6 +50,7 @@ function DetailsPage(props) {
           stars={stars}
           numReviews={numReviews}
           type={type}
+          heroImage={heroImage}
         />
 
         {/* List/Row of buttons (write a review, add photo, share, save) */}
