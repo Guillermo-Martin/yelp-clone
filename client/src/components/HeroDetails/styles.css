@@ -35,8 +35,14 @@
   margin-right: 0.3rem;
 }
 
-.HeroDetails-status {
+/* Open/close status */
+.HeroDetails-open-true {
   color: #159775;
+  margin-right: 0.3rem;
+}
+
+.HeroDetails-open-false {
+  color: #f43a39;
   margin-right: 0.3rem;
 }
 

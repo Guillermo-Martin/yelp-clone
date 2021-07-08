@@ -51,6 +51,7 @@ function DetailsPage(props) {
           numReviews={numReviews}
           type={type}
           heroImage={heroImage}
+          hours={hours}
         />
 
         {/* List/Row of buttons (write a review, add photo, share, save) */}
