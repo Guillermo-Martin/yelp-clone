@@ -30,6 +30,9 @@ function DetailsPage(props) {
     dispatch(getOneBusinessDetails(businessId))
   }, []);
 
+
+  console.log("businessDetails", businessDetails);
+
   return (
     <div>
       {/* if "isLoading" is true, display the loader; otherwise, show the info */}

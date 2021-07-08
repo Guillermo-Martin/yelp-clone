@@ -132,6 +132,16 @@ module.exports = {
     // create a snapshot of the document
     const docSnapshot = await docRef.get();
 
+    // create a snapshot of the reviews
+    const reviewsSnapshot = await db.collection("businesses").doc(businessId).collection("reviews").get();
+
+    // store all reviews into an array
+    let allReviews = reviewsSnapshot.docs.map(doc => {
+      return doc.data();
+    });
+
+    console.log("allReviews", allReviews);
+
     // see if the document exists
     if(!docSnapshot){
       // if it doesn't, send back a "doesn't exist message"
@@ -146,6 +156,9 @@ module.exports = {
       // change type to string before sending it to front end
       businessData.type = businessData.type.join(", ");
       
+      // add reviews to businessData
+      businessData.reviews = allReviews;
+
       // send data to front end
       return res.status(200).json(businessData);
     }
