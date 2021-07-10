@@ -60,13 +60,26 @@
 .LocationHoursSection li {
   list-style-type: none;
   margin-bottom: 0.3rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
 .LocationHoursSection-day {
   display: inline-block;
-  width: 5rem;
+  width: 3.2rem;
+}
+
+.LocationHoursSection-hours {
+  /* border: 1px solid black; */
+  padding-right: 0.5rem;
+}
+
+.LocationHoursSection-open {
+  color: #07a881
+}
+
+.LocationHoursSection-closed {
+  color: #f43a39;
 }
 
 .LocationHoursSection li:last-child {
