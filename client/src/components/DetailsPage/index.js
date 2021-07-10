@@ -20,7 +20,7 @@ function DetailsPage(props) {
 
   // the data
   // extract data from store
-  const { name, stars, numReviews, type, phoneNumber, address, city, neighborhood, zipcode, intersection, website, hours, covid19Updates, services, safety, reviews, heroImage } = businessDetails.details;
+  const { name, stars, numReviews, type, phoneNumber, address, city, neighborhood, zipcode, intersection, website, hours, covid19Updates, services, safety, reviews, heroImage, smallMenu } = businessDetails.details;
 
   // save dispatch to a variable
   const dispatch = useDispatch();
@@ -74,7 +74,9 @@ function DetailsPage(props) {
         />
 
         {/* Menu section */}
-        <MenuSection />
+        <MenuSection 
+          smallMenu={smallMenu}
+        />
 
         {/* Location and hours section (map) */}
         <LocationHoursSection 
