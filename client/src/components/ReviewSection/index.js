@@ -39,7 +39,7 @@ function ReviewSection(props) {
       {
         allReviews.length === 0
         ?
-        <p>Can you believe it?  No one's written a review yet!</p>
+        <p className="ReviewSection-none">Can you believe it?  No one's written a review yet!</p>
         :
         allReviews
       }
