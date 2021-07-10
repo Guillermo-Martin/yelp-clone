@@ -5,3 +5,9 @@
 .ReviewSection h4 {
   padding-left: 1rem;
 }
+
+.ReviewSection p {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  font-weight: 600;
+}

@@ -17,16 +17,12 @@ function LocationHoursSection(props) {
   
   // variable to see if business is open
   let isOpen = false;
-
-  // variable for the current day's hours
-  let openHours = "";
   
   // loop through the days of the hours array and see if it's equal to the current day
   // if it is, see if the current time is within range; if so, "isOpen" will be true
   for(let i = 0; i < hours.length; i++) {
     if(hours[i].day === curDay && (curTime >= hours[i].open && curTime <= hours[i].close)) {
       isOpen = true;
-      openHours = hours[i].hours;
     } 
   }
 
@@ -75,5 +71,3 @@ function LocationHoursSection(props) {
 }
 
 export default LocationHoursSection;
-
-// ****make "open" and "close" dynamic****
