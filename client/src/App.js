@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import LogInPage from "./components/LogInPage";
 import SignUpPage from "./components/SignUpPage";
 import SearchResultsPage from "./components/SearchResultsPage";
+import MoreCitiesPage from "./components/MoreCitiesPage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/login" component={LogInPage} />
           <Route exact path="/signup" component={SignUpPage} />
           <Route exact path="/search/:businessInput/:cityInput" component={SearchResultsPage} />
+          <Route exact path="/morecities" component={MoreCitiesPage} />
         </Switch>
         
         <Footer />

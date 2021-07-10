@@ -15,7 +15,7 @@ function CityNameSection() {
         <li><Link to="/search/default/San Francisco" className="CityNameSection-links">San Francisco</Link></li>
         <li><Link to="/search/default/Berkeley" className="CityNameSection-links">Berkeley</Link></li>
         <li><Link to="/search/default/Emeryville" className="CityNameSection-links">Emeryville</Link></li>
-        <li><Link to="/search/default/Oakland" className="CityNameSection-links"><i class="fas fa-search CityNameSection-search"></i> More Cities</Link></li>
+        <li><Link to="/morecities" className="CityNameSection-links"><i class="fas fa-search CityNameSection-search"></i> More Cities</Link></li>
       </ul>
 
       <hr></hr>
