@@ -1,0 +1,46 @@
+.MoreCitiesPage {
+  padding: 2rem 2rem;
+}
+
+/* Main header */
+.MoreCitiesPage h2 {
+  color: #d32422;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.MoreCitiesPage-cities {
+  text-align: left;
+}
+
+.MoreCitiesPage-cities h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600
+}
+
+/* Cities list */
+.MoreCitiesPage-ul {
+  padding-left: 0;
+}
+
+.MoreCitiesPage-li {
+  list-style-type: none;
+  margin-bottom: 0.3rem;
+}
+
+.MoreCitiesPage-li a {
+  color: #0373ba;
+  font-size: 1rem;
+}
+
+.MoreCitiesPage-cities-float {
+  /* border: 3px solid black; */
+  width: 50%;
+  float: left;
+}
+
+.MoreCitiesPage-cities-last {
+  width: 50%;
+}
