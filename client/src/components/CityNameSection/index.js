@@ -57,7 +57,8 @@ function CityNameSection() {
         />
       </div>
       
-      <a href="#"><p className="CityNameSection-seeMore">See more hot and new businesses</p></a>
+      {/* Link will go to "SearchResultsPage" */}
+      <Link to="/search/default/default"><p className="CityNameSection-seeMore">See more hot and new businesses</p></Link>
     </section>
 
   );
