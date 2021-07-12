@@ -8,6 +8,7 @@ import LogInPage from "./components/LogInPage";
 import SignUpPage from "./components/SignUpPage";
 import SearchResultsPage from "./components/SearchResultsPage";
 import MoreCitiesPage from "./components/MoreCitiesPage";
+import GalleryPage from "./components/GalleryPage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
@@ -18,14 +19,15 @@ function App() {
         <ScrollToTop />
         <TopNavbar />
 
-        <Switch>
+        {/* <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/search/:businessInput/:cityInput/details/:id" component={DetailsPage} />
           <Route exact path="/login" component={LogInPage} />
           <Route exact path="/signup" component={SignUpPage} />
           <Route exact path="/search/:businessInput/:cityInput" component={SearchResultsPage} />
           <Route exact path="/morecities" component={MoreCitiesPage} />
-        </Switch>
+        </Switch> */}
+        <GalleryPage />
         
         <Footer />
       </Router>
