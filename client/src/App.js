@@ -19,14 +19,14 @@ function App() {
         <ScrollToTop />
         <TopNavbar />
 
-        {/* <Switch>
-          <Route exact path="/" component={HomePage} />
+        <Switch>
+          {/* <Route exact path="/" component={HomePage} />
           <Route exact path="/search/:businessInput/:cityInput/details/:id" component={DetailsPage} />
           <Route exact path="/login" component={LogInPage} />
           <Route exact path="/signup" component={SignUpPage} />
           <Route exact path="/search/:businessInput/:cityInput" component={SearchResultsPage} />
-          <Route exact path="/morecities" component={MoreCitiesPage} />
-        </Switch> */}
+          <Route exact path="/morecities" component={MoreCitiesPage} /> */}
+        </Switch>
         <GalleryPage />
         
         <Footer />
