@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Image, Container, Row } from "react-bootstrap";
 import "./styles.css";
 
@@ -23,11 +24,13 @@ const allImg = picArr.map(image => (
   </div>
 ));
 
-function GalleryPage(props) {
-  console.log("gallery page props", props);
+function GalleryPage() {
+  // extract state from store
+  const businessDetails = useSelector(state => state.businessDetails);
+
   return (
     <section className="GalleryPage">
-      <h2>Photos for Business</h2>
+      <h2>Photos for {businessDetails.details.name}</h2>
       
       <hr></hr>
 
