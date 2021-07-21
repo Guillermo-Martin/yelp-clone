@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import date from 'date-and-time';
 import "./styles.css";
 
 function HeroDetails(props) {
   // get data from props
-  const { name, stars, numReviews, type, heroImage, hours } = props;
+  const { name, stars, numReviews, type, heroImage, hours, businessUrl } = props;
 
   // date and time
   const now = new Date();
@@ -41,7 +42,7 @@ function HeroDetails(props) {
         {/* if "isOpen" is true, show "Open"; else show "Closed" */}
         <p><span className={`HeroDetails-open-${isOpen}`}>{isOpen ? "Open" : "Closed"}</span> {openHours}</p>
         <p className="HeroDetails-updates"><i class="fas fa-info-circle"></i>Hours updated a few days ago</p>
-        <a href="#"><Button variant="outline-secondary" className="HeroDetails-btn">See 20 photos</Button></a>
+        <Link to={`${businessUrl}/photos`}><Button variant="outline-secondary" className="HeroDetails-btn">See 20 photos</Button></Link>
       </div>
     </section>
   );

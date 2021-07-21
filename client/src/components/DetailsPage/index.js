@@ -11,8 +11,12 @@ import ReviewSection from "../ReviewSection";
 import Loader from "./../Loader";
 
 function DetailsPage(props) {
+  // console.log("details page", props.match.url);
   // get the id from the url using react router
   const businessId = props.match.params.id;
+
+  // get the url using react router
+  const businessUrl = props.match.url;
 
   // extract state from store
   const businessDetails = useSelector(state => state.businessDetails);
@@ -45,13 +49,14 @@ function DetailsPage(props) {
         {/* <h1>Details Page!</h1> */}
         {/* Hero Image with basic details section */}
         
-          <HeroDetails 
+        <HeroDetails 
           name={name}
           stars={stars}
           numReviews={numReviews}
           type={type}
           heroImage={heroImage}
           hours={hours}
+          businessUrl={businessUrl}
         />
 
         {/* List/Row of buttons (write a review, add photo, share, save) */}

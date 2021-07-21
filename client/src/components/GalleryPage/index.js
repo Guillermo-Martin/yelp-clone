@@ -23,7 +23,8 @@ const allImg = picArr.map(image => (
   </div>
 ));
 
-function GalleryPage() {
+function GalleryPage(props) {
+  console.log("gallery page props", props);
   return (
     <section className="GalleryPage">
       <h2>Photos for Business</h2>
