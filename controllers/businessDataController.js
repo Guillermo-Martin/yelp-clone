@@ -140,7 +140,16 @@ module.exports = {
       return doc.data();
     });
 
-    console.log("allReviews", allReviews);
+    // create a snapshot of the photos
+    const photosSnapshot = await db.collection("businesses").doc(businessId).collection("photos").get();
+
+    // store all photos into an array
+    let allPhotos = photosSnapshot.docs.map(doc => {
+      return doc.data();
+    })
+
+    // console.log("allReviews", allReviews);
+    // console.log("all photos", allPhotos);
 
     // see if the document exists
     if(!docSnapshot){
@@ -158,6 +167,9 @@ module.exports = {
       
       // add reviews to businessData
       businessData.reviews = allReviews;
+
+      // add photos to businessData
+      businessData.photos = allPhotos;
 
       // send data to front end
       return res.status(200).json(businessData);
