@@ -1,0 +1,10 @@
+/* How to create an overlay:  https://stackoverflow.com/questions/56963074/react-application-how-to-create-a-black-overlay-for-a-picture */
+.Overlay {
+  background-color: rgba(0,0,0,0.35);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
