@@ -21,15 +21,15 @@ function App() {
         <TopNavbar />
 
         <Switch>
-          {/* <Route exact path="/" component={HomePage} />
+          <Route exact path="/" component={HomePage} />
           <Route exact path="/search/:businessInput/:cityInput/details/:id" component={DetailsPage} />
           <Route exact path="/login" component={LogInPage} />
           <Route exact path="/signup" component={SignUpPage} />
           <Route exact path="/search/:businessInput/:cityInput" component={SearchResultsPage} />
           <Route exact path="/morecities" component={MoreCitiesPage} />
-          <Route exact path="/search/:businessInput/:cityInput/details/:id/photos" component={GalleryPage} /> */}
+          <Route exact path="/search/:businessInput/:cityInput/details/:id/photos" component={GalleryPage} />
         </Switch>
-        <Overlay />
+        {/* <Overlay /> */}
         
         <Footer />
       </Router>

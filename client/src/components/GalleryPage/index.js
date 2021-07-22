@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Image, Container, Row } from "react-bootstrap";
+import Overlay from "./../Overlay";
 import "./styles.css";
 
 const picArr = [
@@ -17,17 +17,14 @@ const picArr = [
 ]
 
 
-const allImg = picArr.map(image => (
-  <div className="GalleryPage-tile">
-    <div className="GalleryPage-tile-img">
-      <Image rounded src={image} alt="something" />
-    </div>
-  </div>
-));
-
 function GalleryPage() {
   // extract state from store
   const businessDetails = useSelector(state => state.businessDetails);
+
+  // create a tile fo every image
+  const allImg = picArr.map(image => (
+    <Overlay src={image} />
+  ));
 
   return (
     <section className="GalleryPage">
