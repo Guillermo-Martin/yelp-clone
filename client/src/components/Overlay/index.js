@@ -23,10 +23,9 @@ function Overlay(props){
         showOverlay
         ?
           <div className="Overlay" onClick={closeOverlay}>
+            <span className="Overlay-close" onClick={closeOverlay}>Close X</span>
             <div className="Overlay-div">
-              <img src={props.src} alt="milkshake" 
-              className="Overlay-img"
-              />
+              <img src={props.src} alt="milkshake" className="Overlay-img" />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </div> 
           </div>
