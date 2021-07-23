@@ -11,7 +11,6 @@ import ReviewSection from "../ReviewSection";
 import Loader from "./../Loader";
 
 function DetailsPage(props) {
-  // console.log("details page", props.match.url);
   // get the id from the url using react router
   const businessId = props.match.params.id;
 
@@ -21,7 +20,6 @@ function DetailsPage(props) {
   // extract state from store
   const businessDetails = useSelector(state => state.businessDetails);
   const isLoading = useSelector(state => state.businessDetails.isLoading);
-
 
   // the data
   // extract data from store
@@ -35,73 +33,79 @@ function DetailsPage(props) {
     dispatch(getOneBusinessDetails(businessId))
   }, []);
 
-
-  return (
-    <div>
-      {/* if "isLoading" is true, display the loader; otherwise, show the info */}
-      {
-        isLoading
-        ?
-        <Loader />
-        :
-        <div>
-        {/* <h1>Details Page!</h1> */}
-        {/* Hero Image with basic details section */}
-        
-        <HeroDetails 
-          name={name}
-          stars={stars}
-          numReviews={numReviews}
-          type={type}
-          heroImage={heroImage}
-          hours={hours}
-          businessUrl={businessUrl}
-          photos={photos}
-        />
-
-        {/* List/Row of buttons (write a review, add photo, share, save) */}
-        <ShareRowSection />
-
-        {/* Basic info section (website, address, etc.) */}
-        <BasicInfoSection 
-          phoneNumber={phoneNumber}
-          address={address}
-          city={city}
-          zipcode={zipcode}
-          website={website}
-        />
-
-        {/* COVID-19 updates section (?) */}
-        <UpdatesSection 
-          covid19Updates={covid19Updates}
-          services={services}
-          safety={safety}
-        />
-
-        {/* Menu section */}
-        <MenuSection 
-          smallMenu={smallMenu}
-        />
-
-        {/* Location and hours section (map) */}
-        <LocationHoursSection 
-          address={address}
-          city={city}
-          zipcode={zipcode}
-          neighborhood={neighborhood}
-          intersection={intersection}
-          hours={hours}
-        />
-
-        {/* Review section (with reviews) */}
-        <ReviewSection 
-          reviews={reviews}
-        />
-        </div>
-      }
-    </div>
-  );
+  // if businessDetails.details isn't available yet, return null
+  // https://stackoverflow.com/questions/63967956/make-useeffect-hook-run-before-rendering-the-component
+  if(businessDetails.details){
+    return (
+      <div>
+        {/* if "isLoading" is true, display the loader; otherwise, show the info */}
+        {
+          isLoading
+          ?
+          <Loader />
+          :
+          <div>
+          {/* <h1>Details Page!</h1> */}
+          {/* Hero Image with basic details section */}
+          
+          <HeroDetails 
+            name={name}
+            stars={stars}
+            numReviews={numReviews}
+            type={type}
+            heroImage={heroImage}
+            hours={hours}
+            businessUrl={businessUrl}
+            photos={photos}
+          />
+  
+          {/* List/Row of buttons (write a review, add photo, share, save) */}
+          <ShareRowSection />
+  
+          {/* Basic info section (website, address, etc.) */}
+          <BasicInfoSection 
+            phoneNumber={phoneNumber}
+            address={address}
+            city={city}
+            zipcode={zipcode}
+            website={website}
+          />
+  
+          {/* COVID-19 updates section (?) */}
+          <UpdatesSection 
+            covid19Updates={covid19Updates}
+            services={services}
+            safety={safety}
+          />
+  
+          {/* Menu section */}
+          <MenuSection 
+            smallMenu={smallMenu}
+          />
+  
+          {/* Location and hours section (map) */}
+          <LocationHoursSection 
+            address={address}
+            city={city}
+            zipcode={zipcode}
+            neighborhood={neighborhood}
+            intersection={intersection}
+            hours={hours}
+          />
+  
+          {/* Review section (with reviews) */}
+          <ReviewSection 
+            reviews={reviews}
+          />
+          </div>
+        }
+      </div>
+    );
+  } else {
+    return null;
+  }
 }
+  
 
 // making DetailsPage aware of Redux store
 function mapStateToProps(state) {
