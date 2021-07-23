@@ -66,6 +66,7 @@
   padding: 1rem;
   position: absolute;
   right: 10px;
+  z-index: 1;
 }
 
 .Overlay-close:hover {

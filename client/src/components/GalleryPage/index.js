@@ -16,6 +16,7 @@ function GalleryPage() {
       src={photo.photoInfo.src}
       alt={photo.photoInfo.alt}
       description={photo.photoInfo.description}
+      key={photo.photoInfo.src}
     />
   ));
 
