@@ -22,9 +22,10 @@ function DetailsPage(props) {
   const businessDetails = useSelector(state => state.businessDetails);
   const isLoading = useSelector(state => state.businessDetails.isLoading);
 
+
   // the data
   // extract data from store
-  const { name, stars, numReviews, type, phoneNumber, address, city, neighborhood, zipcode, intersection, website, hours, covid19Updates, services, safety, reviews, heroImage, smallMenu } = businessDetails.details;
+  const { name, stars, numReviews, type, phoneNumber, address, city, neighborhood, zipcode, intersection, website, hours, covid19Updates, services, safety, reviews, heroImage, smallMenu, photos } = businessDetails.details;
 
   // save dispatch to a variable
   const dispatch = useDispatch();
@@ -34,8 +35,6 @@ function DetailsPage(props) {
     dispatch(getOneBusinessDetails(businessId))
   }, []);
 
-
-  console.log("businessDetails", businessDetails);
 
   return (
     <div>
@@ -57,6 +56,7 @@ function DetailsPage(props) {
           heroImage={heroImage}
           hours={hours}
           businessUrl={businessUrl}
+          photos={photos}
         />
 
         {/* List/Row of buttons (write a review, add photo, share, save) */}
