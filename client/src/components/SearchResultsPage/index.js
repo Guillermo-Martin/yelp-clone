@@ -25,6 +25,7 @@ function SearchResultsPage(props) {
   // results array for rendering
   let allSearchResults = "";
 
+  
   // map through searchResults (from store) and save to variable
   if(searchResults !== undefined){
     allSearchResults = searchResults.map(business => 
@@ -47,6 +48,8 @@ function SearchResultsPage(props) {
       </div>
     );
   }
+
+  
 
   return (
     <div className="SearchResultsPage">

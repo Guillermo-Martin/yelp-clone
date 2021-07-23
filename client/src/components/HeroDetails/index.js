@@ -6,8 +6,9 @@ import "./styles.css";
 
 function HeroDetails(props) {
   // get data from props
-  const { name, stars, numReviews, type, heroImage, hours, businessUrl, photos } = props;
+  const { name, stars, type, heroImage, hours, businessUrl, photos, reviews } = props;
 
+  console.log("hero", reviews)
   // date and time
   const now = new Date();
   
@@ -36,7 +37,7 @@ function HeroDetails(props) {
       <div>
         <h2 className="HeroDetails-name">{name}</h2>
         <img src={process.env.PUBLIC_URL + `/images/stars${stars}.png`} alt="number of stars" />
-        <p>{numReviews} reviews</p>
+        <p>{reviews.length} reviews</p>
         <p className="HeroDetails-claimed"><i class="fas fa-check-circle"></i>Claimed</p>
         <p>{type}</p>
         {/* if "isOpen" is true, show "Open"; else show "Closed" */}
