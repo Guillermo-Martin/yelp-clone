@@ -1,13 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CategoryTile from "../CategoryTile";
 import { Button } from "react-bootstrap";
 import "./styles.css";
 
 function MenuSection(props) {
-  console.log("in menu", props.smallMenu);
-
   // extract data from props
-  const { smallMenu } = props;
+  const { smallMenu, businessUrl } = props;
 
   // create a CategoryTile for every item in the smallMenu
   // smallMenu array for rendering
@@ -36,7 +35,7 @@ function MenuSection(props) {
       <div>
         {allSmallMenu}
       </div>
-      <a href="#"><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></a>
+      <Link to={`${businessUrl}/menu`}><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></Link>
     </section>
   );
 }

@@ -81,6 +81,7 @@ function DetailsPage(props) {
       {/* Menu section */}
       <MenuSection 
         smallMenu={smallMenu}
+        businessUrl={businessUrl}
       />
 
       {/* Location and hours section (map) */}
