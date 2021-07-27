@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch, connect } from "react-redux";
-import { getOneBusinessDetails } from "./../../actions/detailsPageActions";
+import { getOneBusinessDetails, getOneBusinessDetailsClear } from "./../../actions/detailsPageActions";
 import HeroDetails from "../HeroDetails";
 import BasicInfoSection from "../BasicInfoSection";
 import ShareRowSection from "../ShareRowSection";
@@ -9,6 +9,7 @@ import MenuSection from "../MenuSection";
 import LocationHoursSection from "../LocationHoursSection";
 import ReviewSection from "../ReviewSection";
 import Loader from "./../Loader";
+import { GET_ONE_BUSINESS_DETAILS_CLEAR } from "../../actions/types";
 
 function DetailsPage(props) {
   // get the id from the url using react router
@@ -30,7 +31,10 @@ function DetailsPage(props) {
 
   // call useEffect to make the API call (pass in the action to make an API call)
   useEffect(() => {
-    dispatch(getOneBusinessDetails(businessId))
+    dispatch(getOneBusinessDetails(businessId));
+
+    // clear out data if the user goes back:  https://stackoverflow.com/questions/65736238/react-redux-shows-previous-state-old-data-before-fetching-new-data
+    dispatch({ type: GET_ONE_BUSINESS_DETAILS_CLEAR })
   }, []);
 
   // if businessDetails.details isn't available yet, return the loader
