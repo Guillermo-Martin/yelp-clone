@@ -1,0 +1,38 @@
+.MenuPage {
+  padding: 2rem 1rem;
+}
+
+.MenuPage h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Item info */
+.MenuPage-info {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 1rem 0;
+}
+
+.MenuPage-info-row {
+  display: flex;
+}
+
+.MenuPage-info-col {
+  font-size: 1rem;
+  font-weight: 700;
+  width: 50%;
+}
+
+.MenuPage-info-price {
+  width: 50%;
+  text-align: right;
+}
+
+.MenuPage-info img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 1rem 0;
+}
+
