@@ -1,4 +1,4 @@
-import { GET_ONE_BUSINESS_DETAILS_LOADING, GET_ONE_BUSINESS_DETAILS_LOADED, GET_ONE_BUSINESS_DETAILS_ERROR } from "./../actions/types";
+import { GET_ONE_BUSINESS_DETAILS_LOADING, GET_ONE_BUSINESS_DETAILS_LOADED, GET_ONE_BUSINESS_DETAILS_ERROR, GET_ONE_BUSINESS_DETAILS_CLEAR } from "./../actions/types";
 
 // initial state
 const initialState = {
@@ -14,6 +14,8 @@ export default function(state = initialState, action) {
       return { ...state, details: action.payload, isLoading: false }
     case GET_ONE_BUSINESS_DETAILS_ERROR:
       return { error: action.payload };
+    case GET_ONE_BUSINESS_DETAILS_CLEAR:
+      return { ...state, details: ""};
     default:
       return state;
   }

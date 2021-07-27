@@ -1,4 +1,4 @@
-import { GET_ONE_BUSINESS_DETAILS_LOADING, GET_ONE_BUSINESS_DETAILS_LOADED, GET_ONE_BUSINESS_DETAILS_ERROR } from "./types";
+import { GET_ONE_BUSINESS_DETAILS_LOADING, GET_ONE_BUSINESS_DETAILS_LOADED, GET_ONE_BUSINESS_DETAILS_ERROR, GET_ONE_BUSINESS_DETAILS_CLEAR } from "./types";
 import axios from "axios";
 
 // Action:  "getOneBusinessDetails"
@@ -21,3 +21,8 @@ export const getOneBusinessDetails = id => async dispatch => {
     })
   }
 }
+
+// clear action
+// export const getOneBusinessDetailsClear = () => {
+//   return { type: GET_ONE_BUSINESS_DETAILS_CLEAR };
+// }
