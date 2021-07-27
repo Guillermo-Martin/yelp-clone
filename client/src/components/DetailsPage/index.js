@@ -19,7 +19,7 @@ function DetailsPage(props) {
 
   // extract state from store
   const businessDetails = useSelector(state => state.businessDetails);
-  const isLoading = useSelector(state => state.businessDetails.isLoading);
+  const isLoading = useSelector(state => state.businessDetails.isLoading); // <-- ***can delete***
 
   // the data
   // extract data from store
@@ -33,77 +33,70 @@ function DetailsPage(props) {
     dispatch(getOneBusinessDetails(businessId))
   }, []);
 
-  // if businessDetails.details isn't available yet, return null
+  // if businessDetails.details isn't available yet, return the loader
   // https://stackoverflow.com/questions/63967956/make-useeffect-hook-run-before-rendering-the-component
-  if(businessDetails.details){
-    return (
-      <div>
-        {/* if "isLoading" is true, display the loader; otherwise, show the info */}
-        {
-          isLoading
-          ?
-          <Loader />
-          :
-          <div>
-          {/* <h1>Details Page!</h1> */}
-          {/* Hero Image with basic details section */}
-          
-          <HeroDetails 
-            name={name}
-            stars={stars}
-            type={type}
-            heroImage={heroImage}
-            hours={hours}
-            businessUrl={businessUrl}
-            photos={photos}
-            reviews={reviews}
-          />
-  
-          {/* List/Row of buttons (write a review, add photo, share, save) */}
-          <ShareRowSection />
-  
-          {/* Basic info section (website, address, etc.) */}
-          <BasicInfoSection 
-            phoneNumber={phoneNumber}
-            address={address}
-            city={city}
-            zipcode={zipcode}
-            website={website}
-          />
-  
-          {/* COVID-19 updates section (?) */}
-          <UpdatesSection 
-            covid19Updates={covid19Updates}
-            services={services}
-            safety={safety}
-          />
-  
-          {/* Menu section */}
-          <MenuSection 
-            smallMenu={smallMenu}
-          />
-  
-          {/* Location and hours section (map) */}
-          <LocationHoursSection 
-            address={address}
-            city={city}
-            zipcode={zipcode}
-            neighborhood={neighborhood}
-            intersection={intersection}
-            hours={hours}
-          />
-  
-          {/* Review section (with reviews) */}
-          <ReviewSection 
-            reviews={reviews}
-          />
-          </div>
-        }
-      </div>
-    );
-  } else {
-    return null;
+  // Conditional rendering: https://reactjs.org/docs/conditional-rendering.html
+  if(!businessDetails.details) {
+    return <Loader />
   }
+
+  return (
+    <div>
+      <div>
+      {/* Hero Image with basic details section */}
+      <HeroDetails 
+        name={name}
+        stars={stars}
+        type={type}
+        heroImage={heroImage}
+        hours={hours}
+        businessUrl={businessUrl}
+        photos={photos}
+        reviews={reviews}
+      />
+
+      {/* List/Row of buttons (write a review, add photo, share, save) */}
+      <ShareRowSection />
+
+      {/* Basic info section (website, address, etc.) */}
+      <BasicInfoSection 
+        phoneNumber={phoneNumber}
+        address={address}
+        city={city}
+        zipcode={zipcode}
+        website={website}
+      />
+
+      {/* COVID-19 updates section (?) */}
+      <UpdatesSection 
+        covid19Updates={covid19Updates}
+        services={services}
+        safety={safety}
+      />
+
+      {/* Menu section */}
+      <MenuSection 
+        smallMenu={smallMenu}
+      />
+
+      {/* Location and hours section (map) */}
+      <LocationHoursSection 
+        address={address}
+        city={city}
+        zipcode={zipcode}
+        neighborhood={neighborhood}
+        intersection={intersection}
+        hours={hours}
+      />
+
+      {/* Review section (with reviews) */}
+      <ReviewSection 
+        reviews={reviews}
+      />
+      </div>
+      
+    </div>
+  );
 }
   
 
@@ -113,6 +106,5 @@ function mapStateToProps(state) {
     businessDetails: state.businessDetails
   };
 }
-
 
 export default connect(mapStateToProps)(DetailsPage);
