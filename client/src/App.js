@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/search/:businessInput/:cityInput" component={SearchResultsPage} />
           <Route exact path="/morecities" component={MoreCitiesPage} />
           <Route exact path="/search/:businessInput/:cityInput/details/:id/photos" component={GalleryPage} />
-          <Route exact path="/search/:businessInput/:cityInput/details/:id/menu" component={MenuPage} /> */}
+          <Route exact path="/search/:businessInput/:cityInput/details/:id/menu" component={MenuPage} />
         </Switch>
         
         <Footer />

@@ -37,7 +37,7 @@ module.exports = {
     const { businessInput, cityInput } = req.params;
 
     // create a collection reference (for database searching)
-    const businessRef = db.collection("businesses");
+    const businessRef = db.collection("businesses").where("published", "==", true);
 
     try {
       // ===== RETRIEVE ALL DATA IF BOTH INPUTS ARE EMPTY =====
