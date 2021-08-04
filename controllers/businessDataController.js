@@ -132,24 +132,29 @@ module.exports = {
     // create a snapshot of the document
     const docSnapshot = await docRef.get();
 
+    // ===== REVIEWS =====
     // create a snapshot of the reviews
     const reviewsSnapshot = await db.collection("businesses").doc(businessId).collection("reviews").get();
-
     // store all reviews into an array
     let allReviews = reviewsSnapshot.docs.map(doc => {
       return doc.data();
     });
 
+    // ===== PHOTOS =====
     // create a snapshot of the photos
     const photosSnapshot = await db.collection("businesses").doc(businessId).collection("photos").get();
-
     // store all photos into an array
     let allPhotos = photosSnapshot.docs.map(doc => {
       return doc.data();
-    })
+    });
 
-    // console.log("allReviews", allReviews);
-    // console.log("all photos", allPhotos);
+    // ===== MENU =====
+    // create a snapshot of the menu items
+    const menuSnapshot = await db.collection("businesses").doc(businessId).collection("menu").get();
+    // store all menu items into an array
+    let allMenu = menuSnapshot.docs.map(doc => {
+      return doc.data();
+    });
 
     // see if the document exists
     if(!docSnapshot){
@@ -170,6 +175,9 @@ module.exports = {
 
       // add photos to businessData
       businessData.photos = allPhotos;
+
+      // add menu to businessData
+      businessData.menu = allMenu;
 
       // send data to front end
       return res.status(200).json(businessData);
