@@ -36,3 +36,16 @@
   margin: 1rem 0;
 }
 
+/* icons */
+.MenuPage-info-icons {
+  color: #999;
+  font-weight: 400;
+}
+
+.MenuPage-info-icons .fas {
+  margin-right: 0.3rem;
+}
+
+.MenuPage-info-icons span {
+  margin-right: 1rem;
+}

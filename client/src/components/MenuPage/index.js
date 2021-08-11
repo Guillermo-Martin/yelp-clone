@@ -19,9 +19,18 @@ function MenuPage() {
         <div className="MenuPage-info-col MenuPage-info-price">{item.menu.price}</div>
       </div>
   
+      {/* image */}
       <img src={item.menu.src} alt={item.menu.name} />
       
+      {/* description */}
       <p>{item.menu.description}</p>
+
+      {/* icons */}
+      <div className="MenuPage-info-icons">
+        <i className="fas fa-star"></i><span>5 reviews</span>
+        <i className="fas fa-camera"></i><span>10 photos</span>
+      </div>
+      
     </div>
   ));
 
