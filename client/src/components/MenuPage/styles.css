@@ -10,7 +10,6 @@
 /* Item info */
 .MenuPage-info {
   border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
   padding: 1rem 0;
 }
 
@@ -34,6 +33,10 @@
   height: 100px;
   object-fit: cover;
   margin: 1rem 0;
+}
+
+.MenuPage-info-desc {
+  margin-bottom: 0.4rem;
 }
 
 /* icons */

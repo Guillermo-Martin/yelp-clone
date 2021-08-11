@@ -23,7 +23,7 @@ function MenuPage() {
       <img src={item.menu.src} alt={item.menu.name} />
       
       {/* description */}
-      <p>{item.menu.description}</p>
+      <p className="MenuPage-info-desc">{item.menu.description}</p>
 
       {/* icons */}
       <div className="MenuPage-info-icons">
