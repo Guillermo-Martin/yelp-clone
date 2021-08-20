@@ -31,11 +31,21 @@ function MenuSection(props) {
 
   return (
     <section className="MenuSection">
-      <h5>Menu</h5>
       <div>
-        {allSmallMenu}
+        {/* if smallMenu exists, show the "menu" section; else show the "services rendered" section */}
+        {
+          smallMenu 
+            ? 
+              <div>
+                <h5>Menu</h5>
+                {allSmallMenu}
+                <Link to={`${businessUrl}/menu`}><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></Link>
+              </div>
+            : 
+              <h1>Services Rendered</h1>
+        }
+        <Link to={`${businessUrl}/menu`}><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></Link>
       </div>
-      <Link to={`${businessUrl}/menu`}><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></Link>
     </section>
   );
 }
