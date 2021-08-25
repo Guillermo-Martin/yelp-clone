@@ -6,7 +6,7 @@ import "./styles.css";
 
 function MenuSection(props) {
   // extract data from props
-  const { smallMenu, businessUrl } = props;
+  const { smallMenu, businessUrl, servicesRendered } = props;
 
   // create a CategoryTile for every item in the smallMenu
   // smallMenu array for rendering
@@ -32,6 +32,14 @@ function MenuSection(props) {
     } 
   }
 
+  // servicesRendered for rendering
+  let allServices = "";
+
+  if(servicesRendered){
+    allServices = servicesRendered.map(service => (
+      <p>{service}</p>
+    ))
+  }
 
   return (
     <section className="MenuSection">
@@ -46,9 +54,12 @@ function MenuSection(props) {
                 <Link to={`${businessUrl}/menu`}><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></Link>
               </div>
             : 
-              <h1>Services Rendered</h1>
+              <div>
+                <h1>Services Rendered</h1>
+                {allServices}
+              </div>
+              
         }
-        {/* <Link to={`${businessUrl}/menu`}><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></Link> */}
       </div>
     </section>
   );
