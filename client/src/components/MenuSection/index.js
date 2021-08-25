@@ -12,29 +12,33 @@ function MenuSection(props) {
   // smallMenu array for rendering
   let allSmallMenu = "";
 
+  // if smallMenu isn't undefined...
   if(smallMenu !== undefined){
-    allSmallMenu = smallMenu.map(item => (
-      <div className="MenuSection-tile">
-        <a href="#">
-          <CategoryTile 
-            src={item.imgSrc}
-            alt={item.item}
-            category={item.item} // <-- Menu item
-            section="MenuSection"
-          />
-          <p>{item.numPhotos} Photos &#8226; {item.numReviews} Reviews</p>
-        </a> 
-      </div>
-    ))
+    // ...check to see if a small menu exists. if so, map and create the items
+    if(smallMenu.exists) {
+      allSmallMenu = smallMenu.items.map(item => (
+        <div className="MenuSection-tile">
+          <a href="#">
+            <CategoryTile 
+              src={item.imgSrc}
+              alt={item.item}
+              category={item.item} // <-- Menu item
+              section="MenuSection"
+            />
+            <p>{item.numPhotos} Photos &#8226; {item.numReviews} Reviews</p>
+          </a> 
+        </div>
+      ))
+    } 
   }
 
 
   return (
     <section className="MenuSection">
       <div>
-        {/* if smallMenu exists, show the "menu" section; else show the "services rendered" section */}
+        {/* if smallMenu exists or a fullMenu exists, show the "menu" section; else show the "services rendered" section */}
         {
-          smallMenu 
+          smallMenu.exists || smallMenu.fullMenu
             ? 
               <div>
                 <h5>Menu</h5>
@@ -44,7 +48,7 @@ function MenuSection(props) {
             : 
               <h1>Services Rendered</h1>
         }
-        <Link to={`${businessUrl}/menu`}><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></Link>
+        {/* <Link to={`${businessUrl}/menu`}><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></Link> */}
       </div>
     </section>
   );
