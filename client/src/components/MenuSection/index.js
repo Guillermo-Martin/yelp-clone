@@ -37,7 +37,7 @@ function MenuSection(props) {
 
   if(servicesRendered){
     allServices = servicesRendered.map(service => (
-      <p>{service}</p>
+      <li>{service}</li>
     ))
   }
 
@@ -54,9 +54,12 @@ function MenuSection(props) {
                 <Link to={`${businessUrl}/menu`}><Button variant="outline-secondary" className="MenuSection-btn"><i class="fas fa-book-open"></i>Full Menu</Button></Link>
               </div>
             : 
-              <div>
-                <h1>Services Rendered</h1>
-                {allServices}
+              <div className="MenuSection-services-rendered">
+                <h5>Services Offered</h5>
+                <ul>
+                  {allServices}
+                </ul>
+                
               </div>
               
         }

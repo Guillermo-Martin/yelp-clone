@@ -51,3 +51,23 @@
 .MenuSection-btn .fa-book-open {
   margin-right: 0.3rem;
 }
+
+/* Services Rendered (if there's no menu) */
+.MenuSection-services-rendered {
+  padding: 0 1rem;
+}
+
+.MenuSection-services-rendered h5 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.MenuSection-services-rendered ul {
+  padding-left: 0;
+}
+
+.MenuSection-services-rendered li {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+
