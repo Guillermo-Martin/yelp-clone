@@ -6,6 +6,12 @@ import SearchResultsCard from "./../SearchResultsCard";
 import Loader from "./../Loader";
 import "./styles.css";
 
+// ------------------------------------------------------------
+// * When the component renders, call "useEffect".  
+// * "useEffect" will call "dispatch", which will call the "getSearchBusinessResults" action, 
+// passing in the "businessInput" and "cityInput" obtained from React Router.  
+// * Go to "searchResultsPageAction.js" for next steps.
+// ------------------------------------------------------------
 
 function SearchResultsPage(props) {
   // get the inputs from URL using React Router
@@ -24,7 +30,6 @@ function SearchResultsPage(props) {
 
   // results array for rendering
   let allSearchResults = "";
-
   
   // map through searchResults (from store) and save to variable
   if(searchResults !== undefined){
@@ -48,8 +53,6 @@ function SearchResultsPage(props) {
       </div>
     );
   }
-
-  
 
   return (
     <div className="SearchResultsPage">

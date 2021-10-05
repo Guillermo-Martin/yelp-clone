@@ -11,6 +11,8 @@ export default function(state = initialState, action) {
     case GET_SEARCH_BUSINESS_RESULTS_LOADING:
       return { ...state, isLoading: true }
     case GET_SEARCH_BUSINESS_RESULTS_LOADED:
+      // when data is received from "searchResultsPageActions.js", update the store
+      // with the data received ("searchResults" will be updated in the store)
       return { ...state, searchResults: action.payload, isLoading: false }
     case GET_SEARCH_BUSINESS_RESULTS_ERROR:
       return { error: action.payload }
